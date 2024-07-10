@@ -1,0 +1,121 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+
+&mt {
+    tapping-term-ms = <190>;
+    require-prior-idle-ms = <200>;
+    flavor = "tap-preferred";
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        SZ {
+            bindings = <&kp RA(S)>;
+            key-positions = <11 12>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        UE {
+            bindings = <&kp RA(Y)>;
+            key-positions = <7 8>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        AE {
+            bindings = <&kp RA(Q)>;
+            key-positions = <17 18>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        OE {
+            bindings = <&kp RA(P)>;
+            key-positions = <8 17>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        Semi {
+            bindings = <&kp SEMI>;
+            key-positions = <27 28>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+    };
+
+    behaviors {
+        mt_hp: mt_hp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_HoldPreferred";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+            quick-tap-ms = <150>;
+        };
+
+        mt_arrowfy: mt_arrowfy {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_ARROW";
+            bindings = <&arrowfy>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+            flavor = "tap-preferred";
+        };
+    };
+
+    macros {
+        arrowfy: arrowfy {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp GT>;
+            label = "ARROWFY";
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        apt {
+            bindings = <
+        &kp W  &kp G  &kp D               &kp F           &kp B                 &kp Q        &kp L               &kp U               &kp O     &kp Y
+        &kp R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                 &kp J        &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
+&trans  &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V                 &kp Z        &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &kp FSLH  &trans
+                      &trans              &lt 1 ESC       &mt_hp LSHIFT BSPC    &lt 2 SPACE  &lt 3 ENTER         &trans
+            >;
+        };
+
+        sym {
+            bindings = <
+        &kp DOLLAR  &kp HASH         &kp AT    &kp EXCL  &kp STAR       &kp UNDER  &kp N7    &kp N8    &kp N9         &mt_arrowfy EQUAL EQUAL
+        &kp N0      &kp N3           &kp N2    &kp N1    &kp LBKT       &kp RBKT   &kp N4    &kp N5    &kp N6         &mt_arrowfy MINUS MINUS
+&trans  &kp CARET   &mt TILDE GRAVE  &kp LPAR  &kp RPAR  &kp PERCENT    &kp PLUS   &kp RBRC  &kp LBRC  &kp AMPERSAND  &mt BSLH PIPE            &trans
+                                     &trans    &trans    &trans         &trans     &trans    &trans
+            >;
+        };
+
+        nav {
+            bindings = <
+        &trans  &trans   &trans            &trans        &trans    &trans     &kp HOME   &kp END   &trans  &kp DEL
+        &trans  &kp TAB  &kp LEFT_CONTROL  &kp LALT      &trans    &kp PG_UP  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT
+&trans  &trans  &trans   &trans            &kp LEFT_GUI  &trans    &kp PG_DN  &kp K_APP  &trans    &trans  &trans     &trans
+                         &trans            &trans        &trans    &trans     &trans     &trans
+            >;
+        };
+
+        fun {
+            bindings = <
+        &trans        &trans        &trans               &trans           &trans    &trans  &trans           &kp PRINTSCREEN  &kp F11  &kp F12
+        &kp F1        &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8     &kp F9   &kp F10
+&trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE           &mt LGUI F5      &trans    &trans  &mt RGUI F6      &trans           &trans   &trans   &trans
+                                    &trans               &trans           &trans    &trans  &trans           &trans
+            >;
+        };
+    };
+};
