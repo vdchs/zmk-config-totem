@@ -79,7 +79,7 @@
             bindings = <
         &kp W  &kp G  &kp D               &kp F           &kp B                 &kp Q        &kp L               &kp U               &kp O     &kp Y
         &kp R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                 &kp J        &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
-&trans  &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V                 &kp Z        &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &kp FSLH  &kp SEMI
+&kp Z   &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V                 &kp SEMI     &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &kp FSLH  &trans
                       &trans              &lt 1 ESC       &mt_hp LSHIFT BSPC    &lt 2 SPACE  &lt 3 ENTER         &trans
             >;
         };
