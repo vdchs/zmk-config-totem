@@ -39,13 +39,6 @@
             timeout-ms = <25>;
             layers = <0>;
         };
-
-        Semi {
-            bindings = <&kp SEMI>;
-            key-positions = <27 28>;
-            timeout-ms = <25>;
-            layers = <0>;
-        };
     };
 
     behaviors {
@@ -86,8 +79,8 @@
             bindings = <
         &kp W  &kp G  &kp D               &kp F           &kp B                 &kp Q        &kp L               &kp U               &kp O     &kp Y
         &kp R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                 &kp J        &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
-&trans  &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V                 &kp Z        &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &kp FSLH  &trans
-                      &trans              &lt 1 ESC       &mt_hp LSHIFT BSPC    &lt 2 SPACE  &lt 3 ENTER         &trans
+&trans  &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V                 &kp Z        &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &kp FSLH  &kp SEMI
+                      &trans              &mo 1 ESC       &mt_hp LSHIFT BSPC    &lt 2 SPACE  &lt 3 ENTER         &trans
             >;
         };
 
@@ -95,7 +88,7 @@
             bindings = <
         &kp DOLLAR  &kp HASH         &kp AT    &kp EXCL  &kp STAR       &kp UNDER  &kp N7    &kp N8    &kp N9         &mt_arrowfy EQUAL EQUAL
         &kp N0      &kp N3           &kp N2    &kp N1    &kp LBKT       &kp RBKT   &kp N4    &kp N5    &kp N6         &mt_arrowfy MINUS MINUS
-&trans  &kp CARET   &mt TILDE GRAVE  &kp LPAR  &kp RPAR  &kp PERCENT    &kp PLUS   &kp RBRC  &kp LBRC  &kp AMPERSAND  &mt BSLH PIPE            &trans
+&trans  &kp CARET   &mt TILDE GRAVE  &kp LBRC  &kp RBRC  &kp PERCENT    &kp PLUS   &kp RPAR  &kp LPAR  &kp AMPERSAND  &mt BSLH PIPE            &trans
                                      &trans    &trans    &trans         &trans     &trans    &trans
             >;
         };
