@@ -88,7 +88,7 @@
             bindings = <
         &kp DOLLAR  &kp HASH         &kp AT    &kp EXCL  &kp STAR       &kp UNDER  &kp N7    &kp N8    &kp N9         &mt_arrowfy EQUAL EQUAL
         &kp N0      &kp N3           &kp N2    &kp N1    &kp LBKT       &kp RBKT   &kp N4    &kp N5    &kp N6         &mt_arrowfy MINUS MINUS
-&trans  &kp CARET   &mt TILDE GRAVE  &kp LBRC  &kp RBRC  &kp PERCENT    &kp PLUS   &kp RPAR  &kp LPAR  &kp AMPERSAND  &mt BSLH PIPE            &trans
+&trans  &kp CARET   &mt TILDE GRAVE  &kp LPAR  &kp RPAR  &kp PERCENT    &kp PLUS   &kp RBRC  &kp LPAR  &kp AMPERSAND  &mt BSLH PIPE            &trans
                                      &trans    &trans    &trans         &trans     &trans    &trans
             >;
         };
