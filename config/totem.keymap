@@ -106,7 +106,25 @@
         &trans        &trans        &trans               &trans           &trans    &trans  &trans           &kp PRINTSCREEN  &kp F11  &kp F12
         &kp F1        &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8     &kp F9   &kp F10
 &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE           &mt LGUI F5      &trans    &trans  &mt RGUI F6      &trans           &trans   &trans   &trans
-                                    &trans               &trans           &trans    &trans  &trans           &trans
+                                    &to 4                &trans           &trans    &trans  &trans           &trans
+            >;
+        };
+
+        gam_1 {
+            bindings = <
+       &kp X       &kp Q  &kp T     &kp E  &kp R        &trans  &trans  &trans  &trans  &trans
+       &kp LCTRL   &kp A  &kp W     &kp S  &kp G        &trans  &trans  &trans  &trans  &trans
+&kp Z  &kp LSHIFT  &kp C  &kp D     &kp F  &kp V        &trans  &trans  &trans  &trans  &trans  &trans
+                          &kp LALT  &mo 5  &kp SPACE    &trans  &trans  &trans
+            >;
+        };
+
+        gam_2 {
+            bindings = <
+         &kp N1    &kp N2  &kp N3  &kp N4  &kp N5    &trans  &trans  &trans  &trans  &trans
+         &kp TAB   &trans  &trans  &trans  &kp M     &trans  &trans  &trans  &trans  &trans
+&kp ESC  &kp CAPS  &kp Y   &trans  &kp H   &kp B     &trans  &trans  &trans  &trans  &trans  &trans
+                           &to 0   &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
