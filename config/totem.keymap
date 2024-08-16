@@ -113,8 +113,8 @@
         gam_1 {
             bindings = <
        &kp X       &kp Q  &kp T     &kp E  &kp R        &trans  &trans  &trans  &trans  &trans
-       &kp LCTRL   &kp A  &kp W     &kp S  &kp G        &trans  &trans  &trans  &trans  &trans
-&kp Z  &kp LSHIFT  &kp C  &kp D     &kp F  &kp V        &trans  &trans  &trans  &trans  &trans  &trans
+       &kp LCTRL   &kp A  &kp W     &kp D  &kp G        &trans  &trans  &trans  &trans  &trans
+&kp Z  &kp LSHIFT  &kp C  &kp S     &kp F  &kp V        &trans  &trans  &trans  &trans  &trans  &trans
                           &kp LALT  &mo 5  &kp SPACE    &trans  &trans  &trans
             >;
         };
