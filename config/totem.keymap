@@ -112,10 +112,10 @@
 
         gam_1 {
             bindings = <
-       &kp X       &kp Q  &kp T     &kp E  &kp R        &trans  &trans  &trans  &trans  &trans
-       &kp LCTRL   &kp A  &kp W     &kp D  &kp G        &trans  &trans  &trans  &trans  &trans
-&kp Z  &kp LSHIFT  &kp C  &kp S     &kp F  &kp V        &trans  &trans  &trans  &trans  &trans  &trans
-                          &kp LALT  &mo 5  &kp SPACE    &trans  &trans  &trans
+       &kp X       &kp Q  &kp T  &kp E  &kp R        &trans  &trans  &trans  &trans  &trans
+       &kp LCTRL   &kp A  &kp W  &kp D  &kp G        &trans  &trans  &trans  &trans  &trans
+&kp Z  &kp LSHIFT  &kp C  &kp S  &kp F  &kp V        &trans  &trans  &trans  &trans  &trans  &trans
+                          &mo 6  &mo 5  &kp SPACE    &trans  &trans  &trans
             >;
         };
 
@@ -123,8 +123,17 @@
             bindings = <
          &kp N1    &kp N2  &kp N3  &kp N4  &kp N5    &trans  &trans  &trans  &trans  &trans
          &kp TAB   &trans  &trans  &trans  &kp M     &trans  &trans  &trans  &trans  &trans
-&kp ESC  &kp CAPS  &kp Y   &trans  &kp H   &kp B     &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC  &kp LALT  &kp Y   &trans  &kp H   &kp B     &trans  &trans  &trans  &trans  &trans  &trans
                            &to 0   &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        gam_3 {
+            bindings = <
+        &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &trans  &trans  &trans  &trans  &trans
+        &kp I   &trans  &trans  &trans  &kp J     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
