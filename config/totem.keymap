@@ -69,13 +69,6 @@
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp GT>;
             label = "ARROWFY";
         };
-
-        append_space: append_space {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp SPACE>;
-            label = "APPEND_SPACE";
-        };
     };
 
     keymap {
@@ -92,10 +85,10 @@
 
         apt_2 {
             bindings = <
-        &trans  &trans  &mt_arrowfy EQUAL EQUAL  &mt_arrowfy MINUS MINUS  &trans    &trans  &trans                  &trans     &trans               &trans
-        &kp X   &trans  &trans                   &kp Z                    &trans    &trans  &append_space QUESTION  &kp SLASH  &append_space COLON  &append_space SEMI
-&trans  &trans  &trans  &trans                   &trans                   &trans    &trans  &trans                  &trans     &trans               &trans              &trans
-                        &trans                   &kp LS(V)                &trans    &trans  &mo 4                   &trans
+        &trans  &trans  &mt_arrowfy EQUAL EQUAL  &mt_arrowfy MINUS MINUS  &trans                &trans  &trans        &trans     &trans     &trans
+        &kp X   &trans  &trans                   &kp Z                    &trans                &trans  &kp QUESTION  &kp SLASH  &kp COLON  &kp SEMI
+&trans  &trans  &trans  &trans                   &trans                   &trans                &trans  &trans        &trans     &trans     &trans    &trans
+                        &trans                   &kp LS(V)                &mt_hp LSHFT SPACE    &trans  &mo 4         &trans
             >;
         };
 
