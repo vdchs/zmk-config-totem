@@ -38,13 +38,6 @@
             timeout-ms = <25>;
             layers = <0>;
         };
-
-        ENTR {
-            bindings = <&kp ENTER>;
-            key-positions = <16 17 18>;
-            timeout-ms = <25>;
-            layers = <0>;
-        };
     };
 
     behaviors {
@@ -83,18 +76,18 @@
 
         apt {
             bindings = <
-        &kp W      &kp G  &kp D               &kp F           &kp B                 &kp Q        &kp L               &kp U               &kp O     &kp Y
-        &mt ESC R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                 &kp J        &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
-&trans  &trans     &kp C  &kp M               &mt LEFT_GUI P  &trans                &trans       &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &trans  &trans
-                          &trans              &lt 2 V         &mt_hp LSHIFT BSPC    &lt 3 SPACE  &sl 1               &trans
+        &kp W   &kp G  &kp D               &kp F           &kp B                 &kp Q        &kp L               &kp U               &kp O     &kp Y
+        &kp R   &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                 &kp J        &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
+&trans  &trans  &kp C  &kp M               &mt LEFT_GUI P  &trans                &trans       &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &trans  &trans
+                       &trans              &lt 2 V         &mt_hp LSHIFT BSPC    &lt 3 SPACE  &sl 1               &trans
             >;
         };
 
         apt_2 {
             bindings = <
-        &trans  &trans    &trans  &trans     &trans    &trans  &trans  &trans  &trans     &trans
-        &kp X   &kp SEMI  &trans  &kp COLON  &trans    &trans  &kp Z   &trans  &kp QMARK  &kp SLASH
-&trans  &trans  &trans    &trans  &trans     &trans    &trans  &trans  &trans  &trans     &trans     &trans
+        &trans  &trans    &trans  &trans     &trans    &trans  &trans  &trans  &trans  &kp QUESTION
+        &kp X   &kp SEMI  &trans  &kp COLON  &trans    &trans  &kp Z   &trans  &trans  &kp SLASH
+&trans  &trans  &trans    &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans        &trans
                           &trans  &kp LS(V)  &trans    &trans  &mo 4   &trans
             >;
         };
@@ -110,10 +103,10 @@
 
         nav {
             bindings = <
-        &trans  &trans   &trans            &trans        &trans    &trans     &kp HOME   &kp END   &trans  &kp DEL
-        &trans  &kp TAB  &kp LEFT_CONTROL  &kp LALT      &trans    &kp PG_UP  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT
-&trans  &trans  &trans   &trans            &kp LEFT_GUI  &trans    &kp PG_DN  &kp K_APP  &trans    &trans  &trans     &trans
-                         &trans            &trans        &trans    &trans     &trans     &trans
+        &trans   &trans   &trans            &trans          &trans       &trans     &kp HOME   &kp END   &trans  &kp DEL
+        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &mt LALT ENTER  &kp PG_DN    &kp PG_UP  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT
+&trans  &trans   &trans   &trans            &kp LEFT_GUI    &trans       &trans     &kp K_APP  &trans    &trans  &trans     &trans
+                          &trans            &trans          &trans       &trans     &trans     &trans
             >;
         };
 
