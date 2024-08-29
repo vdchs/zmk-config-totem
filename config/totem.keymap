@@ -41,7 +41,7 @@
 
         ENTR {
             bindings = <&kp ENTER>;
-            key-positions = <16 19>;
+            key-positions = <16 17 18>;
             timeout-ms = <25>;
             layers = <0>;
         };
