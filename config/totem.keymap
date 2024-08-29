@@ -85,10 +85,10 @@
 
         apt_2 {
             bindings = <
-        &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &trans  &trans     &trans    &trans  &trans    &trans     &trans    &trans
-        &kp X                    &trans                   &trans  &kp Z      &trans    &trans  &kp SEMI  &kp COLON  &kp FSLH  &kp QUESTION
-&trans  &trans                   &trans                   &trans  &trans     &trans    &trans  &trans    &trans     &trans    &trans        &trans
-                                                          &trans  &kp LS(V)  &trans    &trans  &mo 4     &trans
+        &trans  &trans  &mt_arrowfy EQUAL EQUAL  &mt_arrowfy MINUS MINUS  &trans    &trans  &trans    &trans     &trans    &trans
+        &kp X   &trans  &trans                   &kp Z                    &trans    &trans  &kp SEMI  &kp COLON  &kp FSLH  &kp QUESTION
+&trans  &trans  &trans  &trans                   &trans                   &trans    &trans  &trans    &trans     &trans    &trans        &trans
+                        &trans                   &kp LS(V)                &trans    &trans  &mo 4     &trans
             >;
         };
 
