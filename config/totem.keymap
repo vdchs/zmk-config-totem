@@ -60,6 +60,15 @@
             tapping-term-ms = <190>;
             flavor = "tap-preferred";
         };
+
+        lowU: lowU {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LOWU";
+            bindings = <&kp U>, <&kp U>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -69,6 +78,13 @@
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp GT>;
             label = "ARROWFY";
         };
+
+        Qu: Qu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &lowU>;
+            label = "QU";
+        };
     };
 
     keymap {
@@ -76,28 +92,28 @@
 
         apt {
             bindings = <
-        &kp W   &kp G  &kp D               &kp F           &kp B                 &kp Q        &kp L               &kp U               &kp O     &kp Y
+        &kp W   &kp G  &kp D               &kp F           &kp B                 &kp FSLH     &kp L               &kp U               &kp O     &kp Y
         &kp R   &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                 &kp J        &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
 &trans  &trans  &kp C  &kp M               &mt LEFT_GUI P  &trans                &trans       &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &trans  &trans
-                       &trans              &sl 2           &mt_hp LSHIFT BSPC    &lt 3 SPACE  &sl 1               &trans
+                       &trans              &lt 2 V         &mt_hp LSHIFT BSPC    &lt 3 SPACE  &sl 1               &trans
             >;
         };
 
         apt_2 {
             bindings = <
-        &trans  &trans  &mt_arrowfy EQUAL EQUAL  &mt_arrowfy MINUS MINUS  &trans       &trans  &trans        &trans     &trans     &trans
-        &kp X   &trans  &trans                   &kp Z                    &kp LS(V)    &trans  &kp QUESTION  &kp SLASH  &kp COLON  &kp SEMI
-&trans  &trans  &trans  &trans                   &trans                   &trans       &trans  &trans        &trans     &trans     &trans    &trans
-                        &trans                   &trans                   &kp V        &trans  &mo 4         &trans
+        &trans  &trans  &kp AT  &kp EXCLAMATION  &trans                &trans  &trans  &trans  &trans     &trans
+        &kp X   &trans  &trans  &kp Z            &trans                &trans  &Qu     &trans  &kp COLON  &kp SEMI
+&trans  &trans  &trans  &trans  &trans           &trans                &trans  &trans  &trans  &trans     &trans    &trans
+                        &trans  &kp LS(V)        &mt_hp LSHFT SPACE    &trans  &mo 4   &trans
             >;
         };
 
         sym {
             bindings = <
-        &mt CARET DOLLAR  &mt PRCNT HASH   &kp AT    &kp EXCL  &kp STAR    &kp UNDER  &kp N7    &kp N8    &kp N9    &mt BSLH PIPE
-        &kp N0            &kp N3           &kp N2    &kp N1    &kp LBKT    &kp RBKT   &kp N4    &kp N5    &kp N6    &kp AMPS
-&trans  &trans            &mt TILDE GRAVE  &kp LPAR  &kp RPAR  &trans      &trans     &kp RBRC  &kp LBRC  &kp PLUS  &trans         &trans
-                                           &to 5     &trans    &trans      &trans     &trans    &trans
+        &mt CARET DOLLAR  &mt PRCNT HASH   &mt BSLH PIPE  &kp AMPS  &kp STAR    &kp UNDER  &kp N7    &kp N8    &kp N9    &mt_arrowfy EQUAL EQUAL
+        &kp N0            &kp N3           &kp N2         &kp N1    &kp LBKT    &kp RBKT   &kp N4    &kp N5    &kp N6    &mt_arrowfy MINUS MINUS
+&trans  &trans            &mt TILDE GRAVE  &kp LPAR       &kp RPAR  &trans      &trans     &kp RBRC  &kp LBRC  &kp PLUS  &trans                   &trans
+                                           &to 5          &trans    &trans      &trans     &trans    &trans
             >;
         };
 
