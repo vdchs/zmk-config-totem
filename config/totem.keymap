@@ -85,10 +85,10 @@
 
         apt_2 {
             bindings = <
-        &trans  &trans    &trans  &trans     &trans    &trans  &trans  &trans  &trans  &kp QUESTION
-        &kp X   &kp SEMI  &trans  &kp COLON  &trans    &trans  &kp Z   &trans  &trans  &kp SLASH
-&trans  &trans  &trans    &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans        &trans
-                          &trans  &kp LS(V)  &trans    &trans  &mo 4   &trans
+        &trans  &trans  &trans  &trans     &trans    &trans  &trans    &trans     &trans  &kp QUESTION
+        &kp X   &trans  &trans  &kp Z      &trans    &trans  &kp SEMI  &kp COLON  &trans  &kp SLASH
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans    &trans     &trans  &trans        &trans
+                        &trans  &kp LS(V)  &trans    &trans  &mo 4     &trans
             >;
         };
 
