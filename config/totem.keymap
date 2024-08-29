@@ -42,6 +42,8 @@
         ENTR {
             bindings = <&kp ENTER>;
             key-positions = <16 19>;
+            timeout-ms = <25>;
+            layers = <0>;
         };
     };
 
@@ -90,10 +92,10 @@
 
         apt_2 {
             bindings = <
-        &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans    &trans     &trans
-        &kp X   &trans  &trans  &trans     &trans    &trans  &kp Z      &trans    &kp QMARK  &kp SLASH
-&trans  &trans  &trans  &trans  &trans     &trans    &trans  &kp COLON  &kp SEMI  &trans     &trans     &trans
-                        &trans  &kp LS(V)  &trans    &trans  &mo 4      &trans
+        &trans  &trans    &trans  &trans     &trans    &trans  &trans  &trans  &trans     &trans
+        &kp X   &kp SEMI  &trans  &kp COLON  &trans    &trans  &kp Z   &trans  &kp QMARK  &kp SLASH
+&trans  &trans  &trans    &trans  &trans     &trans    &trans  &trans  &trans  &trans     &trans     &trans
+                          &trans  &kp LS(V)  &trans    &trans  &mo 4   &trans
             >;
         };
 
