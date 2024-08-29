@@ -60,6 +60,15 @@
             tapping-term-ms = <190>;
             flavor = "tap-preferred";
         };
+
+        duo_layer: duo_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "DUO_LAYER";
+            bindings = <&mo>, <&sl>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+        };
     };
 
     macros {
@@ -69,6 +78,13 @@
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp GT>;
             label = "ARROWFY";
         };
+
+        apt_2_shift: alp_2_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sl 1 &sk LEFT_SHIFT>;
+            label = "ALP_2_SHIFT";
+        };
     };
 
     keymap {
@@ -76,10 +92,19 @@
 
         apt {
             bindings = <
-       &kp W  &kp G  &kp D               &kp F           &kp B                 &kp Q        &kp L               &kp U               &kp O     &kp Y
-       &kp R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                 &kp J        &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
-&kp Z  &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V                 &kp COLON    &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &kp FSLH  &kp SEMI
-                     &trans              &lt 1 ESC       &mt_hp LSHIFT BSPC    &lt 2 SPACE  &lt 3 ENTER         &trans
+        &kp W      &kp G  &kp D               &kp F           &kp B                 &kp Z        &kp L               &kp U               &kp O     &kp Y
+        &mt R ESC  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                 &kp J        &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
+&trans  &trans     &kp C  &kp M               &mt LEFT_GUI P  &trans                &trans       &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &trans  &trans
+                          &trans              &duo_layer 2 1  &mt_hp LSHIFT BSPC    &lt 3 SPACE  &lt 4 ENTER         &trans
+            >;
+        };
+
+        apt_2 {
+            bindings = <
+        &trans  &trans  &trans  &trans        &trans    &trans  &trans     &trans    &trans  &trans
+        &kp X   &trans  &trans  &kp V         &trans    &trans  &kp Q      &trans    &trans  &kp SLASH
+&trans  &trans  &trans  &trans  &trans        &trans    &trans  &kp COLON  &kp SEMI  &trans  &trans     &trans
+                        &trans  &apt_2_shift  &trans    &trans  &trans     &trans
             >;
         };
 
@@ -88,7 +113,7 @@
         &kp DOLLAR  &kp HASH         &kp AT    &kp EXCL  &kp STAR       &kp UNDER  &kp N7    &kp N8    &kp N9         &mt_arrowfy EQUAL EQUAL
         &kp N0      &kp N3           &kp N2    &kp N1    &kp LBKT       &kp RBKT   &kp N4    &kp N5    &kp N6         &mt_arrowfy MINUS MINUS
 &trans  &kp CARET   &mt TILDE GRAVE  &kp LPAR  &kp RPAR  &kp PERCENT    &kp PLUS   &kp RBRC  &kp LBRC  &kp AMPERSAND  &mt BSLH PIPE            &trans
-                                     &to 4     &trans    &trans         &trans     &trans    &trans
+                                     &to 5     &trans    &trans         &trans     &trans    &trans
             >;
         };
 
@@ -115,7 +140,7 @@
        &kp X       &kp Q  &kp T  &kp E  &kp R        &trans  &trans  &trans  &trans  &trans
        &kp LCTRL   &kp A  &kp W  &kp D  &kp G        &trans  &trans  &trans  &trans  &trans
 &kp Z  &kp LSHIFT  &kp C  &kp S  &kp F  &kp V        &trans  &trans  &trans  &trans  &trans  &trans
-                          &mo 6  &mo 5  &kp SPACE    &trans  &trans  &trans
+                          &mo 7  &mo 6  &kp SPACE    &trans  &trans  &trans
             >;
         };
 
