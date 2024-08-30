@@ -119,19 +119,19 @@
 
         nav {
             bindings = <
-        &trans   &trans   &trans            &trans             &trans       &trans     &kp HOME   &kp END   &trans  &kp DEL
-        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &mt_hp LALT ENTER  &kp PG_DN    &kp PG_UP  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT
-&trans  &trans   &trans   &trans            &kp LEFT_GUI       &trans       &trans     &kp K_APP  &trans    &trans  &trans     &trans
-                          &trans            &trans             &trans       &trans     &trans     &trans
+        &trans   &trans     &trans            &trans             &trans       &trans     &kp HOME   &kp END   &trans  &kp DEL
+        &kp ESC  &kp TAB    &kp LEFT_CONTROL  &mt_hp LALT ENTER  &kp PG_DN    &kp PG_UP  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT
+&trans  &trans   &kp LC(C)  &kp LC(X)         &kp LEFT_GUI       &kp LC(V)    &trans     &kp K_APP  &trans    &trans  &trans     &trans
+                            &trans            &trans             &trans       &trans     &trans     &trans
             >;
         };
 
         fun {
             bindings = <
-        &trans        &trans        &trans               &trans           &trans    &trans  &trans           &kp PRINTSCREEN  &kp F11  &kp F12
-        &kp F1        &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8     &kp F9   &kp F10
-&trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE           &mt LGUI F5      &trans    &trans  &mt RGUI F6      &trans           &trans   &trans   &trans
-                                    &trans               &trans           &trans    &trans  &trans           &trans
+        &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP         &trans           &trans    &trans  &trans           &kp PRINTSCREEN  &kp F11  &kp F12
+        &kp F1      &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8     &kp F9   &kp F10
+&trans  &trans      &trans        &trans               &mt LGUI F5      &trans    &trans  &mt RGUI F6      &trans           &trans   &trans   &trans
+                                  &trans               &trans           &trans    &trans  &trans           &trans
             >;
         };
 
