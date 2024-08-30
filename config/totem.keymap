@@ -101,6 +101,13 @@
             bindings = <&kp E &lowX>;
             label = "EX";
         };
+
+        appendSpace: appendSpace {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp SPACE>;
+            label = "APPENDSPACE";
+        };
     };
 
     keymap {
@@ -117,9 +124,9 @@
 
         apt_2 {
             bindings = <
-        &trans  &trans  &kp AT  &kp EXCLAMATION  &trans                &trans  &kp Q   &trans  &trans     &trans
-        &kp X   &Ex     &trans  &kp Z            &trans                &trans  &Qu     &trans  &kp COLON  &kp SEMI
-&trans  &trans  &trans  &trans  &trans           &trans                &trans  &trans  &trans  &trans     &trans    &trans
+        &trans  &trans  &kp AT  &kp EXCLAMATION  &trans                &trans  &kp Q   &trans  &appendSpace COLON  &appendSpace SEMI
+        &kp X   &Ex     &trans  &kp Z            &trans                &trans  &Qu     &trans  &kp COLON           &kp SEMI
+&trans  &trans  &trans  &trans  &trans           &trans                &trans  &trans  &trans  &trans              &trans             &trans
                         &trans  &kp LS(V)        &mt_hp LSHFT SPACE    &trans  &mo 4   &trans
             >;
         };
