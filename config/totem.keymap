@@ -115,8 +115,8 @@
 
         apt {
             bindings = <
-        &kp W   &kp G  &kp D               &kp F           &kp B                 &kp FSLH     &kp L               &kp U               &kp O     &kp Y
-        &kp R   &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                 &kp J        &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
+        &kp W   &kp G  &kp D               &kp F           &kp B                 &kp J        &kp L               &kp U               &kp O     &kp Y
+        &kp R   &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                 &kp Z        &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
 &trans  &trans  &kp C  &kp M               &mt LEFT_GUI P  &trans                &trans       &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &trans  &trans
                        &trans              &lt 2 V         &mt_hp LSHIFT BSPC    &lt 3 SPACE  &sl 1               &trans
             >;
@@ -124,10 +124,10 @@
 
         apt_2 {
             bindings = <
-        &trans  &trans  &kp AT  &kp EXCLAMATION  &trans                &trans  &kp Q   &trans  &appendSpace COLON  &appendSpace SEMI
-        &Ex     &kp X   &trans  &kp Z            &trans                &trans  &Qu     &trans  &kp COLON           &kp SEMI
-&trans  &trans  &trans  &trans  &trans           &trans                &trans  &trans  &trans  &trans              &trans             &trans
-                        &trans  &kp LS(V)        &mt_hp LSHFT SPACE    &trans  &mo 4   &trans
+        &trans  &trans  &kp AT              &kp EXCLAMATION    &trans                &trans  &kp Q   &trans  &appendSpace COLON  &appendSpace SEMI
+        &Ex     &kp X   &kp QMARK           &kp FSLH           &trans                &trans  &Qu     &trans  &kp COLON           &kp SEMI
+&trans  &trans  &trans  &appendSpace QMARK  &appendSpace FSLH  &trans                &trans  &trans  &trans  &trans              &trans             &trans
+                        &trans              &kp LS(V)          &mt_hp LSHFT SPACE    &trans  &mo 4   &trans
             >;
         };
 
