@@ -69,6 +69,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        lowX: lowX {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LOWX";
+            bindings = <&kp X>, <&kp X>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -84,6 +93,13 @@
             #binding-cells = <0>;
             bindings = <&kp Q &lowU>;
             label = "QU";
+        };
+
+        Ex: Ex {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &lowX>;
+            label = "EX";
         };
     };
 
@@ -102,7 +118,7 @@
         apt_2 {
             bindings = <
         &trans  &trans  &kp AT  &kp EXCLAMATION  &trans                &trans  &kp Q   &trans  &trans     &trans
-        &kp X   &trans  &trans  &kp Z            &trans                &trans  &Qu     &trans  &kp COLON  &kp SEMI
+        &kp X   &Ex     &trans  &kp Z            &trans                &trans  &Qu     &trans  &kp COLON  &kp SEMI
 &trans  &trans  &trans  &trans  &trans           &trans                &trans  &trans  &trans  &trans     &trans    &trans
                         &trans  &kp LS(V)        &mt_hp LSHFT SPACE    &trans  &mo 4   &trans
             >;
