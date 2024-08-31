@@ -41,14 +41,14 @@
 
         Slash {
             bindings = <&kp FSLH>;
-            key-positions = <28 29>;
+            key-positions = <28 18>;
             timeout-ms = <25>;
             layers = <0>;
         };
 
         Semi {
             bindings = <&kp SEMI>;
-            key-positions = <27 28>;
+            key-positions = <28 29>;
             timeout-ms = <25>;
             layers = <0>;
         };
