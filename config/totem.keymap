@@ -119,7 +119,7 @@
             #binding-cells = <2>;
             hold-trigger-key-positions = <5 6 7 8 9 19 31 18 17 16 15 26 27 28 29 30 37 36 35>;
             tapping-term-ms = <190>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
         };
 
         mt_right: mt_right {
@@ -130,7 +130,7 @@
             #binding-cells = <2>;
             hold-trigger-key-positions = <20 21 10 0 11 1 22 2 12 23 24 13 3 4 14 25 32 33 34>;
             tapping-term-ms = <190>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
         };
     };
 
@@ -170,7 +170,7 @@
         apt {
             bindings = <
         &kp W             &kp G  &kp D               &kp F           &kp B      &kp J        &kp L               &kp U               &kp O     &kp Y
-        &mt_left LSHFT R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K      &kp Z        &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &mt_right RSHFT I
+        &mt_left LSHFT R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K      &kp Z        &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &mt_right LSHFT I
 &trans  &trans            &kp C  &kp M               &mt LEFT_GUI P  &trans     &trans       &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &trans             &trans
                                  &trans              &sl 1           &lt 2 V    &lt 3 SPACE  &lt 4 ENTER         &trans
             >;
@@ -196,10 +196,10 @@
 
         nav {
             bindings = <
-        &trans   &trans     &trans            &trans             &trans       &trans     &kp HOME   &kp END   &kp BSPC  &kp DEL
-        &kp ESC  &kp TAB    &kp LEFT_CONTROL  &mt_hp LALT ENTER  &kp PG_DN    &kp PG_UP  &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT
-&trans  &trans   &kp LC(C)  &kp LC(X)         &kp LEFT_GUI       &kp LC(V)    &trans     &kp K_APP  &trans    &trans    &trans     &trans
-                            &trans            &trans             &trans       &trans     &trans     &trans
+        &trans          &trans     &trans            &trans             &trans       &trans     &kp HOME   &kp END   &kp BSPC  &kp DEL
+        &mt LSHIFT ESC  &kp TAB    &kp LEFT_CONTROL  &mt_hp LALT ENTER  &kp PG_DN    &kp PG_UP  &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT
+&trans  &trans          &kp LC(C)  &kp LC(X)         &kp LEFT_GUI       &kp LC(V)    &trans     &kp K_APP  &trans    &trans    &trans     &trans
+                                   &trans            &trans             &trans       &trans     &trans     &trans
             >;
         };
 
