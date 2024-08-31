@@ -144,7 +144,7 @@
 
         fun {
             bindings = <
-        &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP         &trans           &trans    &trans  &trans           &kp PRINTSCREEN  &kp F11  &kp F12
+        &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP         &trans           &trans    &trans  &trans           &kp PRINTSCREEN  &kp F11  &kp F12
         &kp F1      &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8     &kp F9   &kp F10
 &trans  &trans      &trans        &trans               &mt LGUI F5      &trans    &trans  &mt RGUI F6      &trans           &trans   &trans   &trans
                                   &trans               &trans           &trans    &trans  &trans           &trans
