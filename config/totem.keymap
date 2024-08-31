@@ -78,6 +78,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        lowC: lowC {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LOWC";
+            bindings = <&kp C>, <&kp C>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        lowH: lowH {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LOWH";
+            bindings = <&kp H>, <&kp H>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -101,6 +119,13 @@
             bindings = <&kp E &lowX>;
             label = "EX";
         };
+
+        Sch: Sch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &lowC &lowH>;
+            label = "SCH";
+        };
     };
 
     keymap {
@@ -119,7 +144,7 @@
             bindings = <
         &trans  &trans  &kp AT     &kp EXCLAMATION  &trans                &trans  &trans  &trans  &trans     &trans
         &Ex     &kp X   &kp QMARK  &kp FSLH         &trans                &trans  &Qu     &kp Q   &kp COLON  &kp SEMI
-&trans  &trans  &trans  &trans     &trans           &trans                &trans  &trans  &trans  &trans     &trans    &trans
+&trans  &trans  &Sch    &trans     &trans           &trans                &trans  &trans  &trans  &trans     &trans    &trans
                         &trans     &kp LS(V)        &mt_hp LSHFT SPACE    &trans  &mo 4   &trans
             >;
         };
