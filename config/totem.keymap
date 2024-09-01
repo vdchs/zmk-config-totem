@@ -40,20 +40,6 @@
             timeout-ms = <25>;
             layers = <0>;
         };
-
-        Slash {
-            bindings = <&kp FSLH>;
-            key-positions = <28 18>;
-            timeout-ms = <25>;
-            layers = <0>;
-        };
-
-        Semi {
-            bindings = <&kp SEMI>;
-            key-positions = <28 29>;
-            timeout-ms = <25>;
-            layers = <0>;
-        };
     };
 
     behaviors {
@@ -169,9 +155,9 @@
 
         apt_2 {
             bindings = <
-        &trans  &trans  &trans  &trans     &trans    &trans     &trans  &trans  &trans  &trans
-        &Ex E   &kp X   &kp AT  &kp EXCL   &trans    &trans     &Qu Q   &kp Q   &trans  &trans
-&trans  &trans  &Sch S  &trans  &kp LS(V)  &trans    &trans     &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans     &trans    &trans     &trans  &trans  &trans  &kp SEMI
+        &Ex E   &kp X   &kp AT  &kp EXCL   &trans    &trans     &Qu Q   &kp Q   &trans  &kp FSLH
+&trans  &trans  &Sch S  &trans  &kp LS(V)  &trans    &trans     &trans  &trans  &trans  &trans    &trans
                         &trans  &trans     &sl 1     &kp LSHFT  &trans  &trans
             >;
         };
