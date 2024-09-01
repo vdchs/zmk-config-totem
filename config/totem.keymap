@@ -169,10 +169,10 @@
 
         apt_2 {
             bindings = <
-        &trans  &trans  &trans  &trans     &trans    &trans     &trans               &trans  &trans  &trans
-        &Ex E   &kp X   &kp AT  &kp EXCL   &trans    &trans     &Qu Q                &kp Q   &trans  &trans
-&trans  &trans  &Sch S  &trans  &kp LS(V)  &trans    &trans     &trans               &trans  &trans  &trans  &trans
-                        &trans  &trans     &sl 1     &kp SPACE  &mt_hp LSHIFT SPACE  &trans
+        &trans  &trans  &trans  &trans     &trans    &trans     &trans  &trans  &trans  &trans
+        &Ex E   &kp X   &kp AT  &kp EXCL   &trans    &trans     &Qu Q   &kp Q   &trans  &trans
+&trans  &trans  &Sch S  &trans  &kp LS(V)  &trans    &trans     &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans     &sl 1     &kp LSHFT  &trans  &trans
             >;
         };
 
