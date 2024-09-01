@@ -155,7 +155,7 @@
         alpha-2 {
             bindings = <
         &trans  &trans  &trans  &trans     &trans    &trans     &trans  &trans  &kp SEMI  &kp COLON
-        &kp X   &trans  &kp AT  &kp EXCL   &trans    &Qu        &Ex     &kp Q   &kp FSLH  &kp QMARK
+        &kp X   &trans  &kp AT  &kp EXCL   &trans    &Qu        &kp Q   &Ex     &kp FSLH  &kp QMARK
 &trans  &trans  &Sch    &trans  &kp LS(V)  &trans    &trans     &trans  &trans  &trans    &trans     &trans
                         &trans  &sl 1      &trans    &sk LSHFT  &trans  &trans
             >;
