@@ -154,9 +154,9 @@
 
         apt_2 {
             bindings = <
-        &trans  &trans  &trans  &trans     &trans    &trans     &trans  &trans  &trans  &kp SEMI
-        &Ex E   &kp X   &kp AT  &kp EXCL   &trans    &trans     &Qu Q   &kp Q   &trans  &kp FSLH
-&trans  &trans  &Sch S  &trans  &kp LS(V)  &trans    &trans     &trans  &trans  &trans  &trans    &trans
+        &trans  &trans  &trans  &trans     &trans    &trans     &trans  &trans  &kp COLON  &kp SEMI
+        &Ex E   &kp X   &kp AT  &kp EXCL   &trans    &trans     &Qu Q   &kp Q   &kp QMARK  &kp FSLH
+&trans  &trans  &Sch S  &trans  &kp LS(V)  &trans    &trans     &trans  &trans  &trans     &trans    &trans
                         &trans  &trans     &sl 1     &sk LSHFT  &trans  &trans
             >;
         };
