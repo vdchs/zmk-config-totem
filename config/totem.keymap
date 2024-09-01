@@ -118,21 +118,21 @@
             label = "ARROWFY";
         };
 
-        Qu: Qu {
+        Xu: Qu {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &lowU>;
             label = "QU";
         };
 
-        Ex: Ex {
+        Xx: Ex {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &lowX>;
             label = "EX";
         };
 
-        Sch: Sch {
+        Xch: Sch {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &lowC &lowH>;
@@ -155,8 +155,8 @@
         apt_2 {
             bindings = <
         &trans  &trans  &trans  &trans     &trans    &trans     &trans  &trans  &kp COLON  &kp SEMI
-        &Ex E   &kp X   &kp AT  &kp EXCL   &trans    &trans     &Qu Q   &kp Q   &kp QMARK  &kp FSLH
-&trans  &trans  &Sch S  &trans  &kp LS(V)  &trans    &trans     &trans  &trans  &trans     &trans    &trans
+        &kp X   &trans  &kp AT  &kp EXCL   &trans    &trans     &Xu Q   &kp Q   &kp QMARK  &kp FSLH
+&trans  &trans  &Xch S  &trans  &kp LS(V)  &trans    &trans     &Xx E   &trans  &trans     &trans    &trans
                         &trans  &sl 1      &trans    &sk LSHFT  &trans  &trans
             >;
         };
