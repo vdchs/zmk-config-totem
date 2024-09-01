@@ -118,24 +118,24 @@
             label = "ARROWFY";
         };
 
-        Xu: Qu {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &lowU>;
+        Qu: Qu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &lowU>;
             label = "QU";
         };
 
-        Xx: Ex {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &lowX>;
+        Ex: Ex {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &lowX>;
             label = "EX";
         };
 
-        Xch: Sch {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &lowC &lowH>;
+        Sch: Sch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &lowC &lowH>;
             label = "SCH";
         };
     };
@@ -154,9 +154,9 @@
 
         apt_2 {
             bindings = <
-        &trans  &trans  &trans  &trans     &trans    &trans     &trans  &trans  &kp COLON  &kp SEMI
-        &kp X   &trans  &kp AT  &kp EXCL   &trans    &trans     &Xu Q   &kp Q   &kp QMARK  &kp FSLH
-&trans  &trans  &Xch S  &trans  &kp LS(V)  &trans    &trans     &Xx E   &trans  &trans     &trans    &trans
+        &trans  &trans  &trans  &trans     &trans    &trans     &trans  &trans  &kp SEMI  &kp COLON
+        &kp X   &trans  &kp AT  &kp EXCL   &trans    &Qu        &Ex     &kp Q   &kp FSLH  &kp QMARK
+&trans  &trans  &Sch S  &trans  &kp LS(V)  &trans    &trans     &trans  &trans  &trans    &trans     &trans
                         &trans  &sl 1      &trans    &sk LSHFT  &trans  &trans
             >;
         };
