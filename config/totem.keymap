@@ -99,10 +99,10 @@
             mods = <(MOD_LSFT)>;
         };
 
-        mt_sl: mt_sl {
+        duo_layer: duo_layer {
             compatible = "zmk,behavior-hold-tap";
-            label = "MT_SL";
-            bindings = <&kp>, <&sl>;
+            label = "DUO_LAYER";
+            bindings = <&mo>, <&sl>;
 
             #binding-cells = <2>;
             tapping-term-ms = <190>;
@@ -148,7 +148,7 @@
         &kp W   &kp G  &kp D               &kp F           &kp B                  &kp J        &kp L               &kp U               &kp O     &kp Y
         &kp R   &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                  &kp Z        &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
 &trans  &trans  &kp C  &kp M               &mt LEFT_GUI P  &trans                 &trans       &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &trans  &trans
-                       &trans              &lt 2 V         &mt_sl LEFT_SHIFT 1    &lt 3 SPACE  &lt 4 BSPC          &trans
+                       &trans              &duo_layer 2 1  &mt_hp LEFT_SHIFT V    &lt 3 SPACE  &lt 4 BSPC          &trans
             >;
         };
 
@@ -157,7 +157,7 @@
         &trans  &trans  &trans  &trans     &trans    &trans     &trans  &trans  &kp COLON  &kp SEMI
         &Ex E   &kp X   &kp AT  &kp EXCL   &trans    &trans     &Qu Q   &kp Q   &kp QMARK  &kp FSLH
 &trans  &trans  &Sch S  &trans  &kp LS(V)  &trans    &trans     &trans  &trans  &trans     &trans    &trans
-                        &trans  &trans     &sl 1     &sk LSHFT  &trans  &trans
+                        &trans  &sl 1      &trans    &sk LSHFT  &trans  &trans
             >;
         };
 
