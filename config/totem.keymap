@@ -106,7 +106,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <190>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
         };
     };
 
