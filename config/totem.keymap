@@ -143,7 +143,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        apt {
+        alpha {
             bindings = <
         &kp W   &kp G  &kp D               &kp F           &kp B                  &kp J        &kp L               &kp U               &kp O     &kp Y
         &kp R   &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                  &kp Z        &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
@@ -152,7 +152,7 @@
             >;
         };
 
-        apt_2 {
+        alpha-2 {
             bindings = <
         &trans  &trans  &trans  &trans     &trans    &trans     &trans  &trans  &kp SEMI  &kp COLON
         &kp X   &trans  &kp AT  &kp EXCL   &trans    &Qu        &Ex     &kp Q   &kp FSLH  &kp QMARK
@@ -179,7 +179,7 @@
             >;
         };
 
-        fun {
+        func {
             bindings = <
         &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP         &trans           &trans    &trans  &trans           &kp PRINTSCREEN  &kp F11  &kp F12
         &kp F1      &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8     &kp F9   &kp F10
