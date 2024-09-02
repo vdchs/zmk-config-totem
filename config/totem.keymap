@@ -154,10 +154,10 @@
 
         alpha-2 {
             bindings = <
-        &trans  &trans  &trans  &trans     &trans    &trans     &trans  &trans  &kp SEMI  &kp COLON
-        &kp X   &trans  &kp AT  &kp EXCL   &trans    &kp Q      &Qu     &Ex     &kp FSLH  &kp QMARK
-&trans  &trans  &Sch    &trans  &kp LS(V)  &trans    &trans     &trans  &trans  &trans    &trans     &trans
-                        &trans  &sl 1      &trans    &sk LSHFT  &trans  &trans
+        &trans  &trans  &trans  &trans    &trans    &trans     &trans  &trans  &kp SEMI  &kp COLON
+        &kp X   &trans  &kp AT  &kp EXCL  &trans    &kp Q      &Qu     &Ex     &kp FSLH  &kp QMARK
+&trans  &trans  &Sch    &trans  &trans    &trans    &trans     &trans  &trans  &trans    &trans     &trans
+                        &trans  &sl 1     &trans    &sk LSHFT  &trans  &trans
             >;
         };
 
@@ -172,10 +172,10 @@
 
         nav {
             bindings = <
-        &trans          &trans     &trans            &trans             &trans       &trans     &kp HOME   &kp END   &trans  &kp DEL
-        &mt LSHIFT ESC  &kp TAB    &kp LEFT_CONTROL  &mt_hp LALT ENTER  &kp PG_DN    &kp PG_UP  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT
-&trans  &trans          &kp LC(C)  &kp LC(X)         &kp LEFT_GUI       &kp LC(V)    &trans     &kp K_APP  &trans    &trans  &trans     &trans
-                                   &trans            &trans             &trans       &trans     &trans     &trans
+        &trans          &trans   &trans            &trans             &trans                &trans     &kp HOME   &kp END   &trans  &kp DEL
+        &mt LSHIFT ESC  &kp TAB  &kp LEFT_CONTROL  &mt_hp LALT ENTER  &kp PG_DN             &kp PG_UP  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT
+&trans  &trans          &trans   &trans            &kp LEFT_GUI       &trans                &trans     &kp K_APP  &trans    &trans  &trans     &trans
+                                 &trans            &trans             &mt_hp LSHFT LS(V)    &trans     &trans     &trans
             >;
         };
 
