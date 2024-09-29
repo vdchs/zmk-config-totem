@@ -192,9 +192,9 @@
 
         alpha-2 {
             bindings = <
-        &kp AT  &tz     &kp V     &trans  &trans    &trans     &trans  &trans  &kp SLASH  &kp QMARK
+        &kp AT  &tz     &trans    &trans  &trans    &trans     &trans  &trans  &kp SLASH  &kp QMARK
         &kp X   &kp Z   &kp EXCL  &kp J   &trans    &kp Q      &Qu     &Ex     &kp SEMI   &kp COLON
-&trans  &trans  &Sc     &trans    &Ph     &trans    &trans     &trans  &trans  &trans     &trans     &trans
+&trans  &trans  &Sc     &trans    &Ph     &trans    &trans     &kp V   &trans  &trans     &trans     &trans
                         &trans    &sl 1   &trans    &sk LSHFT  &trans  &trans
             >;
         };
