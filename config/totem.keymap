@@ -157,7 +157,7 @@
         tz: tz {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp t &kp z>;
+            bindings = <&kp T &kp Z>;
             label = "TZ";
         };
     };
