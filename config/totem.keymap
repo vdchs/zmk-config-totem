@@ -159,7 +159,7 @@
             #binding-cells = <0>;
             bindings = <&kp t &kp z>;
             label = "TZ";
-        }
+        };
     };
 
     keymap {
