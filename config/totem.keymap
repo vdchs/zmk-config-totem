@@ -56,7 +56,7 @@
         mt_magic: mt_magic {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_MAGIC";
-            bindings = <&kp>, <&ad_v>;
+            bindings = <&kp>, <&magic>;
 
             #binding-cells = <2>;
             tapping-term-ms = <190>;
