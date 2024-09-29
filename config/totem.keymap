@@ -153,6 +153,13 @@
             bindings = <&kp S &lowC>;
             label = "SC";
         };
+
+        tz: tz {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp t &kp z>;
+            label = "TZ";
+        }
     };
 
     keymap {
@@ -169,7 +176,7 @@
 
         alpha-2 {
             bindings = <
-        &trans  &kp V   &kp AT    &trans  &trans    &trans     &trans  &trans  &kp SLASH  &kp QMARK
+        &kp AT  &tz     &kp V     &trans  &trans    &trans     &trans  &trans  &kp SLASH  &kp QMARK
         &kp X   &kp Z   &kp EXCL  &kp J   &trans    &kp Q      &Qu     &Ex     &kp SEMI   &kp COLON
 &trans  &trans  &Sc     &trans    &trans  &trans    &trans     &trans  &trans  &trans     &trans     &trans
                         &trans    &sl 1   &trans    &sk LSHFT  &trans  &trans
