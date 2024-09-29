@@ -58,7 +58,7 @@
             label = "MT_Magic";
             bindings = <&kp>, <&magic>;
 
-            #binding-cells = <2>;
+            #binding-cells = <1>;
             tapping-term-ms = <190>;
             quick-tap-ms = <150>;
         };
