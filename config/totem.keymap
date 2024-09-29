@@ -90,15 +90,6 @@
             mods = <(MOD_LSFT)>;
         };
 
-        lowH: lowH {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LOWH";
-            bindings = <&kp H>, <&kp H>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         duo_layer: duo_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "DUO_LAYER";
@@ -132,10 +123,10 @@
             label = "EX";
         };
 
-        Sch: Sch {
+        Sc: Sch {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S &lowC &lowH>;
+            bindings = <&kp S &lowC>;
             label = "SCH";
         };
     };
@@ -155,7 +146,7 @@
         alpha-2 {
             bindings = <
         &trans  &kp AT  &trans    &trans  &trans    &trans     &trans  &trans  &kp SLASH  &kp QMARK
-        &kp X   &Sch    &kp EXCL  &kp J   &trans    &kp Q      &Qu     &Ex     &kp SEMI   &kp COLON
+        &kp X   &Sc     &kp EXCL  &kp J   &trans    &kp Q      &Qu     &Ex     &kp SEMI   &kp COLON
 &trans  &trans  &trans  &trans    &trans  &trans    &trans     &trans  &trans  &trans     &trans     &trans
                         &trans    &sl 1   &trans    &sk LSHFT  &trans  &trans
             >;
