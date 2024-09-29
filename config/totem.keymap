@@ -115,8 +115,12 @@
             label = "MAGIC";
             #binding-cells = <0>;
             defaults = <&kp V>;
-            bindings = <    &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat>;
-            antecedents = < W           G           D           F           B           L           Y           R           S           T           H           N           C           M           P           V>;
+            bindings = <
+                &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat
+            >;
+            antecedents = <
+                W           G           D           F           B           L           Y           R           S           T           H           N           C           M           P           V
+            >;
             max-delay-ms = <250>;
         };
     };
