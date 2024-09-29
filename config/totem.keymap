@@ -91,6 +91,15 @@
             mods = <(MOD_LSFT)>;
         };
 
+         lowH: lowH {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LOWH";
+            bindings = <&kp H>, <&kp H>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
         lowC: lowC {
             compatible = "zmk,behavior-mod-morph";
             label = "LOWC";
@@ -154,6 +163,13 @@
             label = "SC";
         };
 
+        Ph: Ph {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &lowH>;
+            label = "PH";
+        };
+
         tz: tz {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -178,7 +194,7 @@
             bindings = <
         &kp AT  &tz     &kp V     &trans  &trans    &trans     &trans  &trans  &kp SLASH  &kp QMARK
         &kp X   &kp Z   &kp EXCL  &kp J   &trans    &kp Q      &Qu     &Ex     &kp SEMI   &kp COLON
-&trans  &trans  &Sc     &trans    &kp V   &trans    &trans     &trans  &trans  &trans     &trans     &trans
+&trans  &trans  &Sc     &trans    &Ph     &trans    &trans     &trans  &trans  &trans     &trans     &trans
                         &trans    &sl 1   &trans    &sk LSHFT  &trans  &trans
             >;
         };
