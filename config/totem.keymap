@@ -140,6 +140,8 @@
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp GT>;
             label = "ARROWFY";
+            wait-ms = <30>;
+            tap-ms = <30>;
         };
 
         Qu: Qu {
@@ -147,6 +149,8 @@
             #binding-cells = <0>;
             bindings = <&kp Q &lowU>;
             label = "QU";
+            wait-ms = <30>;
+            tap-ms = <30>;
         };
 
         Ex: Ex {
@@ -154,6 +158,8 @@
             #binding-cells = <0>;
             bindings = <&kp E &lowX>;
             label = "EX";
+            wait-ms = <30>;
+            tap-ms = <30>;
         };
 
         Sc: Sc {
@@ -161,6 +167,8 @@
             #binding-cells = <0>;
             bindings = <&kp S &lowC>;
             label = "SC";
+            wait-ms = <30>;
+            tap-ms = <30>;
         };
 
         Ph: Ph {
@@ -168,6 +176,8 @@
             #binding-cells = <0>;
             bindings = <&kp P &lowH>;
             label = "PH";
+            wait-ms = <30>;
+            tap-ms = <30>;
         };
 
         tz: tz {
@@ -175,6 +185,8 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp Z>;
             label = "TZ";
+            wait-ms = <30>;
+            tap-ms = <30>;
         };
     };
 
