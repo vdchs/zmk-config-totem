@@ -143,15 +143,6 @@
             wait-ms = <30>;
             tap-ms = <30>;
         };
-
-        tz: tz {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp Z>;
-            label = "TZ";
-            wait-ms = <30>;
-            tap-ms = <30>;
-        };
     };
 
     keymap {
@@ -168,7 +159,7 @@
 
         alpha-2 {
             bindings = <
-        &kp AT  &tz     &kp V     &trans  &trans    &trans     &trans  &trans  &kp SLASH  &kp QMARK
+        &kp AT  &kp V   &trans    &trans  &trans    &trans     &trans  &trans  &kp SLASH  &kp QMARK
         &kp X   &kp Z   &kp EXCL  &kp J   &trans    &kp Q      &Qu     &Ex     &kp SEMI   &kp COLON
 &trans  &trans  &trans  &trans    &trans  &trans    &trans     &trans  &trans  &trans     &trans     &trans
                         &trans    &sl 1   &trans    &sk LSHFT  &trans  &trans
