@@ -107,10 +107,10 @@
             #binding-cells = <0>;
             defaults = <&kp V>;
             bindings = <
-                       &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat &key_repeat
+                       &kp Z  &kp C  &kp H  &kp B
                        >;
             antecedents = <
-                       G           D           F           B           L           R           S           T           N           C           M           P           Z           X           J
+                       T      S      P      M
                        >;
             max-delay-ms = <500>;
         };
