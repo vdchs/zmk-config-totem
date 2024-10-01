@@ -40,6 +40,48 @@
             timeout-ms = <25>;
             layers = <0>;
         };
+
+        Ex {
+            bindings = <&kp X>;
+            key-positions = <10 11>;
+            layers = <0>;
+            timeout-ms = <25>;
+        };
+
+        Jay {
+            bindings = <&kp J>;
+            key-positions = <13 12>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        Vee {
+            bindings = <&kp V>;
+            key-positions = <1 2>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        Que {
+            bindings = <&kp Q>;
+            key-positions = <0 1>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        Excl {
+            bindings = <&kp EXCL>;
+            key-positions = <12 13>;
+            timeout-ms = <25>;
+            layers = <2>;
+        };
+
+        At {
+            bindings = <&kp AT>;
+            key-positions = <10 11>;
+            layers = <2>;
+            timeout-ms = <25>;
+        };
     };
 
     behaviors {
@@ -108,10 +150,12 @@
             defaults = <&kp V>;
             bindings = <
                        &kp Z  &kp C  &kp H  &kp T  &key_repeat  &key_repeat  &key_repeat  &key_repeat  &key_repeat  &kp J  &key_repeat  &key_repeat  &kp R  &kp U  &kp T
-                       >;
+            >;
+
             antecedents = <
                        T      S      P      M      F            Z            J            X            Q            B      N            L            W      RA(Q)  RA(S)
-                       >;
+            >;
+
             max-delay-ms = <500>;
         };
     };
@@ -150,10 +194,10 @@
 
         alpha {
             bindings = <
-        &kp W   &kp G  &kp D               &kp F           &kp B                   &trans       &kp L               &kp U               &kp O     &kp Y
-        &kp R   &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                   &trans       &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
-&trans  &trans  &kp C  &kp M               &mt LEFT_GUI P  &trans                  &trans       &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &trans  &trans
-                       &trans              &duo_layer 2 1  &mt_magic LEFT_SHIFT V  &lt 3 SPACE  &lt 4 BSPC          &trans
+        &kp W   &kp G  &kp D               &kp F           &kp B                     &trans       &kp L               &kp U               &kp O     &kp Y
+        &kp R   &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                     &trans       &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
+&trans  &trans  &kp C  &kp M               &mt LEFT_GUI P  &trans                    &trans       &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &trans  &trans
+                       &trans              &duo_layer 2 1  &mt_magic LEFT_SHIFT V    &lt 3 SPACE  &lt 4 BSPC          &trans
             >;
         };
 
