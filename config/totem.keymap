@@ -69,18 +69,11 @@
             layers = <0>;
         };
 
-        Excl {
-            bindings = <&kp EXCL>;
-            key-positions = <12 13>;
+        Zed {
+            bindings = <&kp Z>;
+            key-positions = <22 23>;
             timeout-ms = <25>;
-            layers = <2>;
-        };
-
-        At {
-            bindings = <&kp AT>;
-            key-positions = <10 11>;
-            layers = <2>;
-            timeout-ms = <25>;
+            layers = <0>;
         };
     };
 
@@ -203,10 +196,10 @@
 
         alpha-2 {
             bindings = <
-        &kp AT  &kp V   &trans    &trans  &trans    &trans     &trans  &trans  &kp SLASH  &kp QMARK
-        &kp X   &kp Z   &kp EXCL  &kp J   &trans    &kp Q      &Qu     &Ex     &kp SEMI   &kp COLON
-&trans  &trans  &trans  &trans    &trans  &trans    &trans     &trans  &trans  &trans     &trans     &trans
-                        &trans    &sl 1   &trans    &sk LSHFT  &trans  &trans
+        &trans  &trans    &trans  &trans  &trans    &trans     &trans  &trans  &kp SLASH  &kp QMARK
+        &kp AT  &kp EXCL  &trans  &trans  &trans    &trans     &Qu     &Ex     &kp SEMI   &kp COLON
+&trans  &trans  &trans    &trans  &trans  &trans    &trans     &trans  &trans  &trans     &trans     &trans
+                          &trans  &sl 1   &trans    &sk LSHFT  &trans  &trans
             >;
         };
 
