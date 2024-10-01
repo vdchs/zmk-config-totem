@@ -140,13 +140,13 @@
             compatible = "zmk,behavior-antecedent-morph";
             label = "MAGIC";
             #binding-cells = <0>;
-            defaults = <&kp V>;
+            defaults = <&key_repeat>;
             bindings = <
-                       &kp Z  &kp C  &kp H  &kp T  &key_repeat  &key_repeat  &key_repeat  &key_repeat  &key_repeat  &kp J  &key_repeat  &key_repeat  &kp R  &kp U  &kp T
+                       &kp Z  &kp C  &kp H  &kp T  &kp J  &kp R  &kp T  &kp U  &kp A  &kp U  &kp T
             >;
 
             antecedents = <
-                       T      S      P      M      F            Z            J            X            Q            B      N            L            W      RA(Q)  RA(S)
+                       T      S      P      M      B      W      X      E      O      RA(Q)  RA(S)
             >;
 
             max-delay-ms = <500>;
