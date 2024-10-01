@@ -142,11 +142,11 @@
             #binding-cells = <0>;
             defaults = <&key_repeat>;
             bindings = <
-                       &kp Z  &kp C  &kp H  &kp T  &kp J  &kp R  &kp T  &kp U  &kp A  &kp V  &kp U  &kp T
+                       &kp Z  &kp C  &kp H  &kp T  &kp J  &kp R  &kp T  &kp U  &kp A  &kp V  &kp V  &kp U  &kp T
             >;
 
             antecedents = <
-                       T      S      P      M      B      W      X      E      O      R      RA(Q)  RA(S)
+                       T      S      P      M      B      W      X      E      O      R      D      RA(Q)  RA(S)
             >;
 
             max-delay-ms = <500>;
