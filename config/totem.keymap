@@ -107,10 +107,10 @@
             #binding-cells = <0>;
             defaults = <&kp V>;
             bindings = <
-                       &kp Z  &kp C  &kp H  &kp H  &kp T  &key_repeat  &key_repeat  &key_repeat  &key_repeat  &key_repeat  &kp J  &key_repeat  &key_repeat  &kp R  &kp U  &kp T
+                       &kp Z  &kp C  &kp H  &kp T  &key_repeat  &key_repeat  &key_repeat  &key_repeat  &key_repeat  &kp J  &key_repeat  &key_repeat  &kp R  &kp U  &kp T
                        >;
             antecedents = <
-                       T      S      C      P      M      F            Z            J            X            Q            B      N            L            W      RA(Q)  RA(S)
+                       T      S      P      M      F            Z            J            X            Q            B      N            L            W      RA(Q)  RA(S)
                        >;
             max-delay-ms = <500>;
         };
@@ -179,7 +179,7 @@
             bindings = <
         &trans   &trans   &trans            &trans             &trans                 &trans     &kp HOME   &kp END   &trans  &kp DEL
         &kp ESC  &kp TAB  &kp LEFT_CONTROL  &mt_hp LALT ENTER  &kp PG_DN              &kp PG_UP  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT
-&trans  &trans   &trans   &trans            &kp LEFT_GUI       &trans                 &trans     &kp K_APP  &trans    &trans  &trans     &trans
+&trans  &trans   &trans   &sk GLOBE         &kp LEFT_GUI       &trans                 &trans     &kp K_APP  &trans    &trans  &trans     &trans
                           &trans            &trans             &mt_hp LSHIFT LS(V)    &trans     &trans     &trans
             >;
         };
