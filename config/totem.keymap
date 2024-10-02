@@ -15,7 +15,7 @@
 
         SZ {
             bindings = <&kp RA(S)>;
-            key-positions = <11 12>;
+            key-positions = <1 2>;
             timeout-ms = <25>;
             layers = <0>;
         };
@@ -57,7 +57,7 @@
 
         Vee {
             bindings = <&kp V>;
-            key-positions = <1 2>;
+            key-positions = <11 12>;
             timeout-ms = <25>;
             layers = <0>;
         };
@@ -166,7 +166,7 @@
         Qu: Qu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Q &lowU>;
+            bindings = <&kp Q &kp U>;
             label = "QU";
             wait-ms = <30>;
             tap-ms = <30>;
@@ -175,8 +175,17 @@
         Ex: Ex {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp E &lowX>;
+            bindings = <&kp E &kp X>;
             label = "EX";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        Sch: Sch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp C &kp H>;
+            label = "SCH";
             wait-ms = <30>;
             tap-ms = <30>;
         };
@@ -196,9 +205,9 @@
 
         alpha-2 {
             bindings = <
-        &trans  &trans    &trans  &trans  &trans    &trans     &trans  &trans  &kp SLASH  &kp QMARK
-        &kp AT  &kp EXCL  &trans  &trans  &trans    &trans     &Qu     &Ex     &kp SEMI   &kp COLON
-&trans  &trans  &trans    &trans  &trans  &trans    &trans     &trans  &trans  &trans     &trans     &trans
+        &kp AT    &trans  &trans  &trans  &trans    &trans     &trans  &trans  &kp SLASH  &kp QMARK
+        &kp EXCL  &Sch    &trans  &trans  &trans    &trans     &Qu     &Ex     &kp SEMI   &kp COLON
+&trans  &trans    &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans     &trans     &trans
                           &trans  &sl 1   &trans    &sk LSHFT  &trans  &trans
             >;
         };
