@@ -71,7 +71,7 @@
 
         Zed {
             bindings = <&kp Z>;
-            key-positions = <22 23>;
+            key-positions = <23 24>;
             timeout-ms = <25>;
             layers = <0>;
         };
