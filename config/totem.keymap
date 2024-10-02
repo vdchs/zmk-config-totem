@@ -108,24 +108,6 @@
             flavor = "tap-preferred";
         };
 
-        lowU: lowU {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LOWU";
-            bindings = <&kp U>, <&kp U>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        lowX: lowX {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LOWX";
-            bindings = <&kp X>, <&kp X>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         duo_layer: duo_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "DUO_LAYER";
