@@ -199,16 +199,16 @@
         &mt CARET DOLLAR  &mt PRCNT HASH   &mt BSLH PIPE  &kp AMPS  &kp STAR    &kp UNDER  &kp N7    &kp N8    &kp N9    &mt_arrowfy EQUAL EQUAL
         &kp N0            &kp N3           &kp N2         &kp N1    &kp LBKT    &kp RBKT   &kp N4    &kp N5    &kp N6    &mt_arrowfy MINUS MINUS
 &trans  &trans            &mt TILDE GRAVE  &kp LPAR       &kp RPAR  &trans      &trans     &kp RBRC  &kp LBRC  &kp PLUS  &trans                   &trans
-                                           &to 5          &trans    &trans      &trans     &trans    &trans
+                                           &trans         &trans    &trans      &trans     &trans    &trans
             >;
         };
 
         nav {
             bindings = <
-        &trans   &trans   &trans            &trans             &trans                 &trans     &kp HOME   &kp END   &trans  &kp DEL
-        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &mt_hp LALT ENTER  &kp PG_DN              &kp PG_UP  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT
-&trans  &trans   &trans   &sk GLOBE         &kp LEFT_GUI       &trans                 &trans     &kp K_APP  &trans    &trans  &trans     &trans
-                          &trans            &trans             &mt_hp LSHIFT LS(V)    &trans     &trans     &trans
+        &trans   &trans   &trans            &trans             &trans       &trans     &kp HOME   &kp END   &trans  &kp DEL
+        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &mt_hp LALT ENTER  &kp PG_DN    &kp PG_UP  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT
+&trans  &trans   &trans   &sk GLOBE         &kp LEFT_GUI       &trans       &trans     &kp K_APP  &trans    &trans  &trans     &trans
+                          &trans            &trans             &trans       &trans     &trans     &trans
             >;
         };
 
@@ -218,33 +218,6 @@
         &kp F1      &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8     &kp F9   &kp F10
 &trans  &trans      &trans        &trans               &mt LGUI F5      &trans    &trans  &mt RGUI F6      &trans           &trans   &trans   &trans
                                   &trans               &trans           &trans    &trans  &trans           &trans
-            >;
-        };
-
-        gam_1 {
-            bindings = <
-       &kp X       &kp Q  &kp T  &kp E  &kp R        &trans  &trans  &trans  &trans  &trans
-       &kp LCTRL   &kp A  &kp W  &kp D  &kp G        &trans  &trans  &trans  &trans  &trans
-&kp Z  &kp LSHIFT  &kp C  &kp S  &kp F  &kp V        &trans  &trans  &trans  &trans  &trans  &trans
-                          &mo 7  &mo 6  &kp SPACE    &trans  &trans  &trans
-            >;
-        };
-
-        gam_2 {
-            bindings = <
-         &kp N1    &kp N2  &kp N3  &kp N4  &kp N5    &trans  &trans  &trans  &trans  &trans
-         &kp TAB   &trans  &trans  &trans  &kp M     &trans  &trans  &trans  &trans  &trans
-&kp ESC  &kp LALT  &kp Y   &trans  &kp H   &kp B     &trans  &trans  &trans  &trans  &trans  &trans
-                           &to 0   &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        gam_3 {
-            bindings = <
-        &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &trans  &trans  &trans  &trans  &trans
-        &kp I   &trans  &trans  &trans  &kp J     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
