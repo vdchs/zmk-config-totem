@@ -12,7 +12,7 @@ Base:
 |  W     G-[ß]-D     F     B |      |       L     U     O-[Ü]-Y  |
 |  R-[X]-S-[V]-T-[J]-H     K |      |       N     E-[Ä]-A     I  |
 |        C     M-[Z]-P       |      |       ,     .     '        |
-|                          $ |      | _                          |
+|                          Φ |      | _                          |
  ----------------------------        ----------------------------
 ```
 
@@ -25,8 +25,8 @@ Alpha-2:
 ! sch       qu ex ; :
 ```
 
-But there's more. The key labeled as `$` in the layout is a magic key. Its output depends on the anteceding key and its main purpose is to provide an alternative way to type frequent SFBs that might occur in the layout, i.e. `rv`, `sc`, `tz`, `bj`. It defaults to a repeat key for other letters, i.e. `ll`, `nn`.\
-You can think of it as a Get-Out-Of-Jail-Free-Card in a way. Whenever a key sequence doesn't feel right, I can press the magic key `$` instead.
+But there's more. The key labeled as `Φ` in the layout is a magic key. Its output depends on the anteceding key and its main purpose is to provide an alternative way to type frequent SFBs that might occur in the layout, i.e. `rv`, `sc`, `tz`, `bj`. It defaults to a repeat key for other letters, i.e. `ll`, `nn`.\
+You can think of it as a Get-Out-Of-Jail-Free-Card in a way. Whenever a key sequence doesn't feel right, I can press the magic key `Φ` instead.
 
 For mods I use home row mods for (Ctl, Alt and GUI) and a thumb key for shift.
 
