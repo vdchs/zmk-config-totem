@@ -24,7 +24,7 @@ Alpha-2:
 ```
 
 But there's more. The key labeled as `$` in the layout is a magic key. Its output depends on the anteceding key and its main purpose is to provide an alternative way to type frequent SFBs that might occur in the layout, i.e. `rv`, `sc`, `tz`, `bj`. It defaults to a repeat key for other letters, i.e. `ll`, `nn`.\
-You can think of it as a Get-Out-Of-Jail-Free-Card in a way. Whenever a sequence of keys doesn't feel right, I can press the magic key `$` instead.
+You can think of it as a Get-Out-Of-Jail-Free-Card in a way. Whenever a key sequence doesn't feel right, I can press the magic key `$` instead.
 
 For mods I use home row mods for (Ctl, Alt and GUI) and a thumb key for shift.
 
