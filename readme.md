@@ -9,7 +9,7 @@ The basic layout is apsu's [APTv3](https://github.com/Apsu/APT) that I adapted t
 Base:
 ```
  ----------------------------        ----------------------------
-|  W     G-[ß]-D     F     B |      | L     U     O-[Ü]-Y        |
+|  W     G-[ß]-D     F     B |      |       L     U     O-[Ü]-Y  |
 |  R-[X]-S-[V]-T-[J]-H     K |      |       N     E-[Ä]-A     I  |
 |        C     M-[Z]-P       |      |       ,     .     '        |
 |                          $ |      | _                          |
