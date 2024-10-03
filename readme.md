@@ -3,7 +3,7 @@ This is a 30-key keymap for the Totem keyboard by Geist.
 
 I use it to code and write in English (70%) and German (30%).
 
-The basic layout is apsu's [APTv3](https://github.com/Apsu/APT) that I apadted to fit onto 30 keys.
+The basic layout is apsu's [APTv3](https://github.com/Apsu/APT) that I adapted to fit onto 30 keys.
 
 ## Basic Typing
 Base:
