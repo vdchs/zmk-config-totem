@@ -7,13 +7,15 @@
     flavor = "tap-preferred";
 };
 
+&sl { ignore-modifiers; };
+
 / {
     combos {
         compatible = "zmk,combos";
 
         SZ {
             bindings = <&kp RA(S)>;
-            key-positions = <11 12>;
+            key-positions = <1 2>;
             timeout-ms = <25>;
             layers = <0>;
         };
@@ -38,6 +40,41 @@
             timeout-ms = <25>;
             layers = <0>;
         };
+
+        Ex {
+            bindings = <&kp X>;
+            key-positions = <10 11>;
+            layers = <0>;
+            timeout-ms = <25>;
+        };
+
+        Jay {
+            bindings = <&kp J>;
+            key-positions = <13 12>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        Vee {
+            bindings = <&kp V>;
+            key-positions = <11 12>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        Que {
+            bindings = <&kp Q>;
+            key-positions = <0 1>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        Zed {
+            bindings = <&kp Z>;
+            key-positions = <23 24>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -45,6 +82,16 @@
             compatible = "zmk,behavior-hold-tap";
             label = "MT_HoldPreferred";
             bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+            quick-tap-ms = <150>;
+        };
+
+        mt_magic: mt_magic {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_MAGIC";
+            bindings = <&kp>, <&magic>;
 
             #binding-cells = <2>;
             tapping-term-ms = <190>;
@@ -60,6 +107,32 @@
             tapping-term-ms = <190>;
             flavor = "tap-preferred";
         };
+
+        duo_layer: duo_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "DUO_LAYER";
+            bindings = <&mo>, <&sl>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+            flavor = "balanced";
+        };
+
+        magic: magic {
+            compatible = "zmk,behavior-antecedent-morph";
+            label = "MAGIC";
+            #binding-cells = <0>;
+            defaults = <&key_repeat>;
+            bindings = <
+                       &kp Z  &kp C  &kp H  &kp T  &kp J  &kp R  &kp T  &kp U  &kp E  &kp A  &kp V  &kp V  &kp U  &kp T
+            >;
+
+            antecedents = <
+                       T      S      P      M      B      W      X      E      U      O      R      D      RA(Q)  RA(S)
+            >;
+
+            max-delay-ms = <500>;
+        };
     };
 
     macros {
@@ -68,72 +141,83 @@
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp GT>;
             label = "ARROWFY";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        Qu: Qu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &kp U>;
+            label = "QU";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        Ex: Ex {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp X>;
+            label = "EX";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        Sch: Sch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp C &kp H>;
+            label = "SCH";
+            wait-ms = <30>;
+            tap-ms = <30>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        apt {
+        alpha {
             bindings = <
-       &kp W  &kp G  &kp D               &kp F           &kp B                 &kp Q        &kp L               &kp U               &kp O     &kp Y
-       &kp R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                 &kp J        &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
-&kp Z  &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V                 &kp COLON    &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &kp FSLH  &kp SEMI
-                     &trans              &lt 1 ESC       &mt_hp LSHIFT BSPC    &lt 2 SPACE  &lt 3 ENTER         &trans
+        &kp W   &kp G        &kp D               &kp F           &kp B                     &trans       &kp L               &kp U               &kp O           &kp Y
+        &kp R   &kp S        &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                     &trans       &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A           &kp I
+&trans  &trans  &mt GLOBE C  &kp M               &mt LEFT_GUI P  &trans                    &trans       &mt LEFT_GUI COMMA  &kp DOT             &mt GLOBE APOS  &trans  &trans
+                             &trans              &duo_layer 2 1  &mt_magic LEFT_SHIFT V    &lt 3 SPACE  &lt 4 BSPC          &trans
+            >;
+        };
+
+        alpha-2 {
+            bindings = <
+        &kp AT    &trans  &trans  &trans  &trans    &trans     &trans  &trans  &kp SLASH  &kp QMARK
+        &kp EXCL  &Sch    &trans  &trans  &trans    &trans     &Qu     &Ex     &kp SEMI   &kp COLON
+&trans  &trans    &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans     &trans     &trans
+                          &trans  &sl 1   &trans    &sk LSHFT  &trans  &trans
             >;
         };
 
         sym {
             bindings = <
-        &kp DOLLAR  &kp HASH         &kp AT    &kp EXCL  &kp STAR       &kp UNDER  &kp N7    &kp N8    &kp N9         &mt_arrowfy EQUAL EQUAL
-        &kp N0      &kp N3           &kp N2    &kp N1    &kp LBKT       &kp RBKT   &kp N4    &kp N5    &kp N6         &mt_arrowfy MINUS MINUS
-&trans  &kp CARET   &mt TILDE GRAVE  &kp LPAR  &kp RPAR  &kp PERCENT    &kp PLUS   &kp RBRC  &kp LBRC  &kp AMPERSAND  &mt BSLH PIPE            &trans
-                                     &to 4     &trans    &trans         &trans     &trans    &trans
+        &mt CARET DOLLAR  &mt PRCNT HASH   &mt BSLH PIPE  &kp AMPS  &kp STAR    &kp UNDER  &kp N7    &kp N8    &kp N9    &mt_arrowfy EQUAL EQUAL
+        &kp N0            &kp N3           &kp N2         &kp N1    &kp LBKT    &kp RBKT   &kp N4    &kp N5    &kp N6    &mt_arrowfy MINUS MINUS
+&trans  &trans            &mt TILDE GRAVE  &kp LPAR       &kp RPAR  &trans      &trans     &kp RBRC  &kp LBRC  &kp PLUS  &trans                   &trans
+                                           &trans         &trans    &trans      &trans     &trans    &trans
             >;
         };
 
         nav {
             bindings = <
-        &trans  &trans   &trans            &trans        &trans    &trans     &kp HOME   &kp END   &trans  &kp DEL
-        &trans  &kp TAB  &kp LEFT_CONTROL  &kp LALT      &trans    &kp PG_UP  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT
-&trans  &trans  &trans   &trans            &kp LEFT_GUI  &trans    &kp PG_DN  &kp K_APP  &trans    &trans  &trans     &trans
-                         &trans            &trans        &trans    &trans     &trans     &trans
+        &trans   &trans     &trans            &trans             &trans       &trans     &kp HOME   &kp END   &trans  &kp DEL
+        &kp ESC  &kp TAB    &kp LEFT_CONTROL  &mt_hp LALT ENTER  &kp PG_DN    &kp PG_UP  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT
+&trans  &trans   &kp GLOBE  &trans            &kp LEFT_GUI       &trans       &trans     &kp K_APP  &trans    &trans  &trans     &trans
+                            &trans            &trans             &trans       &trans     &trans     &trans
             >;
         };
 
-        fun {
+        func {
             bindings = <
-        &trans        &trans        &trans               &trans           &trans    &trans  &trans           &kp PRINTSCREEN  &kp F11  &kp F12
-        &kp F1        &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8     &kp F9   &kp F10
-&trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE           &mt LGUI F5      &trans    &trans  &mt RGUI F6      &trans           &trans   &trans   &trans
-                                    &trans               &trans           &trans    &trans  &trans           &trans
-            >;
-        };
-
-        gam_1 {
-            bindings = <
-       &kp X       &kp Q  &kp T  &kp E  &kp R        &trans  &trans  &trans  &trans  &trans
-       &kp LCTRL   &kp A  &kp W  &kp D  &kp G        &trans  &trans  &trans  &trans  &trans
-&kp Z  &kp LSHIFT  &kp C  &kp S  &kp F  &kp V        &trans  &trans  &trans  &trans  &trans  &trans
-                          &mo 6  &mo 5  &kp SPACE    &trans  &trans  &trans
-            >;
-        };
-
-        gam_2 {
-            bindings = <
-         &kp N1    &kp N2  &kp N3  &kp N4  &kp N5    &trans  &trans  &trans  &trans  &trans
-         &kp TAB   &trans  &trans  &trans  &kp M     &trans  &trans  &trans  &trans  &trans
-&kp ESC  &kp LALT  &kp Y   &trans  &kp H   &kp B     &trans  &trans  &trans  &trans  &trans  &trans
-                           &to 0   &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        gam_3 {
-            bindings = <
-        &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &trans  &trans  &trans  &trans  &trans
-        &kp I   &trans  &trans  &trans  &kp J     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP         &trans           &trans    &trans  &trans           &kp PRINTSCREEN  &kp F11  &kp F12
+        &kp F1      &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8     &kp F9   &kp F10
+&trans  &trans      &trans        &trans               &mt LGUI F5      &trans    &trans  &mt RGUI F6      &trans           &trans   &trans   &trans
+                                  &trans               &trans           &trans    &trans  &trans           &trans
             >;
         };
     };
