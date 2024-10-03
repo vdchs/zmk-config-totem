@@ -10,7 +10,7 @@ Base:
 ```
 W G-[ß]-D     F B     L U     O-[Ü]-Y
 R S-[V]-T-[J]-H K     N E-[Ä]-A     I
-  C     M-[Z]-P       , . '
+  C     M-[Z]-P         ,     .     '
               $       _
 ```
 
