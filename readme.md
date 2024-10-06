@@ -8,12 +8,12 @@ The basic layout is apsu's [APTv3](https://github.com/Apsu/APT) that I adapted t
 ## Basic Typing
 Base:
 ```
- ----------------------------        ----------------------------
-|  W     G-[ß]-D     F     B |      |       L     U     O-[Ü]-Y  |
-|  R-[X]-S-[V]-T-[J]-H     K |      |       N     E-[Ä]-A     I  |
-|        C     M-[Z]-P       |      |       ,     .     '        |
-|                          Φ |      | _                          |
- ----------------------------        ----------------------------
+ ---------------------------------        ---------------------------------
+|  W     G-[ß]-D     F     B      |      |           L      U     O-[Ü]-Y  |
+|  R-[X]-S-[V]-T-[J]-H     K      |      |           N      E-[Ä]-A     I  |
+|        C     M-[Z]-P            |      |           ,      .     '        |
+|                    sym   Φ/shft |      | _/nav     bspc                  |
+ ---------------------------------        ---------------------------------
 ```
 
 Letters missing from the base layer can be accessed via combos of neighbouring keys, indicated with `-[ ]-`.\
