@@ -21,8 +21,9 @@ But there's more! A secondary alpha layer, accessed by a sticky layer key, conta
 
 Alpha-2:
 ```
-@                 / ?
-! sch       qu ex ; :
+  @               / ?
+  sch !       qu ex ; :
+
 ```
 
 But there's more. The key labeled as `Φ` in the layout is a magic key. Its output depends on the anteceding key and its main purpose is to provide an alternative way to type frequent SFBs that might occur in the layout, i.e. `rv`, `sc`, `tz`, `bj`. It defaults to a repeat key for other letters, i.e. `ll`, `nn`.\
