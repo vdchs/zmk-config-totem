@@ -124,11 +124,11 @@
             #binding-cells = <0>;
             defaults = <&key_repeat>;
             bindings = <
-                       &kp Z  &kp C  &kp H  &kp T  &kp J  &kp R  &kp T  &kp U  &kp E  &kp A  &kp V  &kp V  &kp U  &kp T
+                       &kp Z  &kp C  &kp H  &kp T  &kp J  &kp R  &kp T  &kp U  &kp E  &kp A  &kp V  &kp V  &kp I  &kp U  &kp T
             >;
 
             antecedents = <
-                       T      S      P      M      B      W      X      E      U      O      R      D      RA(Q)  RA(S)
+                       T      S      P      M      B      W      X      E      U      O      R      D      Y      RA(Q)  RA(S)
             >;
 
             max-delay-ms = <500>;
@@ -187,10 +187,10 @@
 
         alpha-2 {
             bindings = <
-        &kp AT    &trans  &trans  &trans  &trans    &trans     &trans  &trans  &kp SLASH  &kp QMARK
-        &kp EXCL  &Sch    &trans  &trans  &trans    &trans     &Qu     &Ex     &kp SEMI   &kp COLON
-&trans  &trans    &trans  &trans  &trans  &trans    &trans     &trans  &trans  &trans     &trans     &trans
-                          &trans  &sl 1   &trans    &sk LSHFT  &trans  &trans
+        &trans  &kp AT  &trans    &trans  &trans    &trans     &trans  &trans  &kp SLASH  &kp QMARK
+        &trans  &Sch    &kp EXCL  &trans  &trans    &trans     &Qu     &Ex     &kp SEMI   &kp COLON
+&trans  &trans  &trans  &trans    &trans  &trans    &trans     &trans  &trans  &trans     &trans     &trans
+                        &trans    &sl 1   &trans    &sk LSHFT  &trans  &trans
             >;
         };
 
