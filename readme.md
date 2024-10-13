@@ -21,7 +21,7 @@ But there's more! A secondary alpha layer, accessed by a sticky layer key, conta
 
 Alpha-2:
 ```
-  @               / ?
+  @                 / ?
   sch !       qu ex ; :
 
 ```
