@@ -4,7 +4,7 @@
 if SHIELD_TOTEM_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "TOTEM"
+    default "THE_SNAGGLETOOTH"
     
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
