@@ -142,7 +142,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             flavor = "balanced";
-            hold-trigger-key-positions = <15 5 6 7 17 16 26 27 28 29 18 8 9 19 30 31 36 37 35>;
+            hold-trigger-key-positions = <15 5 6 7 17 16 26 27 28 29 18 8 9 19 30 31 32 33 34 35 36 37>;
             require-prior-idle-ms = <200>;
         };
 
@@ -154,7 +154,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             flavor = "balanced";
-            hold-trigger-key-positions = <20 21 10 0 1 11 22 23 12 2 3 24 13 4 14 25 32 33 34>;
+            hold-trigger-key-positions = <20 21 10 0 1 11 22 23 12 2 3 24 13 4 14 25 32 33 34 35 36 37>;
             require-prior-idle-ms = <200>;
         };
     };
