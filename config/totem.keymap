@@ -167,6 +167,36 @@
             tapping-term-ms = <190>;
             flavor = "tap-preferred";
         };
+
+        comma_gt: comma_gt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_GT";
+            bindings = <&kp COMMA>, <&kp GT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        dot_lt: dot_lt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_LT";
+            bindings = <&kp DOT>, <&kp LT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mt_hmr_comma_gt: mt_hmr_comma_gt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_HMR_COMMA_GT";
+            bindings = <&kp>, <&comma_gt>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <20 21 10 0 1 11 22 23 12 2 3 24 13 4 14 25 32 33 34 36 37>;
+            require-prior-idle-ms = <200>;
+        };
     };
 
     macros {
@@ -219,10 +249,10 @@
 
         alpha {
             bindings = <
-        &kp W   &kp G  &kp D                     &kp F                 &kp B                     &trans       &kp L                     &kp U                     &kp O     &kp Y
-        &kp R   &kp S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &kp K                     &trans       &mt_hmr_r LEFT_ALT N      &mt_hmr_r LEFT_CONTROL E  &kp A     &kp I
-&trans  &trans  &kp C  &kp M                     &mt_hmr_l LEFT_GUI P  &trans                    &trans       &mt_hmr_r LEFT_GUI COMMA  &kp DOT                   &kp APOS  &trans  &trans
-                       &trans                    &duo_layer 2 1        &mt_magic LEFT_SHIFT V    &lt 3 SPACE  &lt 4 BSPC                &trans
+        &kp W   &kp G  &kp D                     &kp F                 &kp B                     &trans       &kp L                        &kp U                     &kp O     &kp Y
+        &kp R   &kp S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &kp K                     &trans       &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &kp A     &kp I
+&trans  &trans  &kp C  &kp M                     &mt_hmr_l LEFT_GUI P  &trans                    &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &kp APOS  &trans  &trans
+                       &trans                    &duo_layer 2 1        &mt_magic LEFT_SHIFT V    &lt 3 SPACE  &lt 4 BSPC                   &trans
             >;
         };
 
