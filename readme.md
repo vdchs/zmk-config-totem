@@ -43,5 +43,5 @@ The numbers layout is a basic numpad layout with the lower row shifted onto the 
 This offers 2 advantages. Firstly the most commonly used numbers 1, 2 and 3 are in the home row. Secondly it reduces the number of SFB when typing out longer number sequences.
 
 The rest of the symbols are spread on the remaining space with two things to mention.\
-Brackets `{}` are deliberately placed so that they can be typed with an inroll instead of an outroll. I also use a mod morph behaviours to make `<>` an inroll.\
+Brackets `{}` are deliberately placed so that they can be typed with an inroll instead of an outroll. I also use mod morph behaviours to make `<>` an inroll.\
 Some symbols can be held down to change the output, this is how I access convenient sequences like `??` or `=>`.
