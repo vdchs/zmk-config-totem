@@ -13,21 +13,21 @@
     combos {
         compatible = "zmk,combos";
 
-        SZ {
+        sz {
             bindings = <&kp RA(S)>;
             key-positions = <1 2>;
             timeout-ms = <25>;
             layers = <0>;
         };
 
-        UE {
+        ue {
             bindings = <&kp RA(Y)>;
             key-positions = <7 8>;
             timeout-ms = <25>;
             layers = <0>;
         };
 
-        AE {
+        ae {
             bindings = <&kp RA(Q)>;
             key-positions = <17 18>;
             timeout-ms = <25>;
@@ -41,35 +41,35 @@
             layers = <0>;
         };
 
-        Ex {
+        x {
             bindings = <&kp X>;
-            key-positions = <10 11>;
+            key-positions = <11 13>;
             layers = <0>;
             timeout-ms = <25>;
         };
 
-        Jay {
+        j {
             bindings = <&kp J>;
             key-positions = <13 12>;
             timeout-ms = <25>;
             layers = <0>;
         };
 
-        Vee {
+        v {
             bindings = <&kp V>;
             key-positions = <11 12>;
             timeout-ms = <25>;
             layers = <0>;
         };
 
-        Que {
+        q {
             bindings = <&kp Q>;
-            key-positions = <0 1>;
+            key-positions = <3 2>;
             timeout-ms = <25>;
             layers = <0>;
         };
 
-        Zed {
+        z {
             bindings = <&kp Z>;
             key-positions = <23 24>;
             timeout-ms = <25>;
@@ -157,6 +157,16 @@
             hold-trigger-key-positions = <20 21 10 0 1 11 22 23 12 2 3 24 13 4 14 25 32 33 34 36 37>;
             require-prior-idle-ms = <200>;
         };
+
+        hold_repeat: hold_repeat {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_REPEAT";
+            bindings = <&repeated>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -195,6 +205,13 @@
             wait-ms = <30>;
             tap-ms = <30>;
         };
+
+        repeated: repeated {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &key_repeat>;
+            label = "REPEATED";
+        };
     };
 
     keymap {
@@ -211,9 +228,9 @@
 
         alpha-2 {
             bindings = <
-        &trans  &kp AT  &trans    &trans  &trans    &trans     &trans  &trans  &kp SLASH  &kp QMARK
-        &trans  &Sch    &kp EXCL  &trans  &trans    &trans     &Qu     &Ex     &kp SEMI   &kp COLON
-&trans  &trans  &trans  &trans    &trans  &trans    &trans     &trans  &trans  &trans     &trans     &trans
+        &trans  &kp AT  &trans    &trans  &trans    &trans     &trans  &trans  &hold_repeat FSLH FSLH  &hold_repeat QMARK QMARK
+        &trans  &Sch    &kp EXCL  &trans  &trans    &trans     &Qu     &Ex     &kp SEMI                &kp COLON
+&trans  &trans  &trans  &trans    &trans  &trans    &trans     &trans  &trans  &trans                  &trans                    &trans
                         &trans    &sl 1   &trans    &sk LSHFT  &trans  &trans
             >;
         };
