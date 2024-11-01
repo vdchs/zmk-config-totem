@@ -15,7 +15,7 @@
 
         sz {
             bindings = <&kp RA(S)>;
-            key-positions = <1 2>;
+            key-positions = <1 12>;
             timeout-ms = <25>;
             layers = <0>;
         };
@@ -34,7 +34,7 @@
             layers = <0>;
         };
 
-        OE {
+        oe {
             bindings = <&kp RA(P)>;
             key-positions = <8 17>;
             timeout-ms = <25>;
@@ -43,14 +43,14 @@
 
         x {
             bindings = <&kp X>;
-            key-positions = <11 13>;
+            key-positions = <11 10>;
             layers = <0>;
             timeout-ms = <25>;
         };
 
         j {
             bindings = <&kp J>;
-            key-positions = <13 12>;
+            key-positions = <1 2>;
             timeout-ms = <25>;
             layers = <0>;
         };
@@ -72,6 +72,13 @@
         z {
             bindings = <&kp Z>;
             key-positions = <23 24>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        b {
+            bindings = <&kp B>;
+            key-positions = <13 12>;
             timeout-ms = <25>;
             layers = <0>;
         };
@@ -249,7 +256,7 @@
 
         alpha {
             bindings = <
-        &kp W   &kp G  &kp D                     &kp F                 &kp B                     &trans       &kp L                        &kp U                     &kp O     &kp Y
+        &kp W   &kp G  &kp D                     &kp F                 &trans                    &trans       &kp L                        &kp U                     &kp O     &kp Y
         &kp R   &kp S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &kp K                     &trans       &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &kp A     &kp I
 &trans  &trans  &kp C  &kp M                     &mt_hmr_l LEFT_GUI P  &trans                    &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &kp APOS  &trans  &trans
                        &trans                    &duo_layer 2 1        &mt_magic LEFT_SHIFT V    &lt 3 SPACE  &lt 4 BSPC                   &trans
@@ -258,28 +265,28 @@
 
         alpha-2 {
             bindings = <
-        &kp PRCNT  &kp AT  &trans    &trans  &trans    &trans     &kp TILDE  &kp BSLH  &hold_repeat FSLH FSLH  &hold_repeat QMARK QMARK
+        &kp PRCNT  &kp AT  &kp STAR  &trans  &trans    &trans     &kp TILDE  &kp BSLH  &hold_repeat FSLH FSLH  &hold_repeat QMARK QMARK
         &kp CARET  &Sch    &kp EXCL  &trans  &trans    &trans     &Qu        &Ex       &kp SEMI                &kp COLON
-&trans  &trans     &trans  &trans    &trans  &trans    &trans     &trans     &trans    &trans                  &trans                    &trans
+&trans  &trans     &trans  &trans    &trans  &trans    &trans     &kp UNDER  &trans    &trans                  &trans                    &trans
                            &trans    &sl 1   &trans    &sk LSHFT  &trans     &trans
             >;
         };
 
         sym {
             bindings = <
-        &kp DLLR  &kp HASH   &kp PIPE  &kp AMPS  &kp STAR    &kp UNDER  &kp N7    &kp N8    &kp N9    &mt_arrowfy EQUAL EQUAL
-        &kp N0    &kp N3     &kp N2    &kp N1    &kp LBKT    &kp RBKT   &kp N4    &kp N5    &kp N6    &mt_arrowfy MINUS MINUS
-&trans  &trans    &kp GRAVE  &kp LPAR  &kp RPAR  &trans      &trans     &kp RBRC  &kp LBRC  &kp PLUS  &trans                   &trans
-                             &trans    &trans    &trans      &trans     &trans    &trans
+        &kp DLLR  &kp HASH   &kp PIPE  &kp AMPS  &trans      &trans    &kp N7    &kp N8    &kp N9    &mt_arrowfy EQUAL EQUAL
+        &kp N0    &kp N3     &kp N2    &kp N1    &kp LBKT    &kp RBKT  &kp N4    &kp N5    &kp N6    &mt_arrowfy MINUS MINUS
+&trans  &trans    &kp GRAVE  &kp LPAR  &kp RPAR  &trans      &trans    &kp RBRC  &kp LBRC  &kp PLUS  &trans                   &trans
+                             &trans    &trans    &trans      &trans    &trans    &trans
             >;
         };
 
         nav {
             bindings = <
-        &trans   &trans   &trans            &trans             &trans       &trans     &kp HOME   &kp END   &trans  &kp DEL
-        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &mt_hp LALT ENTER  &kp PG_DN    &kp PG_UP  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT
-&trans  &trans   &trans   &trans            &kp LEFT_GUI       &trans       &trans     &kp K_APP  &trans    &trans  &trans     &trans
-                          &trans            &trans             &trans       &trans     &trans     &trans
+        &trans   &trans   &trans            &trans             &trans    &trans  &kp HOME  &kp END    &trans     &kp DEL
+        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &mt_hp LALT ENTER  &trans    &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
+&trans  &trans   &trans   &trans            &kp LEFT_GUI       &trans    &trans  &trans    &kp PG_DN  &kp PG_UP  &trans     &trans
+                          &trans            &trans             &trans    &trans  &trans    &trans
             >;
         };
 
