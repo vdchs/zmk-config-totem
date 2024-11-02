@@ -152,7 +152,7 @@
             #binding-cells = <0>;
             defaults = <&key_repeat>;
             bindings = <
-                       &kp Z  &kp C  &kp H  &kp B  &kp J  &kp R  &kp T  &kp U  &kp E  &kp A  &kp O  &kp V  &kp V  &kp I  &kp S  &kp U  &kp T
+                       &kp Z  &kp C  &kp H  &kp B  &kp J  &kp R  &kp T  &kp U  &kp E  &kp Y  &kp Y  &kp V  &kp V  &kp I  &kp S  &kp U  &kp T
             >;
 
             antecedents = <
