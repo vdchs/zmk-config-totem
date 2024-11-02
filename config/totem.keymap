@@ -225,6 +225,16 @@
             hold-trigger-key-positions = <20 21 10 0 1 11 22 23 12 2 3 24 13 4 14 25 32 33 34 36 37>;
             require-prior-idle-ms = <200>;
         };
+
+        mt_pathify: mt_pathify {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_PATHIFY";
+            bindings = <&pathify>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -277,6 +287,13 @@
             bindings = <&kp Y &kp O &kp U>;
             label = "YOU";
         };
+
+        pathify: pathify {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp FSLH>;
+            label = "PATHIFY";
+        };
     };
 
     keymap {
@@ -293,25 +310,25 @@
 
         alpha-2 {
             bindings = <
-        &kp PRCNT  &kp AT  &kp STAR  &trans  &trans    &trans     &kp TILDE  &kp BSLH  &hold_repeat FSLH FSLH  &hold_repeat QMARK QMARK
-        &kp CARET  &Sch    &kp EXCL  &trans  &trans    &trans     &Qu        &Ex       &kp SEMI                &kp COLON
-&trans  &trans     &trans  &trans    &trans  &trans    &trans     &kp UNDER  &trans    &trans                  &trans                    &trans
-                           &trans    &sl 1   &trans    &sk LSHFT  &trans     &trans
+        &trans    &kp AT     &kp STAR  &kp PRCNT  &trans    &trans     &mt_pathify TILDE TILDE  &kp BSLH  &kp SEMI                  &trans
+        &kp HASH  &Sch       &kp EXCL  &trans     &trans    &trans     &Qu                      &Ex       &kp COLON                 &mt_arrowfy EQUAL EQUAL
+&trans  &trans    &kp CARET  &trans    &trans     &trans    &trans     &kp UNDER                &kp PLUS  &hold_repeat QMARK QMARK  &trans                   &trans
+                             &trans    &sl 1      &trans    &sk LSHFT  &trans                   &trans
             >;
         };
 
         sym {
             bindings = <
-        &kp DLLR  &kp HASH   &kp PIPE  &kp AMPS  &trans      &trans    &kp N7    &kp N8    &kp N9    &mt_arrowfy EQUAL EQUAL
-        &kp N0    &kp N3     &kp N2    &kp N1    &kp LBKT    &kp RBKT  &kp N4    &kp N5    &kp N6    &mt_arrowfy MINUS MINUS
-&trans  &trans    &kp GRAVE  &kp LPAR  &kp RPAR  &trans      &trans    &kp RBRC  &kp LBRC  &kp PLUS  &trans                   &trans
-                             &trans    &trans    &trans      &trans    &trans    &trans
+        &trans  &kp DLLR   &kp PIPE  &kp AMPS  &trans      &trans    &kp N7    &kp N8    &kp N9    &trans
+        &kp N0  &kp N3     &kp N2    &kp N1    &kp LBKT    &kp RBKT  &kp N4    &kp N5    &kp N6    &mt_arrowfy MINUS MINUS
+&trans  &trans  &kp GRAVE  &kp LPAR  &kp RPAR  &trans      &trans    &kp RBRC  &kp LBRC  &kp FSLH  &trans                   &trans
+                           &trans    &trans    &trans      &trans    &trans    &trans
             >;
         };
 
         nav {
             bindings = <
-        &trans   &trans   &trans            &trans             &trans    &trans  &kp HOME  &kp END    &trans     &kp DEL
+        &trans   &trans   &trans            &trans             &trans    &trans  &kp HOME  &kp END    &kp DEL    &trans
         &kp ESC  &kp TAB  &kp LEFT_CONTROL  &mt_hp LALT ENTER  &trans    &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
 &trans  &trans   &trans   &trans            &kp LEFT_GUI       &trans    &trans  &trans    &kp PG_DN  &kp PG_UP  &trans     &trans
                           &trans            &trans             &trans    &trans  &trans    &trans
@@ -320,10 +337,10 @@
 
         func {
             bindings = <
-        &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE           &trans           &trans    &trans  &trans           &kp PRINTSCREEN  &kp F11  &kp F12
-        &kp F1        &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8     &kp F9   &kp F10
-&trans  &trans        &trans        &trans               &mt LGUI F5      &trans    &trans  &mt RGUI F6      &trans           &trans   &trans   &trans
-                                    &trans               &trans           &trans    &trans  &trans           &trans
+        &trans  &kp C_VOL_DN  &kp C_VOL_UP         &kp C_MUTE       &trans    &trans  &kp PSCRN        &kp F11       &kp F12  &trans
+        &kp F1  &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8  &kp F9   &kp F10
+&trans  &trans  &trans        &trans               &mt LGUI F5      &trans    &trans  &mt RGUI F6      &trans        &trans   &trans   &trans
+                              &trans               &trans           &trans    &trans  &trans           &trans
             >;
         };
     };
