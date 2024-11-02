@@ -43,7 +43,7 @@
 
         x {
             bindings = <&kp X>;
-            key-positions = <11 10>;
+            key-positions = <22 23>;
             layers = <0>;
             timeout-ms = <25>;
         };
@@ -57,7 +57,7 @@
 
         v {
             bindings = <&kp V>;
-            key-positions = <11 12>;
+            key-positions = <11 10>;
             timeout-ms = <25>;
             layers = <0>;
         };
@@ -79,6 +79,20 @@
         b {
             bindings = <&kp B>;
             key-positions = <13 12>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        w {
+            bindings = <&kp W>;
+            key-positions = <11 12>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        y {
+            bindings = <&kp Y>;
+            key-positions = <18 19>;
             timeout-ms = <25>;
             layers = <0>;
         };
