@@ -346,9 +346,9 @@
 
         nav {
             bindings = <
-        &trans    &trans   &trans                   &trans             &trans    &trans  &kp HOME  &kp END    &kp DEL    &trans
-        &kp BSPC  &kp ESC  &mt_hp LEFT_CONTROL TAB  &mt_hp LALT ENTER  &trans    &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
-&trans  &trans    &trans   &trans                   &kp LEFT_GUI       &trans    &trans  &trans    &kp PG_DN  &kp PG_UP  &trans     &trans
+        &trans   &kp DEL   &trans                   &trans             &trans    &trans  &kp HOME  &kp END    &trans     &trans
+        &kp ESC  &kp BSPC  &mt_hp LEFT_CONTROL TAB  &mt_hp LALT ENTER  &trans    &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
+&trans  &trans   &trans    &trans                   &kp LEFT_GUI       &trans    &trans  &trans    &kp PG_DN  &kp PG_UP  &trans     &trans
                            &trans                   &trans             &trans    &trans  &trans    &trans
             >;
         };
