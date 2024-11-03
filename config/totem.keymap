@@ -152,11 +152,11 @@
             #binding-cells = <0>;
             defaults = <&key_repeat>;
             bindings = <
-                       &kp Z  &kp C  &kp H  &kp B  &kp J  &kp R  &kp T  &kp U  &kp E  &kp Y  &kp Y  &kp V  &kp V  &kp I  &kp S  &kp U  &kp T
+                       &sk LSHFT  &kp Z  &kp C  &kp H  &kp B  &kp J  &kp R  &kp T  &kp U  &kp E  &kp Y  &kp Y  &kp V  &kp V  &kp I  &kp S  &kp U  &kp T  &kp FSLH
             >;
 
             antecedents = <
-                       T      S      P      M      B      W      X      E      U      O      A      R      D      Y      G      RA(Q)  RA(S)
+                       SPACE      T      S      P      M      B      W      X      E      U      O      A      R      D      Y      G      RA(Q)  RA(S)  TILDE
             >;
 
             max-delay-ms = <500>;
@@ -267,10 +267,10 @@
 
         alpha {
             bindings = <
-        &kp W   &kp G  &kp D                     &kp F                 &trans                    &trans       &kp L                        &kp U                     &kp O     &kp Y
-        &kp R   &kp S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &kp K                     &trans       &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &kp A     &kp I
-&trans  &trans  &kp C  &kp M                     &mt_hmr_l LEFT_GUI P  &trans                    &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &kp APOS  &trans  &trans
-                       &trans                    &duo_layer 2 1        &mt_magic LEFT_SHIFT V    &lt 3 SPACE  &lt 4 BSPC                   &trans
+        &kp W   &kp G  &kp D                     &kp F                 &trans               &trans       &kp L                        &kp U                     &kp O     &kp Y
+        &kp R   &kp S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &kp K                &trans       &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &kp A     &kp I
+&trans  &trans  &kp C  &kp M                     &mt_hmr_l LEFT_GUI P  &trans               &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &kp APOS  &trans  &trans
+                       &trans                    &duo_layer 2 1        &mt_magic LSHFT V    &lt 3 SPACE  &lt 4 BSPC                   &trans
             >;
         };
 
