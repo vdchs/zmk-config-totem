@@ -7,6 +7,8 @@
     flavor = "tap-preferred";
 };
 
+&sl { ignore-modifiers; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -99,7 +101,7 @@
             bindings = <&You>;
             key-positions = <17 18 19>;
             timeout-ms = <28>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         k {
@@ -295,10 +297,10 @@
 
         alpha-2 {
             bindings = <
-        &trans    &kp AT     &kp STAR  &kp PRCNT  &trans    &trans  &kp TILDE  &kp BSLH  &kp SEMI   &trans
-        &kp HASH  &Sch       &kp EXCL  &trans     &trans    &trans  &Qu        &Ex       &kp COLON  &mt_arrowfy EQUAL EQUAL
-&trans  &trans    &kp CARET  &trans    &trans     &trans    &trans  &kp UNDER  &kp PLUS  &kp QMARK  &trans                   &trans
-                             &trans    &sl 1      &trans    &trans  &trans     &trans
+        &trans    &kp AT     &kp STAR  &kp PRCNT  &trans    &trans     &kp TILDE  &kp BSLH  &kp SEMI   &trans
+        &kp HASH  &Sch       &kp EXCL  &trans     &trans    &trans     &Qu        &Ex       &kp COLON  &mt_arrowfy EQUAL EQUAL
+&trans  &trans    &kp CARET  &trans    &trans     &trans    &trans     &kp UNDER  &kp PLUS  &kp QMARK  &trans                   &trans
+                             &trans    &sl 1      &trans    &sk LSHFT  &trans     &trans
             >;
         };
 
