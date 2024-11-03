@@ -101,6 +101,27 @@
             timeout-ms = <28>;
             layers = <0>;
         };
+
+        k {
+            bindings = <&kp K>;
+            key-positions = <11 13>;
+            timeout-ms = <28>;
+            layers = <0>;
+        };
+
+        oBkt {
+            bindings = <&kp LBKT>;
+            key-positions = <13 12>;
+            layers = <2>;
+            timeout-ms = <28>;
+        };
+
+        cBkt {
+            bindings = <&kp RBKT>;
+            key-positions = <16 17>;
+            layers = <2>;
+            timeout-ms = <28>;
+        };
     };
 
     behaviors {
