@@ -43,7 +43,7 @@
 
         x {
             bindings = <&kp X>;
-            key-positions = <22 23>;
+            key-positions = <10 11>;
             layers = <0>;
             timeout-ms = <28>;
         };
@@ -57,7 +57,7 @@
 
         v {
             bindings = <&kp V>;
-            key-positions = <11 10>;
+            key-positions = <23 24>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -71,7 +71,7 @@
 
         z {
             bindings = <&kp Z>;
-            key-positions = <23 24>;
+            key-positions = <22 23>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -180,11 +180,11 @@
             #binding-cells = <0>;
             defaults = <&key_repeat>;
             bindings = <
-                       &sk LSHFT  &kp Z  &kp C  &kp H  &kp B  &kp J  &kp T  &kp U  &kp E  &kp Y  &kp Y  &kp V  &kp V  &kp I  &kp S  &kp U  &kp T  &kp FSLH
+                       &sk LSHFT  &kp Z  &kp C  &kp H  &kp B  &kp J  &kp U  &kp E  &kp Y  &kp Y  &kp V  &kp I  &kp S  &kp U  &kp T  &kp FSLH
             >;
 
             antecedents = <
-                       SPACE      T      S      P      M      B      X      E      U      O      A      R      D      Y      G      RA(Q)  RA(S)  TILDE
+                       SPACE      T      S      P      M      B      E      U      O      A      D      Y      G      RA(Q)  RA(S)  TILDE
             >;
 
             max-delay-ms = <500>;
