@@ -111,20 +111,6 @@
             layers = <0>;
         };
 
-        oBkt {
-            bindings = <&kp LBKT>;
-            key-positions = <13 12>;
-            layers = <2>;
-            timeout-ms = <28>;
-        };
-
-        cBkt {
-            bindings = <&kp RBKT>;
-            key-positions = <16 17>;
-            layers = <2>;
-            timeout-ms = <28>;
-        };
-
         func {
             bindings = <&mo 4>;
             key-positions = <34 35>;
@@ -279,33 +265,6 @@
             tap-ms = <30>;
         };
 
-        Qu: Qu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Q &kp U>;
-            label = "QU";
-            wait-ms = <30>;
-            tap-ms = <30>;
-        };
-
-        Ex: Ex {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp X>;
-            label = "EX";
-            wait-ms = <30>;
-            tap-ms = <30>;
-        };
-
-        Sch: Sch {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp C &kp H>;
-            label = "SCH";
-            wait-ms = <30>;
-            tap-ms = <30>;
-        };
-
         You: You {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -326,16 +285,16 @@
             >;
         };
 
-        alpha-2 {
+        sym0 {
             bindings = <
-        &trans    &kp AT     &kp STAR  &kp PRCNT  &trans        &trans  &kp TILDE  &kp BSLH  &kp SEMI   &trans
-        &kp HASH  &Sch       &kp EXCL  &trans     &trans        &trans  &Qu        &Ex       &kp COLON  &mt_arrowfy MINUS MINUS
-&trans  &trans    &kp CARET  &trans    &trans     &trans        &trans  &kp UNDER  &kp PLUS  &kp QMARK  &trans                   &trans
-                             &trans    &trans     &sk LSHIFT    &trans  &trans     &trans
+        &trans     &kp AT    &trans    &kp PRCNT  &trans    &trans  &kp TILDE  &kp BSLH  &kp SEMI   &trans
+        &kp CARET  &kp HASH  &kp EXCL  &kp STAR   &trans    &trans  &kp UNDER  &kp PLUS  &kp COLON  &mt_arrowfy MINUS MINUS
+&trans  &trans     &trans    &trans    &trans     &trans    &trans  &kp RBKT   &kp LBKT  &kp QMARK  &trans                   &trans
+                             &trans    &trans     &trans    &trans  &trans     &trans
             >;
         };
 
-        sym {
+        sym1 {
             bindings = <
         &trans  &kp DLLR   &kp PIPE  &kp AMPS  &trans    &trans  &kp N7    &kp N8    &kp N9    &trans
         &trans  &kp N3     &kp N2    &kp N1    &trans    &trans  &kp N4    &kp N5    &kp N6    &mt_arrowfy EQUAL EQUAL
