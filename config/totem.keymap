@@ -131,13 +131,6 @@
             layers = <0>;
             timeout-ms = <28>;
         };
-
-        k {
-            bindings = <&kp K>;
-            key-positions = <11 13>;
-            timeout-ms = <28>;
-            layers = <0>;
-        };
     };
 
     behaviors {
@@ -187,11 +180,11 @@
             #binding-cells = <0>;
             defaults = <&key_repeat>;
             bindings = <
-                       &sk LSHFT  &kp Z  &kp C  &kp H  &kp B  &kp J  &kp T  &kp U  &kp E  &kp Y  &kp Y  &kp V  &kp V  &kp I  &kp S  &kp K  &kp U  &kp T  &kp FSLH
+                       &sk LSHFT  &kp Z  &kp C  &kp H  &kp B  &kp J  &kp T  &kp U  &kp E  &kp Y  &kp Y  &kp V  &kp V  &kp I  &kp S  &kp U  &kp T  &kp FSLH
             >;
 
             antecedents = <
-                       SPACE      T      S      P      M      B      X      E      U      O      A      R      D      Y      G      C      RA(Q)  RA(S)  TILDE
+                       SPACE      T      S      P      M      B      X      E      U      O      A      R      D      Y      G      RA(Q)  RA(S)  TILDE
             >;
 
             max-delay-ms = <500>;
