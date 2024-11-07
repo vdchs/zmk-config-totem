@@ -39,7 +39,7 @@ It covers bigrams like `mb`, `eu` or `dv`. But also key repeats like `ll` or `rr
 With the magic key on a thumb this layout manages to signicantly keep the number of SFBs very low despite the heavy use of combos.
 
 ## Home Row Mods
-Mods and layers are accessed via HRMs. To allow for fast natural typing while keeping accidental triggers to a minimum, the `tapping-term` is kept on the high side, but `hold-trigger-key-positions` are enabled, so that accessing the mods usually are usually pressed on the opposite side of the board from the key they are pressed with. The exception to that is the shift key on the thumb which favors the hold action aggressively.
+Mods and layers are accessed via HRMs. To allow for fast natural typing while keeping accidental triggers to a minimum, the `tapping-term` is kept on the high side, but `hold-trigger-key-positions` are enabled, so that accessing the mods are usually pressed on the opposite side of the board from the key they are pressed with. The exception to that is the shift key on the thumb which favors the hold action aggressively.
 
 The mods stay constistent across the fun and nav layers as well.
 
