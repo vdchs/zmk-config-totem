@@ -1,7 +1,7 @@
 # A 22 key layout that doesn't compromise on SFBs 
 This layout is based on Apsu's APTv3 layout. At one point I wanted to find out how far I could push it with eliminating keys and this is where I ended up.
 
-It may be a bit out there but after getting used to it it's supprisingly comfy - and insanely fun to type on.
+It may be a bit out there but after getting used to it it's supprisingly comfy - and insanely fun to type on. So I stuck with it.
 
 The keyboard I use it on is the Totem by Geist. Hence this firmware repo. 
 
