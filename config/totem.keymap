@@ -118,13 +118,6 @@
             timeout-ms = <28>;
         };
 
-        qu {
-            bindings = <&Qu>;
-            key-positions = <6 7>;
-            timeout-ms = <28>;
-            layers = <0>;
-        };
-
         ex {
             bindings = <&Ex>;
             key-positions = <16 17>;
@@ -135,6 +128,13 @@
         fslh {
             bindings = <&kp FSLH>;
             key-positions = <27 28>;
+            timeout-ms = <28>;
+            layers = <0>;
+        };
+
+        sch {
+            bindings = <&Sch>;
+            key-positions = <12 13 11>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -301,6 +301,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        lowC: lowC {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LOWC";
+            bindings = <&kp C>, <&kp C>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        lowH: lowH {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LOWH";
+            bindings = <&kp H>, <&kp H>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -320,18 +338,18 @@
             label = "YOU";
         };
 
-        Qu: Qu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Q &lowU>;
-            label = "QU";
-        };
-
         Ex: Ex {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp E &lowX>;
             label = "EX";
+        };
+
+        Sch: Sch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &lowC &lowH>;
+            label = "SCH";
         };
     };
 
