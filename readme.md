@@ -38,7 +38,7 @@ The key labeled ✭ in the base layer is a magic key. Its output changes based o
 
 It covers bigrams like `mb`, `eu` or `dv`. But also key repeats like `ll` or `rr`. It functions as some sort of "get out of jail free card", where every time pressing the next key seems uncomfortable, you can press the magic key instead.
 
-With the magic key being a thumb key, this layout manages to signicantly decrease the number of SFBs despite the high number of combos used.
+With the magic key on a thumb this layout manages to signicantly keep the number of SFBs very low despite the heavy use of combos.
 
 ## Home Row Mods
 Mods and layers are accessed via HRMs. To allow for fast natural typing while keeping accidental triggers to a minimum, the `tapping-term` as kept on the high side, but `hold-trigger-key-positions` are enabled, so that accessing the mods usually are usually pressed on the opposite side of the board from the key they are pressed with. The exception to that is the shift key on the thumb which favors the hold action aggressively.
