@@ -27,8 +27,6 @@ Pressing both thumb keys together accesses the function layer.
 •x•w•b•     •ex•ä•y•
   •z•v•     •/ •'•
       • fun •
-
-
 ```
 
 In addition to these 2 key combos, there are a number of 3 key combos that simulate rolls, for example to type `you` or `sch`.
