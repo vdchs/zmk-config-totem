@@ -101,7 +101,7 @@
             bindings = <&You>;
             key-positions = <17 18 19>;
             timeout-ms = <28>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         apos {
@@ -116,6 +116,13 @@
             key-positions = <34 35>;
             layers = <0>;
             timeout-ms = <28>;
+        };
+
+        qu {
+            bindings = <&Qu>;
+            key-positions = <6 7>;
+            timeout-ms = <28>;
+            layers = <0>;
         };
     };
 
@@ -253,6 +260,24 @@
             hold-trigger-key-positions = <20 21 10 0 1 11 22 23 12 2 3 24 13 4 14 25 32 33 34 36 37>;
             require-prior-idle-ms = <30>;
         };
+
+        lowO: lowO {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LOWO";
+            bindings = <&kp O>, <&kp O>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        lowU: lowU {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LOWU";
+            bindings = <&kp U>, <&kp U>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -268,8 +293,15 @@
         You: You {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Y &kp O &kp U>;
+            bindings = <&kp Y &lowO &lowU>;
             label = "YOU";
+        };
+
+        Qu: Qu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &lowU>;
+            label = "QU";
         };
     };
 
