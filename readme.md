@@ -5,6 +5,8 @@ It may be a bit out there but after getting used to it it's supprisingly comfy -
 
 The keyboard I use it on is the Totem by Geist. Hence this firmware repo. 
 
+![image](https://github.com/user-attachments/assets/451fc534-1f8b-4e67-9d9b-2bc73bba17e9)
+
 ## Base layer
 ```
   g d f   l u o
