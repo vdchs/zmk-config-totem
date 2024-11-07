@@ -347,21 +347,21 @@
             >;
         };
 
-        sym0 {
+        sym {
             bindings = <
-        &trans     &kp AT    &trans    &kp PRCNT  &trans    &trans  &trans     &trans    &kp SEMI   &trans
-        &kp CARET  &kp HASH  &kp STAR  &kp EXCL   &trans    &trans  &kp UNDER  &kp PLUS  &kp COLON  &mt_arrowfy EQUAL EQUAL
-&trans  &trans     &trans    &trans    &trans     &trans    &trans  &kp RBKT   &kp LBKT  &kp BSLH   &trans                   &trans
-                             &trans    &trans     &trans    &trans  &trans     &trans
+        &trans    &kp AT     &kp PIPE   &kp AMPS  &trans    &trans  &trans                   &kp BSLH                 &kp TILDE  &trans
+        &kp HASH  &kp DLLR   &kp STAR   &kp EXCL  &trans    &trans  &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON  &kp SEMI
+&trans  &trans    &kp CARET  &kp PRCNT  &trans    &trans    &trans  &kp UNDER                &kp PLUS                 &kp GRAVE  &trans    &trans
+                             &trans     &trans    &trans    &trans  &trans                   &trans
             >;
         };
 
-        sym1 {
+        num {
             bindings = <
-        &trans  &kp DLLR   &kp PIPE  &kp AMPS  &trans    &trans  &kp N7    &kp N8    &kp N9     &trans
-        &trans  &kp N3     &kp N2    &kp N1    &trans    &trans  &kp N4    &kp N5    &kp N6     &mt_arrowfy MINUS MINUS
-&trans  &trans  &kp GRAVE  &kp LPAR  &kp RPAR  &trans    &trans  &kp RBRC  &kp LBRC  &kp TILDE  &trans                   &trans
-                           &trans    &trans    &kp N0    &trans  &trans    &trans
+        &trans  &trans  &kp LBKT  &kp RBKT  &trans    &trans  &kp N7    &kp N8    &kp N9  &trans
+        &trans  &kp N3  &kp N2    &kp N1    &trans    &trans  &kp N4    &kp N5    &kp N6  &trans
+&trans  &trans  &trans  &kp LPAR  &kp RPAR  &trans    &trans  &kp RBRC  &kp LBRC  &trans  &trans  &trans
+                        &trans    &trans    &kp N0    &trans  &trans    &trans
             >;
         };
 
