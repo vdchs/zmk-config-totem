@@ -25,12 +25,12 @@ Instead, I shifted the layout towards combos using 2 neighbouring keys. There ar
 Pressing both thumb keys together accesses the function layer.
 
 ```
-  •j•q•     •  •ü•
-•x•w•b•     •ex•ä•y•
+  •j•q•     •  •ü  •
+•x•w•b•     •ex•bsp•y•
   •z•v•     •/ •'•
       • fun •
 ```
-
+For German specific letters `ö`, `ä`, `ß` I use diagonal 2 key combos. I don't type German very often, but I like to keep them under my fingertips just in case. 
 In addition to these 2 key combos, there are a number of 3 key combos that simulate rolls, for example to type `you` or `sch`.
 
 ## Magic key ✭
@@ -78,9 +78,9 @@ A thing to point out is that the keys for `-` and `=` produce `->` and `=>` on h
 ...is kept basic. I am a Vim user so I don't have the need for extensive shortcut binds.
 
 ```
-     del           hom end
- esc bsp tab ret   ←   ↓   ↑   →
-                       pgd pgu
+                     hom end del
+ esc tab     ret     ←   ↓   ↑   →
+                         pgd pgu
 ```
 
 ## The fun layer
