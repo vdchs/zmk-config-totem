@@ -142,6 +142,7 @@
         bspc {
             bindings = <&kp BSPC>;
             key-positions = <17 18>;
+            timeout-ms = <28>;
         };
     };
 
