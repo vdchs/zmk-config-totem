@@ -29,7 +29,7 @@
 
         ae {
             bindings = <&kp RA(Q)>;
-            key-positions = <17 18>;
+            key-positions = <18 28>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -137,6 +137,11 @@
             key-positions = <12 13 11>;
             timeout-ms = <28>;
             layers = <0>;
+        };
+
+        bspc {
+            bindings = <&kp BSPC>;
+            key-positions = <17 18>;
         };
     };
 
@@ -385,10 +390,10 @@
 
         nav {
             bindings = <
-        &trans   &kp DEL   &trans                   &trans             &trans    &trans  &kp HOME  &kp END    &trans     &trans
-        &kp ESC  &kp BSPC  &mt_hp LEFT_CONTROL TAB  &mt_hp LALT ENTER  &trans    &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
-&trans  &trans   &trans    &trans                   &kp LEFT_GUI       &trans    &trans  &trans    &kp PG_DN  &kp PG_UP  &trans     &trans
-                           &trans                   &trans             &trans    &trans  &trans    &trans
+        &trans   &trans   &trans            &trans             &trans    &trans  &kp HOME  &kp END    &kp DEL    &trans
+        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &mt_hp LALT ENTER  &trans    &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
+&trans  &trans   &trans   &trans            &kp LEFT_GUI       &trans    &trans  &trans    &kp PG_DN  &kp PG_UP  &trans     &trans
+                          &trans            &trans             &trans    &trans  &trans    &trans
             >;
         };
 
