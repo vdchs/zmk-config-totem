@@ -12,7 +12,7 @@ The keyboard I use it on is the Totem by Geist. Hence this firmware repo.
 ```
   g d f   l u o
 r s t h   n e a i
-v c m p   , . / k
+k c m p   , . ' /
       ✭   _
 ```
 
@@ -28,29 +28,29 @@ Pressing both thumb keys together accesses the function layer.
 ```
   •j•q•     •  •ü  •
 •x•w•b•     •ex•bsp•y•
-  •z• •     •/ •'•
+  •z•v•     •/ •ä  •
       • fun •
 ```
-For German specific letters `ö`, `ä`, `ß` I use diagonal 2 key combos. I don't type German very often, but I like to keep them under my fingertips just in case. 
+For German specific letters `ö` and `ß` I use diagonal 2 key combos. I don't type German very often, but I like to keep them under my fingertips just in case. 
 In addition to these 2 key combos, there are a number of 3 key combos that simulate rolls, for example to type `you` or `sch`.
 
 ## Magic key ✭
 The key labeled ✭ in the base layer is a magic key. Its output changes based on the key that was pressed before. It's used to decrease the number of SFBs in the layout significantly, especially those that were introduced by the combo keys.
 
-It covers bigrams like `mb`, `eu` or `ay`. But also key repeats like `ll` or `rr`. It functions as some sort of "get out of jail free card", where every time pressing the next key seems uncomfortable, you can press the magic key instead.
+It covers bigrams like `mb`, `eu` or `dv`. But also key repeats like `ll` or `rr`. It functions as some sort of "get out of jail free card", where every time pressing the next key seems uncomfortable, you can press the magic key instead.
 
 With the magic key on a thumb this layout manages to signicantly keep the number of SFBs very low despite the heavy use of combos.
 
 ## Home Row Mods
-Mods and layers are accessed via HRMs. To allow for fast natural typing while keeping accidental triggers to a minimum, the `tapping-term` is kept on the high side, but `hold-trigger-key-positions` are enabled, so that accessing the mods are usually pressed on the opposite side of the board from the key they are pressed with. The exception to that is the shift key on the thumb which favors the hold action aggressively.
+Mods and layers are accessed via HRMs. To allow for fast natural typing while keeping accidental triggers to a minimum, the `tapping-term` is kept on the high side, but `hold-trigger-key-positions` are enabled, so that accessing the mods are usually pressed on the opposite side of the board from the key they are pressed with.
 
 The mods stay constistent across the fun and nav layers as well.
 
 ```
     •   •   •      •   •   •
-num sym ctl alt    alt ctl sym num
+sft sym ctl alt    alt ctl sym sft
     •   •   gui    gui •   •
-            sft    nav
+            num    nav
 ```
 
 ## The Num layer
@@ -59,9 +59,8 @@ The number layer uses a numpad layer, but the bottom row of the numpad is shifte
 This layer also houses parentheses. These are positioned in such a way that they favor inrolls instead of the usual outrolls
 ```
     [ ]   7 8 9
-  3 2 1   4 5 6
+0 3 2 1   4 5 6
     ( )   } {
-      0
 ```
 
 ## The sym layer
