@@ -311,6 +311,30 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        mt_hmr_l_shift: mt_hmr_l_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_HMR_L_SHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <15 5 6 7 17 16 26 27 28 29 18 8 9 19 30 31 32 33 34 36 37>;
+            require-prior-idle-ms = <30>;
+        };
+
+        mt_hmr_r_shift: mt_hmr_r_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_HMR_R_SHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <20 21 10 0 1 11 22 23 12 2 3 24 13 4 14 25 32 33 34 36 37>;
+            require-prior-idle-ms = <30>;
+        };
     };
 
     macros {
@@ -350,10 +374,10 @@
 
         alpha {
             bindings = <
-        &trans              &kp G          &kp D                     &kp F                 &trans           &trans       &kp L                        &kp U                     &kp O          &trans
-        &mt_hmr_l LSHIFT R  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &trans           &trans       &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &mt_hmr_r LSHIFT I
-&trans  &kp V               &kp C          &kp M                     &mt_hmr_l LEFT_GUI P  &trans           &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &kp FSLH       &kp K               &trans
-                                           &trans                    &trans                &lt_magic 2 V    &lt 3 SPACE  &trans                       &trans
+        &trans                    &kp G          &kp D                     &kp F                 &trans           &trans       &kp L                        &kp U                     &kp O          &trans
+        &mt_hmr_l_shift LSHIFT R  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &trans           &trans       &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &mt_hmr_r_shift LSHIFT I
+&trans  &kp V                     &kp C          &kp M                     &mt_hmr_l LEFT_GUI P  &trans           &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &kp FSLH       &kp K                     &trans
+                                                 &trans                    &trans                &lt_magic 2 V    &lt 3 SPACE  &trans                       &trans
             >;
         };
 
@@ -377,10 +401,10 @@
 
         nav {
             bindings = <
-        &trans   &trans   &trans            &trans             &trans    &trans  &kp HOME  &kp END    &kp DEL    &trans
-        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &mt_hp LALT ENTER  &trans    &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
-&trans  &trans   &trans   &trans            &kp LEFT_GUI       &trans    &trans  &trans    &kp PG_DN  &kp PG_UP  &trans     &trans
-                          &trans            &trans             &trans    &trans  &trans    &trans
+        &trans             &trans   &trans            &trans             &trans    &trans  &kp HOME  &kp END    &kp DEL    &trans
+        &mt_hp LSHIFT ESC  &kp TAB  &kp LEFT_CONTROL  &mt_hp LALT ENTER  &trans    &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
+&trans  &trans             &trans   &trans            &kp LEFT_GUI       &trans    &trans  &trans    &kp PG_DN  &kp PG_UP  &trans     &trans
+                                    &trans            &trans             &trans    &trans  &trans    &trans
             >;
         };
 
