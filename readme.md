@@ -19,7 +19,7 @@ v c m p   , . / k
 There is a key override for `,` and `.` in place to convert `<>` into an inroll.
 
 ## Combo layer
-With only 22 keys, not all keys fit into the base layer. There are basically 2 different solutions. I tried a secondary alpha layer but found it limiting my typing speed.
+With so few keys, not all keys fit into the base layer. There are basically 2 different solutions. I tried a secondary alpha layer but found it limiting my typing speed.
 
 Instead, I shifted the layout towards combos using 2 neighbouring keys. There are a lot of them.
 
