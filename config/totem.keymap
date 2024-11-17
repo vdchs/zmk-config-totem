@@ -179,11 +179,11 @@
             #binding-cells = <0>;
             defaults = <&key_repeat>;
             bindings = <
-                       &sk LSHFT  &kp Z  &kp C  &kp H  &kp B  &kp J  &kp U  &kp E  &kp Y  &kp Y  &kp V  &kp I  &kp S  &kp U  &kp T  &kp FSLH
+                       &sk LSHFT  &kp Z  &kp C  &kp H  &kp B  &kp J  &kp U  &kp E  &kp Y  &kp Y  &kp I  &kp S  &kp U  &kp T  &kp FSLH
             >;
 
             antecedents = <
-                       SPACE      T      S      P      M      B      E      U      O      A      D      Y      G      RA(Q)  RA(S)  TILDE
+                       SPACE      T      S      P      M      B      E      U      O      A      Y      G      RA(Q)  RA(S)  TILDE
             >;
 
             max-delay-ms = <500>;
