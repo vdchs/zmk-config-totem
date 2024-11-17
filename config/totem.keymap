@@ -29,7 +29,7 @@
 
         ae {
             bindings = <&kp RA(Q)>;
-            key-positions = <28 18>;
+            key-positions = <28 29>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -97,13 +97,6 @@
             layers = <0>;
         };
 
-        apos {
-            bindings = <&kp APOS>;
-            key-positions = <29 28>;
-            timeout-ms = <28>;
-            layers = <0>;
-        };
-
         func {
             bindings = <&mo 4>;
             key-positions = <34 35>;
@@ -128,6 +121,12 @@
         bspc {
             bindings = <&kp BSPC>;
             key-positions = <17 18>;
+            timeout-ms = <28>;
+        };
+
+        v {
+            bindings = <&kp V>;
+            key-positions = <23 24>;
             timeout-ms = <28>;
         };
     };
@@ -376,7 +375,7 @@
             bindings = <
         &trans                    &kp G          &kp D                     &kp F                 &trans           &trans       &kp L                        &kp U                     &kp O          &trans
         &mt_hmr_l_shift LSHIFT R  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &trans           &trans       &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &mt_hmr_r_shift LSHIFT I
-&trans  &kp V                     &kp C          &kp M                     &mt_hmr_l LEFT_GUI P  &trans           &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &kp FSLH       &kp K                     &trans
+&trans  &kp K                     &kp C          &kp M                     &mt_hmr_l LEFT_GUI P  &trans           &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &kp SQT        &kp FSLH                  &trans
                                                  &trans                    &trans                &lt_magic 2 V    &lt 3 SPACE  &trans                       &trans
             >;
         };
