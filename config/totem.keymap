@@ -333,8 +333,8 @@
         alpha {
             bindings = <
         &trans         &kp G          &kp D                     &kp F                 &trans                &trans       &kp L                        &kp U                     &kp O          &trans
-        &lt_hmr_l 2 R  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &kp K                 &Ex          &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
-&trans  &trans         &kp C          &kp M                     &mt_hmr_l LEFT_GUI P  &trans                &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &kp SQT        &trans         &trans
+        &lt_hmr_l 2 R  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &trans                &Ex          &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
+&trans  &kp K          &kp C          &kp M                     &mt_hmr_l LEFT_GUI P  &trans                &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &kp SQT        &trans         &trans
                                       &trans                    &trans                &mt_magic LSHIFT V    &lt 3 SPACE  &trans                       &trans
             >;
         };
