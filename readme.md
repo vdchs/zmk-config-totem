@@ -12,7 +12,7 @@ The keyboard I use it on is the Totem by Geist. Hence this firmware repo.
 ```
   g d f   l u o
 r s t h   n e a i
-k c m p   , . ' /
+k c m p   , . ' 
       ✭   _
 ```
 
@@ -28,7 +28,7 @@ Pressing both thumb keys together accesses the function layer.
 ```
   •j•q•     •  •ü  •
 •x•w•b•     •ex•bsp•y•
-  •z•v•     •/ •ä  •
+  •z•v•     •ä •/  •
       • fun •
 ```
 For German specific letters `ö` and `ß` I use diagonal 2 key combos. I don't type German very often, but I like to keep them under my fingertips just in case. 
