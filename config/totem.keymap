@@ -436,21 +436,21 @@
             >;
         };
 
-        nav_lock {
+        nav_tog {
+            bindings = <
+        &tog 5  &trans  &trans  &trans  &trans    &trans  &trans                   &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans                   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                   &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &mt_stick_nav BSPC BSPC  &trans
+            >;
+        };
+
+        nav_mo {
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        nav_hold {
-            bindings = <
-        &tog 6  &trans  &trans  &trans  &trans    &trans  &trans                   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans                   &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                   &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &mt_stick_nav BSPC BSPC  &trans
             >;
         };
     };
