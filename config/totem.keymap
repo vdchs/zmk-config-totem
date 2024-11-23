@@ -165,7 +165,7 @@
             #binding-cells = <0>;
             defaults = <&key_repeat>;
             bindings = <
-                       &sk LSHFT  &kp Z  &kp C  &kp V  &kp H  &kp J  &kp B  &kp U  &kp E  &kp A  &kp O  &kp I  &kp U  &kp T  &kp FSLH  &DotDot
+                       &sk LSHFT  &kp Z  &kp C  &kp V  &kp H  &kp J  &kp B  &kp U  &kp E  &kp A  &kp Y  &kp I  &kp U  &kp T  &kp FSLH  &DotDot
             >;
 
             antecedents = <
