@@ -23,7 +23,7 @@
 
         ae {
             bindings = <&kp RA(Q)>;
-            key-positions = <16 17>;
+            key-positions = <17 18>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -63,24 +63,11 @@
             layers = <0>;
         };
 
-        func {
-            bindings = <&mo 4>;
-            key-positions = <34 35>;
-            layers = <0>;
-            timeout-ms = <28>;
-        };
-
         sch {
             bindings = <&Sch>;
             key-positions = <12 13 11>;
             timeout-ms = <28>;
             layers = <0>;
-        };
-
-        bspc {
-            bindings = <&kp BSPC>;
-            key-positions = <17 18>;
-            timeout-ms = <28>;
         };
 
         v {
@@ -298,10 +285,10 @@
 
         alpha {
             bindings = <
-        &kp W          &kp G          &kp D                     &kp F                 &trans                &trans       &kp L                        &kp U                     &kp O          &kp Y
-        &lt_hmr_l 2 R  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &kp B                 &Ex          &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
-&trans  &kp K          &kp C          &kp M                     &mt_hmr_l LEFT_GUI P  &trans                &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &kp SQT        &kp FSLH       &trans
-                                      &trans                    &trans                &mt_magic LSHIFT V    &lt 3 SPACE  &trans                       &trans
+        &kp W  &kp G          &kp D                     &kp F                 &trans                &trans       &kp L                        &kp U                     &kp O          &kp Y
+        &kp R  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &kp K                 &Ex          &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &kp I
+&trans  &kp B  &kp C          &kp M                     &mt_hmr_l LEFT_GUI P  &trans                &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &kp SQT        &kp FSLH  &trans
+                              &trans                    &mo 2                 &mt_magic LSHIFT V    &lt 3 SPACE  &lt 4 BSPC                   &trans
             >;
         };
 
@@ -317,9 +304,9 @@
         num {
             bindings = <
         &trans  &trans  &kp LBKT  &kp RBKT  &trans    &trans  &kp N7    &kp N8    &kp N9  &trans
-        &trans  &kp N3  &kp N2    &kp N1    &trans    &trans  &kp N4    &kp N5    &kp N6  &trans
+        &kp N0  &kp N3  &kp N2    &kp N1    &trans    &trans  &kp N4    &kp N5    &kp N6  &trans
 &trans  &trans  &trans  &kp LPAR  &kp RPAR  &trans    &trans  &kp RBRC  &kp LBRC  &trans  &trans  &trans
-                        &trans    &trans    &kp N0    &trans  &trans    &trans
+                        &trans    &trans    &trans    &trans  &trans    &trans
             >;
         };
 
