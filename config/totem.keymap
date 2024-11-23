@@ -307,14 +307,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-
-        sticky_arrow: sticky_arrow {
-            compatible = "zmk,behavior-sticky-key";
-            label = "STICKY_ARROW";
-            bindings = <&mo>;
-            #binding-cells = <1>;
-            release-after-ms = <1000>;
-        };
     };
 
     macros {
@@ -368,20 +360,6 @@
             bindings = <&kp Q &lowU>;
             label = "QU";
         };
-
-        StickNav: LockNav {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &sticky_arrow 7>;
-            label = "LOCKNAV";
-        };
-
-        UnstickNav: Leave_Nav {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &tog 7>;
-            label = "LEAVE_NAV";
-        };
     };
 
     keymap {
@@ -416,10 +394,10 @@
 
         nav {
             bindings = <
-        &tog 5   &trans   &trans            &trans          &trans    &trans  &kp HOME        &kp END         &kp DEL       &trans
-        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &mt LALT ENTER  &trans    &trans  &StickNav LEFT  &StickNav DOWN  &StickNav UP  &StickNav RIGHT
-&trans  &trans   &trans   &trans            &kp LEFT_GUI    &trans    &trans  &trans          &kp PG_DN       &kp PG_UP     &trans           &trans
-                          &trans            &trans          &trans    &trans  &trans          &trans
+        &tog 5   &trans   &trans            &trans          &trans    &trans  &kp HOME  &kp END    &kp DEL    &trans
+        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &mt LALT ENTER  &trans    &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
+&trans  &trans   &trans   &trans            &kp LEFT_GUI    &trans    &trans  &trans    &kp PG_DN  &kp PG_UP  &trans     &trans
+                          &trans            &trans          &trans    &trans  &trans    &trans
             >;
         };
 
@@ -447,15 +425,6 @@
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        nav_sticky {
-            bindings = <
-        &tog 7           &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &UnstickNav ESC  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans           &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                 &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
