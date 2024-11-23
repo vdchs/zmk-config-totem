@@ -1,4 +1,4 @@
-# A 24 key layout that doesn't compromise on SFBs 
+# A 30 key layout that doesn't compromise on SFBs 
 This layout is based on Apsu's APTv3 layout, which I fitted onto 30 keys. 
 
 This layout is a result of boiling the layout down to 22 keys and then adding keys back in to allow for typing speeds above 100 wpm.
