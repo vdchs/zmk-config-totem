@@ -360,6 +360,13 @@
             bindings = <&kp Q &lowU>;
             label = "QU";
         };
+
+        LockNav: LockNav {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &tog 5>;
+            label = "LOCKNAV";
+        };
     };
 
     keymap {
@@ -394,10 +401,10 @@
 
         nav {
             bindings = <
-        &tog 5   &trans   &trans            &trans          &trans    &trans  &kp HOME  &kp END    &kp DEL    &trans
-        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &mt LALT ENTER  &trans    &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
-&trans  &trans   &trans   &trans            &kp LEFT_GUI    &trans    &trans  &trans    &kp PG_DN  &kp PG_UP  &trans     &trans
-                          &trans            &trans          &trans    &trans  &trans    &trans
+        &tog 5   &trans   &trans            &trans          &trans    &trans  &kp HOME       &kp END        &kp DEL      &trans
+        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &mt LALT ENTER  &trans    &trans  &LockNav LEFT  &LockNav DOWN  &LockNav UP  &LockNav RIGHT
+&trans  &trans   &trans   &trans            &kp LEFT_GUI    &trans    &trans  &trans         &kp PG_DN      &kp PG_UP    &trans          &trans
+                          &trans            &trans          &trans    &trans  &trans         &trans
             >;
         };
 
