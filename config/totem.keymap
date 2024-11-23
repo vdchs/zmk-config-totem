@@ -128,33 +128,23 @@
             #binding-cells = <0>;
             defaults = <&key_repeat>;
             bindings = <
-                       &sk LSHFT  &kp Z  &kp C  &kp V  &kp H  &kp R  &kp R  &kp U  &kp E  &kp A  &kp O  &kp I  &kp U  &kp T  &kp FSLH  &DotDot
+                       &sk LSHFT  &kp Z  &kp C  &kp V  &kp H  &kp J  &kp B  &kp U  &kp E  &kp A  &kp O  &kp I  &kp U  &kp T  &kp FSLH  &DotDot
             >;
 
             antecedents = <
-                       SPACE      T      S      D      P      B      W      E      U      O      A      Y      RA(Q)  RA(S)  TILDE     DOT
+                       SPACE      T      S      D      P      B      M      E      U      O      A      Y      RA(Q)  RA(S)  TILDE     DOT
             >;
 
             max-delay-ms = <500>;
         };
 
-        ad_b: ad_b {
+        ad_g: ad_g {
             compatible = "zmk,behavior-antecedent-morph";
-            label = "ADAPTIVE_B";
+            label = "ADAPTIVE_G";
             #binding-cells = <0>;
-            defaults = <&kp B>;
-            bindings = <&kp K>;
-            antecedents = <C>;
-            max-delay-ms = <150>;
-        };
-
-        ad_k: ad_k {
-            compatible = "zmk,behavior-antecedent-morph";
-            label = "ADAPTIVE_K";
-            #binding-cells = <0>;
-            defaults = <&kp K>;
-            bindings = <&kp B>;
-            antecedents = <C>;
+            defaults = <&kp G>;
+            bindings = <&kp R>;
+            antecedents = <W>;
             max-delay-ms = <150>;
         };
 
@@ -326,7 +316,7 @@
 
         alpha {
             bindings = <
-        &kp W   &kp G          &kp D                     &kp F                 &trans                &trans       &kp L                        &kp U                     &kp O          &kp Y
+        &kp W   &ad_g          &kp D                     &kp F                 &trans                &trans       &kp L                        &kp U                     &kp O          &kp Y
         &kp R   &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &kp K                 &Ex          &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &kp I
 &trans  &trans  &kp C          &kp M                     &mt_hmr_l LEFT_GUI P  &trans                &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &kp SQT        &kp FSLH  &trans
                                &trans                    &mo 2                 &mt_magic LSHIFT V    &lt 3 SPACE  &lt 4 BSPC                   &trans
