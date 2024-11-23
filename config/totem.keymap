@@ -3,6 +3,8 @@
 
 &mt { tapping-term-ms = <190>; };
 
+&sk { quick-release; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -116,31 +118,33 @@
             bindings = <
                        &sk LSHFT  &kp Z  &kp C  &kp V  &kp H  &kp R  &kp R  &kp U  &kp E  &kp A  &kp O  &kp I  &kp U  &kp T  &kp FSLH  &DotDot
             >;
+
             antecedents = <
                        SPACE      T      S      D      P      B      W      E      U      O      A      Y      RA(Q)  RA(S)  TILDE     DOT
             >;
+
             max-delay-ms = <500>;
         };
 
         ad_b: ad_b {
-                    compatible = "zmk,behavior-antecedent-morph";
-                    label = "ADAPTIVE_B";
-                    #binding-cells = <0>;
-                    defaults = <&kp B>;
-                    bindings = <&kp K>;
-                    antecedents = <C>;
-                    max-delay-ms = <150>;
-                };
+            compatible = "zmk,behavior-antecedent-morph";
+            label = "ADAPTIVE_B";
+            #binding-cells = <0>;
+            defaults = <&kp B>;
+            bindings = <&kp K>;
+            antecedents = <C>;
+            max-delay-ms = <150>;
+        };
 
         ad_k: ad_k {
-                    compatible = "zmk,behavior-antecedent-morph";
-                    label = "ADAPTIVE_K";
-                    #binding-cells = <0>;
-                    defaults = <&kp K>;
-                    bindings = <&kp B>;
-                    antecedents = <C>;
-                    max-delay-ms = <150>;
-                };
+            compatible = "zmk,behavior-antecedent-morph";
+            label = "ADAPTIVE_K";
+            #binding-cells = <0>;
+            defaults = <&kp K>;
+            bindings = <&kp B>;
+            antecedents = <C>;
+            max-delay-ms = <150>;
+        };
 
         mt_hmr_l: mt_hmr_l {
             compatible = "zmk,behavior-hold-tap";
