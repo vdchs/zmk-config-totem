@@ -114,10 +114,10 @@
             #binding-cells = <0>;
             defaults = <&key_repeat>;
             bindings = <
-                       &sk LSHFT  &kp Z  &kp C  &kp V  &kp H  &kp R  &kp R  &kp U  &kp E  &kp A  &kp O  &kp I  &kp U  &kp T  &kp FSLH
+                       &sk LSHFT  &kp Z  &kp C  &kp V  &kp H  &kp R  &kp R  &kp U  &kp E  &kp A  &kp O  &kp I  &kp U  &kp T  &kp FSLH  &DotDot
             >;
             antecedents = <
-                       SPACE      T      S      D      P      B      W      E      U      O      A      Y      RA(Q)  RA(S)  TILDE
+                       SPACE      T      S      D      P      B      W      E      U      O      A      Y      RA(Q)  RA(S)  TILDE     DOT
             >;
             max-delay-ms = <500>;
         };
@@ -281,6 +281,13 @@
             #binding-cells = <0>;
             bindings = <&kp Y &lowO &lowU>;
             label = "YOU";
+        };
+
+        DotDot: DotDot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOT &kp DOT>;
+            label = "DotDot";
         };
 
         Ex: Ex {
