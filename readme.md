@@ -1,19 +1,15 @@
 # A 24 key layout that doesn't compromise on SFBs 
-This layout is based on Apsu's APTv3 layout. At one point I wanted to find out how far I could push it with eliminating keys and this is where I ended up.
+This layout is based on Apsu's APTv3 layout, which I fitted onto 30 keys. 
 
-It may be a bit out there but after getting used to it it's supprisingly comfy - and insanely fun to type on. So I stuck with it.
-
-The keyboard I use it on is the Totem by Geist. Hence this firmware repo. 
-
-![image](https://github.com/user-attachments/assets/c8b34765-6975-4b02-9c34-00d0f2a1d5c7)
+This layout is a result of boiling the layout down to 22 keys and then adding keys back in to allow for typing speeds above 100 wpm.
 
 
 ## Base layer
 ```
-  g d f   l u o
-r s t h   n e a i
-k c m p   , . ' 
-      ✭   _
+w g d f           l   u o y
+r s t h   k    ex n   e a i
+b c m p           ,   . ' / 
+      num ✭     _ bsp
 ```
 
 There is a key override for `,` and `.` in place to convert `<>` into an inroll.
@@ -26,18 +22,16 @@ Instead, I shifted the layout towards combos using 2 neighbouring keys. There ar
 Pressing both thumb keys together accesses the function layer.
 
 ```
-  •j•q•     •  •ü  •
-•x•w•b•     •ex•bsp•y•
-  •z•v•     •ä •/  •
-      • fun •
+  •ß•q•     • •ü•
+•x•j•v•     • •ä• •
+  •z• •     • •/ •
+      •     •
 ```
-For German specific letters `ö` and `ß` I use diagonal 2 key combos. I don't type German very often, but I like to keep them under my fingertips just in case. 
-In addition to these 2 key combos, there are a number of 3 key combos that simulate rolls, for example to type `you` or `sch`.
 
 ## Magic key ✭
 The key labeled ✭ in the base layer is a magic key. Its output changes based on the key that was pressed before. It's used to decrease the number of SFBs in the layout significantly, especially those that were introduced by the combo keys.
 
-It covers bigrams like `mb`, `eu` or `dv`. But also key repeats like `ll` or `rr`. It functions as some sort of "get out of jail free card", where every time pressing the next key seems uncomfortable, you can press the magic key instead.
+It covers bigrams like `dv`, `eu` or `br`. But also key repeats like `ll` or `rr`. It functions as some sort of "get out of jail free card", where every time pressing the next key seems uncomfortable, you can press the magic key instead.
 
 With the magic key on a thumb this layout manages to signicantly keep the number of SFBs very low despite the heavy use of combos.
 
@@ -47,10 +41,10 @@ Mods and layers are accessed via HRMs. To allow for fast natural typing while ke
 The mods stay constistent across the fun and nav layers as well.
 
 ```
-    •   •   •      •   •   •
-num sym ctl alt    alt ctl sym num
-    •   •   gui    gui •   •
-            sft    nav
+   •   •   •      •   •   •   •
+•  sym ctl alt    alt ctl sym •
+   •   •   gui    gui •   •   •
+           sft    nav
 ```
 
 ## The Num layer
@@ -59,9 +53,8 @@ The number layer uses a numpad layer, but the bottom row of the numpad is shifte
 This layer also houses parentheses. These are positioned in such a way that they favor inrolls instead of the usual outrolls
 ```
     [ ]   7 8 9
-  3 2 1   4 5 6
+0 3 2 1   4 5 6
     ( )   } {
-      0
 ```
 
 ## The sym layer
