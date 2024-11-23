@@ -313,7 +313,7 @@
             label = "SL_LONG";
             bindings = <&mo>;
             #binding-cells = <1>;
-            release-after-ms = <5000>;
+            release-after-ms = <3000>;
             ignore-modifiers;
         };
     };
@@ -373,7 +373,7 @@
         StickNav: StickNav {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &sl_long 7>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &sl_long 5>;
             label = "STICKNAV";
         };
     };
@@ -443,15 +443,6 @@
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
-
-        nav_sticky {
-            bindings = <
-        &tog 7  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
     };
 
     conditional_layers {
@@ -464,11 +455,6 @@
 
         hold_nav {
             if-layers = <6>;
-            then-layer = <3>;
-        };
-
-        stick_nav {
-            if-layers = <7>;
             then-layer = <3>;
         };
     };
