@@ -95,12 +95,17 @@
 
         ex {
             bindings = <&Ex>;
-            key-positions = <6 7>;
+            key-positions = <16 17>;
         };
 
         fslh {
             bindings = <&kp FSLH>;
             key-positions = <28 29>;
+        };
+
+        you {
+            bindings = <&You>;
+            key-positions = <17 18 19>;
         };
     };
 
@@ -321,6 +326,13 @@
             #binding-cells = <0>;
             bindings = <&kp E &lowX>;
             label = "EX";
+        };
+
+        You: You {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &lowO &lowU>;
+            label = "YOU";
         };
     };
 
