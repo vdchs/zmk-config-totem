@@ -62,50 +62,69 @@
             bindings = <&kp V>;
             key-positions = <23 24>;
             timeout-ms = <28>;
+            layers = <0>;
         };
 
         b {
             bindings = <&kp B>;
             key-positions = <12 13>;
             timeout-ms = <28>;
+            layers = <0>;
         };
 
         ck {
             bindings = <&Ck>;
             key-positions = <22 23 24>;
             timeout-ms = <28>;
+            layers = <0>;
         };
 
         k {
             bindings = <&kp K>;
             key-positions = <2 3>;
             timeout-ms = <28>;
+            layers = <0>;
         };
 
         q {
             bindings = <&kp Q>;
             key-positions = <2 1>;
+            layers = <0>;
         };
 
         x {
             bindings = <&kp X>;
             key-positions = <10 11>;
             timeout-ms = <28>;
+            layers = <0>;
         };
 
         ex {
             bindings = <&Ex>;
             key-positions = <16 17>;
+            timeout-ms = <28>;
+            layers = <0>;
         };
 
         fslh {
             bindings = <&kp FSLH>;
             key-positions = <28 29>;
+            timeout-ms = <28>;
+            layers = <0>;
         };
 
         you {
             bindings = <&You>;
             key-positions = <17 18 19>;
+            layers = <0>;
+            timeout-ms = <28>;
+        };
+
+        qu {
+            bindings = <&Qu>;
+            key-positions = <1 2 3>;
+            layers = <0>;
+            timeout-ms = <28>;
         };
     };
 
@@ -333,6 +352,13 @@
             #binding-cells = <0>;
             bindings = <&kp Y &lowO &lowU>;
             label = "YOU";
+        };
+
+        Qu: Qu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &lowU>;
+            label = "QU";
         };
     };
 
