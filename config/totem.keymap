@@ -11,7 +11,7 @@
 
         sz {
             bindings = <&kp RA(S)>;
-            key-positions = <1 2>;
+            key-positions = <1 12>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -40,13 +40,6 @@
         j {
             bindings = <&kp J>;
             key-positions = <11 12>;
-            timeout-ms = <28>;
-            layers = <0>;
-        };
-
-        q {
-            bindings = <&kp Q>;
-            key-positions = <3 2>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -89,9 +82,9 @@
             timeout-ms = <28>;
         };
 
-        qu {
-            bindings = <&Qu>;
-            key-positions = <6 7>;
+        q {
+            bindings = <&kp Q>;
+            key-positions = <2 1>;
         };
 
         x {
@@ -102,7 +95,7 @@
 
         ex {
             bindings = <&Ex>;
-            key-positions = <16 17>;
+            key-positions = <6 7>;
         };
 
         fslh {
@@ -321,13 +314,6 @@
             #binding-cells = <0>;
             bindings = <&kp C &kp K>;
             label = "CK";
-        };
-
-        Qu: Qu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Q &lowU>;
-            label = "QU";
         };
 
         Ex: Ex {
