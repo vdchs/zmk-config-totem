@@ -129,16 +129,6 @@
     };
 
     behaviors {
-        mt_hp: mt_hp {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_HoldPreferred";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <190>;
-            quick-tap-ms = <150>;
-        };
-
         mt_magic: mt_magic {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_MAGIC";
@@ -307,25 +297,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-
-        sl_long: sl_long {
-            compatible = "zmk,behavior-sticky-key";
-            label = "SL_LONG";
-            bindings = <&mo>;
-            #binding-cells = <1>;
-            release-after-ms = <3000>;
-            ignore-modifiers;
-        };
-
-        mt_stick_nav: mt_stick_nav {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_STICK_NAV";
-            bindings = <&kp>, <&StickNav>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <190>;
-            flavor = "tap-preferred";
-        };
     };
 
     macros {
@@ -379,13 +350,6 @@
             bindings = <&kp Q &lowU>;
             label = "QU";
         };
-
-        StickNav: StickNav {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &sl_long 5>;
-            label = "STICKNAV";
-        };
     };
 
     keymap {
@@ -420,10 +384,10 @@
 
         nav {
             bindings = <
-        &trans   &trans   &trans            &trans          &trans    &trans  &kp HOME                 &kp END                  &kp DEL              &trans
-        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &mt LALT ENTER  &trans    &trans  &mt_stick_nav LEFT LEFT  &mt_stick_nav DOWN DOWN  &mt_stick_nav UP UP  &mt_stick_nav RIGHT RIGHT
-&trans  &trans   &trans   &trans            &kp LEFT_GUI    &trans    &trans  &trans                   &kp PG_DN                &kp PG_UP            &trans                     &trans
-                          &trans            &trans          &trans    &trans  &trans                   &trans
+        &tog 5   &trans   &trans            &trans          &trans    &trans  &kp HOME  &kp END    &kp DEL    &trans
+        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &mt LALT ENTER  &trans    &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
+&trans  &trans   &trans   &trans            &kp LEFT_GUI    &trans    &trans  &trans    &kp PG_DN  &kp PG_UP  &trans     &trans
+                          &trans            &trans          &trans    &trans  &trans    &trans
             >;
         };
 
@@ -438,10 +402,10 @@
 
         nav_tog {
             bindings = <
-        &tog 5  &trans  &trans  &trans  &trans    &trans  &trans                   &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans                   &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                   &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &mt_stick_nav BSPC BSPC  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
