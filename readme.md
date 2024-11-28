@@ -1,7 +1,7 @@
 # A 26 key layout that doesn't compromise on SFBs 
-This layout is based on Apsu's APTv3 layout. At one point I wanted to find out how far I could push it with eliminating keys and this is where I ended up.
+This layout was originally on Apsu's APTv3 layout. At one point I wanted to find out how far I could push it with eliminating keys and this is where I ended up. 
 
-It may be a bit out there but after getting used to it it's supprisingly comfy - and insanely fun to type on. So I stuck with it.
+I also took some inspiration from Hands Down Promethium and moved `R` to a thumb key.
 
 The keyboard I use it on is the Totem by Geist. Hence this firmware repo. 
 
@@ -11,9 +11,9 @@ The keyboard I use it on is the Totem by Geist. Hence this firmware repo.
 ## Base layer
 ```
 w g d f         l u o y
-r s t h         n e a i
+b s t h         n e a i
   c m p         , . ' 
-      num ✭   _ bsp
+      ✭ r     _ ✭
 ```
 
 There is a key override for `,` and `.` in place to convert `<>` into an inroll.
@@ -49,7 +49,7 @@ The mods stay constistent across the fun and nav layers as well.
 •  •   •   •      •   •   •   •
 •  sym ctl alt    alt ctl sym •
 •  •   •   gui    gui •   •   •
-           sft    nav fun
+       num sft    nav fun
 ```
 
 ## The Num layer
@@ -77,8 +77,8 @@ A thing to point out is that the keys for `-` and `=` produce `->` and `=>` on h
 ...is kept basic. I am a Vim user so I don't have the need for extensive shortcut binds.
 
 ```
-                     hom end del
- esc tab     ret     ←   ↓   ↑   →
+     tab             hom end del
+ esc bsp     ret     ←   ↓   ↑   →
                          pgd pgu
 ```
 
