@@ -384,7 +384,7 @@
         &kp W   &ad_g          &kp D                     &kp F                 &trans                   &trans       &kp L                        &kp U                     &kp O          &kp Y
         &kp B   &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &trans                   &trans       &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &kp I
 &trans  &trans  &kp C          &kp M                     &mt_hmr_l LEFT_GUI P  &trans                   &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &kp SQT        &trans  &trans
-                               &trans                    &lt 2 LS(R)           &mt_holdpref LSHIFT R    &lt 3 SPACE  &lt_magic 4 0                &trans
+                               &trans                    &lt_magic 2 0         &mt_holdpref LSHIFT R    &lt 3 SPACE  &lt_magic 4 0                &trans
             >;
         };
 
@@ -408,9 +408,9 @@
 
         nav {
             bindings = <
-        &kp ESC   &trans   &trans            &trans          &trans    &trans  &kp HOME  &kp END    &kp DEL    &trans
-        &kp BSPC  &kp TAB  &kp LEFT_CONTROL  &mt LALT ENTER  &trans    &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
-&trans  &trans    &trans   &trans            &kp LEFT_GUI    &trans    &trans  &trans    &kp PG_DN  &kp PG_UP  &trans     &trans
+        &trans   &kp TAB   &trans            &trans          &trans    &trans  &kp HOME  &kp END    &kp DEL    &trans
+        &kp ESC  &kp BSPC  &kp LEFT_CONTROL  &mt LALT ENTER  &trans    &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
+&trans  &trans   &trans    &trans            &kp LEFT_GUI    &trans    &trans  &trans    &kp PG_DN  &kp PG_UP  &trans     &trans
                            &trans            &trans          &trans    &trans  &trans    &trans
             >;
         };
