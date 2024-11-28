@@ -314,6 +314,26 @@
             #binding-cells = <2>;
             tapping-term-ms = <190>;
         };
+
+        Space_R: Space_R {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SPACE_R";
+            bindings = <&kp SPACE>, <&kp LS(R)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        lt_space_r: lt_space_r {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_SPACE_R";
+            bindings = <&mo>, <&Space_R>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <150>;
+        };
     };
 
     macros {
@@ -381,10 +401,10 @@
 
         alpha {
             bindings = <
-        &kp W   &ad_g          &kp D                     &kp F                 &trans                   &trans       &kp L                        &kp U                     &kp O          &kp Y
-        &kp B   &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &trans                   &trans       &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &kp I
-&trans  &trans  &kp C          &kp M                     &mt_hmr_l LEFT_GUI P  &trans                   &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &kp SQT        &trans  &trans
-                               &trans                    &lt_magic 2 0         &mt_holdpref LSHIFT R    &lt 3 SPACE  &lt_magic 4 0                &trans
+        &kp W   &ad_g          &kp D                     &kp F                 &trans                   &trans           &kp L                        &kp U                     &kp O          &kp Y
+        &kp B   &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &trans                   &trans           &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &kp I
+&trans  &trans  &kp C          &kp M                     &mt_hmr_l LEFT_GUI P  &trans                   &trans           &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &kp SQT        &trans  &trans
+                               &trans                    &lt_magic 2 0         &mt_holdpref LSHIFT R    &lt_space_r 3 0  &lt_magic 4 0                &trans
             >;
         };
 
