@@ -65,13 +65,6 @@
             layers = <0>;
         };
 
-        b {
-            bindings = <&kp B>;
-            key-positions = <12 13>;
-            timeout-ms = <28>;
-            layers = <0>;
-        };
-
         ck {
             bindings = <&Ck>;
             key-positions = <22 23 24>;
@@ -81,7 +74,7 @@
 
         k {
             bindings = <&kp K>;
-            key-positions = <2 3>;
+            key-positions = <12 13>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -302,6 +295,25 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        mt_holdpref: mt_holdpref {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_HOLDPREF";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+            quick-tap-ms = <150>;
+        };
+
+        lt_magic: lt_magic {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_MAGIC";
+            bindings = <&mo>, <&magic>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+        };
     };
 
     macros {
@@ -369,10 +381,10 @@
 
         alpha {
             bindings = <
-        &kp W   &ad_g          &kp D                     &kp F                 &trans                &trans       &kp L                        &kp U                     &kp O          &kp Y
-        &kp R   &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &trans                &trans       &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &kp I
-&trans  &trans  &kp C          &kp M                     &mt_hmr_l LEFT_GUI P  &trans                &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &kp SQT        &trans  &trans
-                               &trans                    &mo 2                 &mt_magic LSHIFT V    &lt 6 SPACE  &lt 4 BSPC                   &trans
+        &kp W   &ad_g          &kp D                     &kp F                 &trans                   &trans       &kp L                        &kp U                     &kp O          &kp Y
+        &kp B   &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &trans                   &trans       &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &kp I
+&trans  &trans  &kp C          &kp M                     &mt_hmr_l LEFT_GUI P  &trans                   &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &kp SQT        &trans  &trans
+                               &trans                    &lt 2 LS(R)           &mt_holdpref LSHIFT R    &lt 6 SPACE  &lt_magic 4 0                &trans
             >;
         };
 
