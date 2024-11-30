@@ -39,7 +39,7 @@
 
         j {
             bindings = <&kp J>;
-            key-positions = <11 12>;
+            key-positions = <1 2>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -60,14 +60,14 @@
 
         k {
             bindings = <&kp K>;
-            key-positions = <2 3>;
+            key-positions = <23 24>;
             timeout-ms = <28>;
             layers = <0>;
         };
 
         q {
             bindings = <&kp Q>;
-            key-positions = <2 1>;
+            key-positions = <2 3>;
             layers = <0>;
         };
 
@@ -80,7 +80,7 @@
 
         fslh {
             bindings = <&kp FSLH>;
-            key-positions = <28 29>;
+            key-positions = <9 8>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -102,6 +102,20 @@
         ck {
             bindings = <&Ck>;
             key-positions = <11 12 13>;
+            timeout-ms = <28>;
+            layers = <0>;
+        };
+
+        v {
+            bindings = <&kp V>;
+            key-positions = <11 12>;
+            timeout-ms = <28>;
+            layers = <0>;
+        };
+
+        apos {
+            bindings = <&kp APOS>;
+            key-positions = <19 18>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -324,17 +338,17 @@
             bindings = <
         &kp W   &kp G          &kp D                     &kp F                 &trans                   &trans       &kp L                        &kp U                     &kp O          &kp Y
         &kp C   &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &trans                   &trans       &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &kp I
-&trans  &trans  &ad_v          &kp M                     &mt_hmr_l LEFT_GUI P  &trans                   &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &kp SQT        &trans  &trans
+&trans  &trans  &trans         &kp M                     &mt_hmr_l LEFT_GUI P  &trans                   &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &trans         &trans  &trans
                                &trans                    &lt_magic 2 0         &mt_holdpref LSHIFT R    &lt 3 SPACE  &lt_magic_R 4 0              &trans
             >;
         };
 
         sym {
             bindings = <
-        &trans    &kp AT     &kp PIPE   &kp AMPS  &trans    &trans  &trans                   &kp BSLH                 &kp TILDE  &trans
-        &kp HASH  &kp DLLR   &kp STAR   &kp EXCL  &trans    &trans  &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON  &kp SEMI
-&trans  &trans    &kp CARET  &kp PRCNT  &trans    &trans    &trans  &kp UNDER                &kp PLUS                 &kp GRAVE  &trans    &trans
-                             &trans     &trans    &trans    &trans  &trans                   &trans
+        &trans    &kp AT    &kp PIPE   &kp AMPS   &trans    &trans  &trans                   &kp BSLH                 &kp GRAVE  &kp TILDE
+        &kp HASH  &kp DLLR  &kp STAR   &kp EXCL   &trans    &trans  &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON  &kp SEMI
+&trans  &trans    &trans    &kp CARET  &kp PRCNT  &trans    &trans  &kp UNDER                &kp PLUS                 &trans     &trans     &trans
+                            &trans     &trans     &trans    &trans  &trans                   &trans
             >;
         };
 
@@ -349,10 +363,10 @@
 
         nav {
             bindings = <
-        &trans   &kp TAB   &trans            &trans          &trans    &trans  &kp HOME  &kp END    &kp DEL    &trans
-        &kp ESC  &kp BSPC  &kp LEFT_CONTROL  &mt LALT ENTER  &trans    &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
-&trans  &trans   &trans    &trans            &kp LEFT_GUI    &trans    &trans  &trans    &kp PG_DN  &kp PG_UP  &trans     &trans
-                           &trans            &trans          &trans    &trans  &trans    &trans
+        &trans   &kp TAB   &trans            &trans          &trans    &trans  &kp HOME   &kp END    &kp DEL  &trans
+        &kp ESC  &kp BSPC  &kp LEFT_CONTROL  &mt LALT ENTER  &trans    &trans  &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT
+&trans  &trans   &trans    &trans            &kp LEFT_GUI    &trans    &trans  &kp PG_DN  &kp PG_UP  &trans   &trans     &trans
+                           &trans            &trans          &trans    &trans  &trans     &trans
             >;
         };
 
