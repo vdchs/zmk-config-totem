@@ -101,7 +101,7 @@
 
         ck {
             bindings = <&Ck>;
-            key-positions = <22 23 24>;
+            key-positions = <11 12 13>;
             timeout-ms = <28>;
             layers = <0>;
         };
