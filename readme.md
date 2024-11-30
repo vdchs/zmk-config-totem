@@ -8,8 +8,8 @@ The keyboard I use it on is the Totem by Geist. Hence this firmware repo.
 ## Base layer
 ```
 w g d f         l u o y
-b s t h         n e a i
-  c m p         , . ' 
+c s t h         n e a i
+  b m p         , . ' 
       ✭ r     _ ✭
 ```
 
@@ -25,9 +25,9 @@ Instead, I shifted the layout towards combos using 2 neighbouring keys. There ar
 Pressing both thumb keys together accesses the function layer.
 
 ```
-  •q•k•     •  •ü•
-•x•j•b•     •ex• •y•
-  •z•v•     •ä •/•
+  •q• •     •  •ü•
+•x•j•v•     •ex•ä•y•
+  •z•k•     •  •/•
 ```
 For German specific letters `ö` and `ß` I use diagonal 2 key combos. I don't type German very often, but I like to keep them under my fingertips just in case. 
 In addition to these 2 key combos, there are a number of 3 key combos that simulate rolls, for example to type `you` or `sch`.
@@ -35,7 +35,7 @@ In addition to these 2 key combos, there are a number of 3 key combos that simul
 ## Magic key ✭
 The key labeled ✭ in the base layer is a magic key. Its output changes based on the key that was pressed before. It's used to decrease the number of SFBs in the layout significantly, especially those that were introduced by the combo keys.
 
-It covers bigrams like `mb`, `eu` or `dv`. But also key repeats like `ll` or `rr`. It functions as some sort of "get out of jail free card", where every time pressing the next key seems uncomfortable, you can press the magic key instead.
+It covers bigrams like `eu` or `dv`. But also key repeats like `ll` or `rr`. It functions as some sort of "get out of jail free card", where every time pressing the next key seems uncomfortable, you can press the magic key instead.
 
 With the magic key on a thumb this layout manages to signicantly keep the number of SFBs very low despite the heavy use of combos.
 
