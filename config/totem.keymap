@@ -11,7 +11,7 @@
 
         sz {
             bindings = <&kp RA(S)>;
-            key-positions = <3 4>;
+            key-positions = <1 12>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -46,7 +46,7 @@
 
         z {
             bindings = <&kp Z>;
-            key-positions = <22 23>;
+            key-positions = <2 3>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -67,7 +67,7 @@
 
         q {
             bindings = <&kp Q>;
-            key-positions = <2 3>;
+            key-positions = <0 1>;
             layers = <0>;
         };
 
