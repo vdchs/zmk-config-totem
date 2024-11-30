@@ -25,7 +25,7 @@
 
         ae {
             bindings = <&kp RA(Q)>;
-            key-positions = <17 18>;
+            key-positions = <27 28>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -78,13 +78,6 @@
             layers = <0>;
         };
 
-        fslh {
-            bindings = <&kp FSLH>;
-            key-positions = <9 8>;
-            timeout-ms = <28>;
-            layers = <0>;
-        };
-
         ex {
             bindings = <&Ex>;
             key-positions = <16 17>;
@@ -115,7 +108,7 @@
 
         apos {
             bindings = <&kp APOS>;
-            key-positions = <19 18>;
+            key-positions = <18 17>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -345,10 +338,10 @@
 
         sym {
             bindings = <
-        &trans    &kp AT    &kp PIPE   &kp AMPS   &trans    &trans  &trans                   &kp BSLH                 &kp GRAVE  &kp TILDE
-        &kp HASH  &kp DLLR  &kp STAR   &kp EXCL   &trans    &trans  &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON  &kp SEMI
-&trans  &trans    &trans    &kp CARET  &kp PRCNT  &trans    &trans  &kp UNDER                &kp PLUS                 &trans     &trans     &trans
-                            &trans     &trans     &trans    &trans  &trans                   &trans
+        &kp PRCNT  &kp AT    &kp PIPE   &kp AMPS  &trans    &trans  &kp CARET                &kp BSLH                 &kp GRAVE  &kp TILDE
+        &kp HASH   &kp DLLR  &kp STAR   &kp EXCL  &trans    &trans  &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON  &kp SEMI
+&trans  &trans     &trans    &kp QMARK  &kp FSLH  &trans    &trans  &kp UNDER                &kp PLUS                 &trans     &trans     &trans
+                             &trans     &trans    &trans    &trans  &trans                   &trans
             >;
         };
 
