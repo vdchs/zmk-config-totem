@@ -1,5 +1,5 @@
 # A 26 key layout that doesn't compromise on SFBs 
-This layout was originally on Apsu's APTv3 layout. At one point I wanted to find out how far I could push it with eliminating keys and this is where I ended up. 
+This layout was originally based on Apsu's APTv3 layout. At one point I wanted to find out how far I could push it with eliminating keys and this is where I ended up. 
 
 I also took some inspiration from Hands Down Promethium and moved `R` to a thumb key.
 
