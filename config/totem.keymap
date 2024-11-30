@@ -354,10 +354,10 @@
 
         num {
             bindings = <
-        &kp LBKT  &kp RBKT  &kp LPAR  &kp RPAR  &trans    &trans  &kp N7    &kp N8    &kp N9  &trans
-        &kp N0    &kp N3    &kp N2    &kp N1    &trans    &trans  &kp N4    &kp N5    &kp N6  &trans
-&trans  &trans    &trans    &trans    &trans    &trans    &trans  &kp RBRC  &kp LBRC  &trans  &trans  &trans
-                            &trans    &trans    &trans    &trans  &trans    &trans
+        &trans  &trans  &kp LBKT  &kp RBKT  &trans    &trans  &kp N7    &kp N8    &kp N9  &trans
+        &kp N0  &kp N3  &kp N2    &kp N1    &trans    &trans  &kp N4    &kp N5    &kp N6  &trans
+&trans  &trans  &trans  &kp LPAR  &kp LPAR  &trans    &trans  &kp RBRC  &kp LBRC  &trans  &trans  &trans
+                        &trans    &trans    &trans    &trans  &trans    &trans
             >;
         };
 
