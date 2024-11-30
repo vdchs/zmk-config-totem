@@ -11,7 +11,7 @@
 
         sz {
             bindings = <&kp RA(S)>;
-            key-positions = <1 12>;
+            key-positions = <3 4>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -103,11 +103,11 @@
             #binding-cells = <0>;
             defaults = <&key_repeat>;
             bindings = <
-                       &sk LSHFT  &kp Z  &kp C  &kp V  &kp H  &kp J  &kp B  &kp U  &kp E  &kp Y  &kp I  &kp U  &kp T  &kp FSLH  &DotDot
+                       &sk LSHFT  &kp Z  &kp V  &kp H  &kp J  &kp E  &kp Y  &kp I  &kp U  &kp T  &kp FSLH  &DotDot
             >;
 
             antecedents = <
-                       SPACE      T      S      D      P      B      M      E      U      A      Y      RA(Q)  RA(S)  TILDE     DOT
+                       SPACE      T      D      P      B      U      A      Y      RA(Q)  RA(S)  TILDE     DOT
             >;
 
             max-delay-ms = <500>;
