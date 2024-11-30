@@ -60,21 +60,14 @@
 
         v {
             bindings = <&kp V>;
-            key-positions = <23 24>;
-            timeout-ms = <28>;
-            layers = <0>;
-        };
-
-        ck {
-            bindings = <&Ck>;
-            key-positions = <22 23 24>;
+            key-positions = <12 13>;
             timeout-ms = <28>;
             layers = <0>;
         };
 
         k {
             bindings = <&kp K>;
-            key-positions = <12 13>;
+            key-positions = <23 24>;
             timeout-ms = <28>;
             layers = <0>;
         };
