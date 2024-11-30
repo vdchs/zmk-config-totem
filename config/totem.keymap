@@ -51,13 +51,6 @@
             layers = <0>;
         };
 
-        sch {
-            bindings = <&Sch>;
-            key-positions = <12 13 11>;
-            timeout-ms = <28>;
-            layers = <0>;
-        };
-
         v {
             bindings = <&kp V>;
             key-positions = <12 13>;
@@ -85,25 +78,11 @@
             layers = <0>;
         };
 
-        ex {
-            bindings = <&Ex>;
-            key-positions = <16 17>;
-            timeout-ms = <28>;
-            layers = <0>;
-        };
-
         fslh {
             bindings = <&kp FSLH>;
             key-positions = <28 29>;
             timeout-ms = <28>;
             layers = <0>;
-        };
-
-        qu {
-            bindings = <&Qu>;
-            key-positions = <1 2 3>;
-            layers = <0>;
-            timeout-ms = <28>;
         };
     };
 
