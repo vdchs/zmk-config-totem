@@ -9,13 +9,13 @@ The keyboard I use it on is the Totem by Geist. Hence this firmware repo.
 ```
 w g d f         l u o y
 c s t h         n e a i
-  b m p         , . ' 
+  v m p         , . ' 
       ✭ r     _ ✭
 ```
 
-There is a key override for `,` and `.` in place to convert `<>` into an inroll.
-
-Capital `R` is taken care of by a key override as well, which I can type with `Shift-Space`.
+There is a key override for `,` and `.` in place to convert `<>` into an inroll.\
+Capital `R` is taken care of by a key override as well, which I can type with `Shift-Space`.\
+`v` is adaptive and becomes `b` after `m` to allow for `mb` rolls.
 
 ## Combo layer
 With so few keys, not all keys fit into the base layer. There are basically 2 different solutions. I tried a secondary alpha layer but found it limiting my typing speed.
@@ -25,9 +25,9 @@ Instead, I shifted the layout towards combos using 2 neighbouring keys. There ar
 Pressing both thumb keys together accesses the function layer.
 
 ```
-  •q• •     •  •ü•
+  •q•k•     •  •ü•
 •x•j•v•     •ex•ä•y•
-  •z•k•     •  •/•
+  •z• •     •  •/•
 ```
 For German specific letters `ö` and `ß` I use diagonal 2 key combos. I don't type German very often, but I like to keep them under my fingertips just in case. 
 In addition to these 2 key combos, there are a number of 3 key combos that simulate rolls, for example to type `you` or `sch`.
