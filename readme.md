@@ -24,9 +24,9 @@ Instead, I shifted the layout towards combos using 2 neighbouring keys. There ar
 Pressing both thumb keys together accesses the function layer.
 
 ```
-•q•j•k•        •  •ü•/•
-•x•v•b•        •ex•ä•'•
-    •k•        •  •
+•q•j•k•        •  •ü• •
+•x•v•b•        •ex•'• •
+    •k•        •ä •
       • •    • •
 ```
 - For German specific letters `ö` and `ß` I use diagonal 2 key combos. I don't type German very often, but I like to keep them under my fingertips just in case. 
@@ -67,9 +67,9 @@ This layer is a hot pot of trying to put the most used symbols on the home row w
 A thing to point out is that the keys for `-` and `=` produce `->` and `=>` on hold for convenience.
 
 ```
-  @ | &      \ ` ~
+% @ | &    ^ \ ` ~
 # $ * !    - = : ;
-    ^ %    _ + 
+    ? /    _ + 
 ```
 
 ## The nav layer
