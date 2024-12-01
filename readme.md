@@ -41,8 +41,8 @@ With the magic key on a thumb this layout manages to signicantly keep the number
 
 Full mapping of magic key
 ```
-Anteceding:  Spc        T  D  P  B  U  A  Y  M  Ä  ß  .
-Output:      StickySft  Z  V  H  J  E  Y  I  B  U  T  ..
+Anteceding:  Spc     T  D  P  B  U  A  Y  M  Ä  ß  .
+Output:      OS-Sft  Z  V  H  J  E  Y  I  B  U  T  ..
 ```
 
 ## Adaptive keys
