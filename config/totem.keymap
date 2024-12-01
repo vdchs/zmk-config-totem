@@ -131,10 +131,10 @@
             #binding-cells = <0>;
             defaults = <&key_repeat>;
             antecedents = <
-                SPACE      M      T      P      B      U      A      Y      M      RA(Q)  RA(S)  DOT
+                SPACE      D      T      P      B      U      A      Y      M      RA(Q)  RA(S)  DOT
             >;
             bindings = <
-                &sk LSHFT  &kp D  &kp Z  &kp H  &kp J  &kp E  &kp Y  &kp I  &kp B  &kp U  &kp T  &DotDot
+                &sk LSHFT  &kp M  &kp Z  &kp H  &kp J  &kp E  &kp Y  &kp I  &kp B  &kp U  &kp T  &DotDot
             >;
 
             max-delay-ms = <500>;
