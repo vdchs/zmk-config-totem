@@ -131,11 +131,10 @@
             #binding-cells = <0>;
             defaults = <&key_repeat>;
             bindings = <
-                       &sk LSHFT  &kp Z  &kp V  &kp H  &kp J  &kp E  &kp Y  &kp I  &kp B  &kp U  &kp T  &kp FSLH  &DotDot
+                &sk LSHFT  &kp Z  &kp V  &kp H  &kp J  &kp E  &kp Y  &kp I  &kp B  &kp U  &kp T  &kp FSLH  &DotDot
             >;
-
             antecedents = <
-                       SPACE      T      D      P      B      U      A      Y      M      RA(Q)  RA(S)  TILDE     DOT
+                SPACE      T      D      P      B      U      A      Y      M      RA(Q)  RA(S)  TILDE     DOT
             >;
 
             max-delay-ms = <500>;
@@ -146,8 +145,12 @@
             label = "ADAPTIVE_C";
             #binding-cells = <0>;
             defaults = <&kp C>;
-            bindings = <&kp S  &kp V>;
-            antecedents = <G  B>;
+            bindings = <
+                &kp S  &kp V  &kp S
+            >;
+            antecedents = <
+                G      B      K
+            >;
             max-delay-ms = <150>;
         };
 
