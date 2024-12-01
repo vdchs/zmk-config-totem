@@ -39,6 +39,11 @@ It covers bigrams like `ue` or `dv`. But also key repeats like `ll` or `rr`. It 
 
 With the magic key on a thumb this layout manages to signicantly keep the number of SFBs very low despite the heavy use of combos.
 
+## Adaptive keys
+The magic key is not the only adaptive key in the layout.
+
+I use adaptive keys to favour alternate ways to type common same finger bigrams in favour of very uncommon ones. For example, typing `gc` produces `gs` and `bc` produces `bv`.
+
 ## Home Row Mods
 Mods and layers are accessed via HRMs. To allow for fast natural typing while keeping accidental triggers to a minimum, the `tapping-term` is kept on the high side, but `hold-trigger-key-positions` are enabled, so that accessing the mods are usually pressed on the opposite side of the board from the key they are pressed with.
 
