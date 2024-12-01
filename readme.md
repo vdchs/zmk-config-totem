@@ -44,8 +44,8 @@ With the magic key on a thumb this layout manages to signicantly keep the number
 
 Full mapping of magic key
 ```
-Anteceding:  Spc     T  D  P  B  U  A  Y  M  Ä  ß  .
-Output:      OS-Sft  Z  M  H  J  E  Y  I  B  U  T  ..
+Anteceding:  Spc     T  D  B  U  A  Y  M  Ä  ß  .
+Output:      OS-Sft  Z  M  J  E  Y  I  B  U  T  ..
 ```
 
 ## Adaptive keys
@@ -53,8 +53,8 @@ The magic key is not the only adaptive key in the layout. I use adaptive keys to
 
 Full map of adaptive keys:
 ```
-Input:     kc  gc  bc  dc
-Output:    ks  gs  bv  dv
+Input:     kc  gc  bc  dc  pc
+Output:    ks  gs  bv  dv  ph
 ```
 
 ## Home Row Mods
