@@ -3,7 +3,10 @@ This layout was originally based on Apsu's APTv3 layout. At one point I wanted t
 
 I also took some inspiration from Hands Down Promethium and moved `R` to a thumb key.
 
-The keyboard I use it on is the Totem by Geist. Hence this firmware repo. 
+The keyboard I use it on is the Totem by Geist. Hence this firmware repo.
+
+![grafik](https://github.com/user-attachments/assets/8f6697cc-962d-4db7-9bfb-b73b770c19ad)
+
 
 ## Base layer
 ```
