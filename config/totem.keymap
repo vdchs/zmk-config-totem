@@ -130,11 +130,11 @@
             label = "MAGIC";
             #binding-cells = <0>;
             defaults = <&key_repeat>;
-            bindings = <
-                &sk LSHFT  &kp Z  &kp V  &kp H  &kp J  &kp E  &kp Y  &kp I  &kp B  &kp U  &kp T  &DotDot
-            >;
             antecedents = <
-                SPACE      T      D      P      B      U      A      Y      M      RA(Q)  RA(S)  DOT
+                SPACE      M      T      P      B      U      A      Y      M      RA(Q)  RA(S)  DOT
+            >;
+            bindings = <
+                &sk LSHFT  &kp D  &kp Z  &kp H  &kp J  &kp E  &kp Y  &kp I  &kp B  &kp U  &kp T  &DotDot
             >;
 
             max-delay-ms = <500>;
@@ -145,11 +145,11 @@
             label = "ADAPTIVE_C";
             #binding-cells = <0>;
             defaults = <&kp C>;
-            bindings = <
-                &kp S  &kp V  &kp S
-            >;
             antecedents = <
-                G      B      K
+                G      B      K      D
+            >;
+            bindings = <
+                &kp S  &kp V  &kp S  &kp V
             >;
             max-delay-ms = <150>;
         };

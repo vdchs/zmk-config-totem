@@ -45,16 +45,16 @@ With the magic key on a thumb this layout manages to signicantly keep the number
 Full mapping of magic key
 ```
 Anteceding:  Spc     T  D  P  B  U  A  Y  M  Ä  ß  .
-Output:      OS-Sft  Z  V  H  J  E  Y  I  B  U  T  ..
+Output:      OS-Sft  Z  M  H  J  E  Y  I  B  U  T  ..
 ```
 
 ## Adaptive keys
-The magic key is not the only adaptive key in the layout. I use adaptive keys to favour alternate ways to type common same finger bigrams in favour of very uncommon ones.
+The magic key is not the only adaptive key in the layout. I use adaptive keys to favour alternate ways to type common same finger bigrams in favour of very uncommon ones. 
 
 Full map of adaptive keys:
 ```
-Input:     kc  gc  bc
-Output:    ks  gs  bv
+Input:     kc  gc  bc  dc
+Output:    ks  gs  bv  dv
 ```
 
 ## Home Row Mods
