@@ -63,10 +63,10 @@ Mods and layers are accessed via HRMs. To allow for fast natural typing while ke
 The mods stay constistent across the fun and nav layers as well.
 
 ```
-•  •   •   •              •   •   •   •
-•  sym ctl alt            alt ctl sym •
-       •   gui            gui • 
-           num sft    nav fun
+•   •   •   •              •   •   •   •
+num sym ctl alt            alt ctl sym num
+        •   gui            gui • 
+            •   sft    nav •
 ```
 
 ## The Num layer
@@ -74,9 +74,10 @@ The number layer uses a numpad layer, but the bottom row of the numpad is shifte
 
 This layer also houses parentheses. These are positioned in such a way that they favor inrolls instead of the usual outrolls
 ```
-[ ] ( )   7 8 9
-0 3 2 1   4 5 6
-          } {
+• • [ ]       7 8 9 •
+• 3 2 1       4 5 6 •
+    ( )       } {
+      • 0   • •
 ```
 
 ## The sym layer
