@@ -1,12 +1,11 @@
-# A 24 key layout that doesn't compromise on SFBs 
+# A 22 key layout that doesn't compromise on SFBs 
 This layout was originally based on Apsu's APTv3 layout. At one point I wanted to find out how far I could push it with eliminating keys and this is where I ended up. It turned out surprisingly comfy so I stuck with the low key count. After many many iterations I'm here - still iterating.
 
 I also took some inspiration from Hands Down Promethium and moved `R` to a thumb key.
 
 The keyboard I use it on is the Totem by Geist. Hence this firmware repo.
 
-![grafik](https://github.com/user-attachments/assets/8f6697cc-962d-4db7-9bfb-b73b770c19ad)
-
+![grafik](https://github.com/user-attachments/assets/81a5aa6d-513b-49e9-b02b-96f011a3189e)
 
 ## Base layer
 ```
