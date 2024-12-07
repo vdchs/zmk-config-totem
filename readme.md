@@ -10,10 +10,10 @@ The keyboard I use it on is the Totem by Geist. Hence this firmware repo.
 
 ## Base layer
 ```
-w g d f         l u o y
-c s t h         n e a i
-    m p         , .  
-      ✭ r     _ ✭
+w g d f     l u o y
+c s t h     n e a i
+    m p     , .  
+      r     _ 
 ```
 
 - There is a key override for `,` and `.` in place to convert `<>` into an inroll.
@@ -27,34 +27,23 @@ Instead, I shifted the layout towards combos using 2 neighbouring keys. There ar
 Pressing both thumb keys together accesses the function layer.
 
 ```
-•q•j•k•        •  •ü• •
-•x•v•b•        •ex•'• •
-    •k•        •ä •
-      • •    • •
+•q•j•k•    •  •ü• •
+•x•v•b•    •ex•'• •
+    •k•    •ä •
+      •    • 
 ```
 - For German specific letters `ö` and `ß` I use diagonal 2 key combos. I don't type German very often, but I like to keep them under my fingertips just in case. 
 - In addition to these 2 key combos, there are a number of 3 key combos to produce more very common bigrams, for example to type `qu` or `ck`.
 
-## Magic key ✭
-The key labeled ✭ in the base layer is a magic key. Its output changes based on the key that was pressed before. It's used to decrease the number of SFBs in the layout significantly, especially those that were introduced by the combo keys.
-
-It covers bigrams like `ue` or `dv`. But also key repeats like `ll` or `rr`. It functions as some sort of "get out of jail free card", where every time pressing the next key seems uncomfortable, you can press the magic key instead.
-
-With the magic key on a thumb this layout manages to signicantly keep the number of SFBs very low despite the heavy use of combos.
-
-Full mapping of magic key
-```
-Anteceding:  Spc     T  D  B  U  A  Y  M  Ä  ß  .
-Output:      OS-Sft  Z  M  J  E  Y  I  B  U  T  ..
-```
-
 ## Adaptive keys
-The magic key is not the only adaptive key in the layout. I use adaptive keys to favour alternate ways to type common same finger bigrams in favour of very uncommon ones. 
+To alleviate some of the SFBs introduced by the high amount of combos, I use adaptive keys to favour alternate ways to type common same finger bigrams in favour of very uncommon ones. 
+
+The timeout of these adaptive keys is chosen quite tightly, so that only rolls produce the alternate outcome, making the original bigram still easily achievable.
 
 Full map of adaptive keys:
 ```
-Input:     kc  gc  bc  dc  pc  mc  bg
-Output:    ks  gs  bv  dv  ph  mb  bj
+Input:     kc  gc  bc  dc  pc  mc  bg  tg
+Output:    ks  gs  bv  dv  ph  mb  bj  tz
 ```
 
 ## Home Row Mods
@@ -64,9 +53,9 @@ The mods stay constistent across the fun and nav layers as well.
 
 ```
 •   •   •   •              •   •   •   •
-num sym ctl alt            alt ctl sym num
-        •   gui            gui • 
-            •   sft    nav •
+num sym ctl alt    alt ctl sym num
+        •   gui    gui • 
+            sft    nav 
 ```
 
 ## The Num layer
@@ -74,10 +63,10 @@ The number layer uses a numpad layer, but the bottom row of the numpad is shifte
 
 This layer also houses parentheses. These are positioned in such a way that they favor inrolls instead of the usual outrolls
 ```
-• • [ ]       7 8 9 •
-• 3 2 1       4 5 6 •
-    ( )       } {
-      • 0   • •
+• • [ ]    7 8 9 •
+• 3 2 1    4 5 6 •
+    ( )    } {
+      0    •  
 ```
 
 ## The sym layer
