@@ -133,6 +133,7 @@
             antecedents = <
                 SPACE      D      T      B      U      A      Y      M      RA(Q)  RA(S)  DOT
             >;
+
             bindings = <
                 &sk LSHFT  &kp M  &kp Z  &kp J  &kp E  &kp Y  &kp I  &kp B  &kp U  &kp T  &DotDot
             >;
@@ -148,9 +149,11 @@
             antecedents = <
                 G      B      K      D      P
             >;
+
             bindings = <
                 &kp S  &kp V  &kp S  &kp V  &kp H
             >;
+
             max-delay-ms = <150>;
         };
 
@@ -239,7 +242,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <190>;
-            quick-tap-ms = <150>;
         };
 
         lt_magic: lt_magic {
@@ -249,6 +251,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <190>;
+            flavor = "balanced";
         };
 
         magic_R: magic_R {
@@ -267,6 +270,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <190>;
+            flavor = "balanced";
         };
 
         lowU: lowU {
@@ -285,6 +289,16 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
+        };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR";
+            bindings = <&mo>, <&magic_R>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+            flavor = "tap-preferred";
         };
     };
 
