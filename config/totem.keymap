@@ -164,6 +164,22 @@
             max-delay-ms = <150>;
         };
 
+        ad_r: ad_r {
+            compatible = "zmk,behavior-antecedent-morph";
+            label = "ADAPTIVE_R";
+            #binding-cells = <0>;
+            defaults = <&kp R>;
+            antecedents = <
+                M
+            >;
+
+            bindings = <
+                &kp B
+            >;
+
+            max-delay-ms = <150>;
+        }; 
+
         mt_hmr_l: mt_hmr_l {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_HMR_L";
