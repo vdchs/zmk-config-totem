@@ -53,8 +53,8 @@ The magic key is not the only adaptive key in the layout. I use adaptive keys to
 
 Full map of adaptive keys:
 ```
-Input:     kc  gc  bc  dc  pc
-Output:    ks  gs  bv  dv  ph
+Input:     kc  gc  bc  dc  pc  mc  bg
+Output:    ks  gs  bv  dv  ph  mb  bj
 ```
 
 ## Home Row Mods
