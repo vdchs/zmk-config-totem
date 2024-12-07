@@ -267,15 +267,6 @@
             tapping-term-ms = <190>;
         };
 
-        magic_R: magic_R {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MAGIC_R";
-            bindings = <&magic>, <&kp LS(R)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         lowU: lowU {
             compatible = "zmk,behavior-mod-morph";
             label = "LOWU";
@@ -360,10 +351,10 @@
 
         sym {
             bindings = <
-        &kp PRCNT  &kp AT    &kp PIPE   &kp AMPS  &trans    &trans  &kp CARET                &kp BSLH                 &kp GRAVE  &kp TILDE
-        &kp HASH   &kp DLLR  &kp STAR   &kp EXCL  &trans    &trans  &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON  &kp SEMI
-&trans  &trans     &trans    &kp QMARK  &kp FSLH  &trans    &trans  &kp UNDER                &kp PLUS                 &trans     &trans     &trans
-                             &trans     &trans    &trans    &trans  &trans                   &trans
+        &kp PRCNT  &kp AT    &kp PIPE   &kp AMPS  &trans     &trans  &kp CARET                &kp BSLH                 &kp GRAVE  &kp TILDE
+        &kp HASH   &kp DLLR  &kp STAR   &kp EXCL  &trans     &trans  &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON  &kp SEMI
+&trans  &trans     &trans    &kp QMARK  &kp FSLH  &trans     &trans  &kp UNDER                &kp PLUS                 &trans     &trans     &trans
+                             &trans     &trans    &kp LS(R)  &trans  &trans                   &trans
             >;
         };
 

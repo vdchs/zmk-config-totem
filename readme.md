@@ -17,7 +17,6 @@ c s t h     n e a i
 ```
 
 - There is a key override for `,` and `.` in place to convert `<>` into an inroll.
-- Capital `R` is taken care of by a key override as well, which I can type with `Shift-Magic`.
 
 ## Combo layer
 With so few keys, not all keys fit into the base layer. There are basically 2 different solutions. I tried a secondary alpha layer but found it limiting my typing speed.
@@ -77,7 +76,8 @@ A thing to point out is that the keys for `-` and `=` produce `->` and `=>` on h
 ```
 % @ | &    ^ \ ` ~
 # $ * !    - = : ;
-    ? /    _ + 
+    ? /    _ +
+      R 
 ```
 
 ## The nav layer
