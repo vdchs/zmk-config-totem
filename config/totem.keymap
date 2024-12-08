@@ -23,13 +23,6 @@
             layers = <0>;
         };
 
-        ae {
-            bindings = <&kp RA(Q)>;
-            key-positions = <27 28>;
-            timeout-ms = <28>;
-            layers = <0>;
-        };
-
         oe {
             bindings = <&kp RA(P)>;
             key-positions = <8 17>;
@@ -113,8 +106,8 @@
             layers = <0>;
         };
 
-        func {
-            bindings = <&mo 4>;
+        ae_func {
+            bindings = <&lt_hmr_r 4 RA(Q)>;
             key-positions = <18 19>;
             timeout-ms = <28>;
             layers = <0>;
