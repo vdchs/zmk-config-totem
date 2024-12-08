@@ -26,8 +26,8 @@ Pressing both thumb keys together accesses the function layer.
 
 ```
 •q•j•k•    •  •ü• •
-•x•v•b•    •ex•'• •
-    •k•    •ä •
+•x•v•b•    •ex•'•ä•
+    •k•    •  •
       •    • 
 ```
 - For German specific letters `ö` and `ß` I use diagonal 2 key combos. I don't type German very often, but I like to keep them under my fingertips just in case. 
