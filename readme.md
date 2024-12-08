@@ -50,7 +50,7 @@ Mods and layers are accessed via HRMs. To allow for fast natural typing while ke
 The mods stay constistent across the fun and nav layers as well.
 
 ```
-•   •   •   •              •   •   •   •
+•   •   •   •      •   •   •   •
 num sym ctl alt    alt ctl sym num
         •   gui    gui • 
             sft    nav 
