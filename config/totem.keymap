@@ -112,6 +112,13 @@
             timeout-ms = <28>;
             layers = <0>;
         };
+
+        ay {
+            bindings = <&Ay>;
+            key-positions = <8 9>;
+            timeout-ms = <28>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -318,6 +325,13 @@
             #binding-cells = <0>;
             bindings = <&kp C &kp K>;
             label = "CK";
+        };
+
+        Ay: Ay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp Y>;
+            label = "AY";
         };
     };
 
