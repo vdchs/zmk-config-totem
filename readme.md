@@ -25,7 +25,7 @@ Instead, I shifted the layout towards combos using 2 neighbouring keys. There ar
 Pressing both thumb keys together accesses the function layer.
 
 ```
-•q•j•k•    •  •ü• •
+•q•j•k•    •  •ü•ay•
 •x•v•b•    •ex•'•ä•
     •k•    •  •
       •    • 
