@@ -22,10 +22,8 @@ With so few keys, not all keys fit into the base layer. There are basically 2 di
 
 Instead, I shifted the layout towards combos using 2 neighbouring keys. There are a lot of them.
 
-Pressing both thumb keys together accesses the function layer.
-
 ```
-•q•j•k•    •  •ü•ay•
+•q•j•z•    •  •ü•ay•
 •x•v•b•    •ex•'•ä•
     •k•    •  •
       •    • 
