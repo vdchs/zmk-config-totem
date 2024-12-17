@@ -38,8 +38,8 @@ The timeout of these adaptive keys is chosen quite tightly, so that only rolls p
 
 Full map of adaptive keys:
 ```
-Input:     kc  gc  bc  dc  pc  mc  bg  tg
-Output:    ks  gs  bv  dv  ph  mb  bj  tz
+Input:     kc  gc  bc  dc  pc  mc  bg  tg  df
+Output:    ks  gs  bv  dm  ph  mb  bj  tz  dv
 ```
 
 ## Home Row Mods

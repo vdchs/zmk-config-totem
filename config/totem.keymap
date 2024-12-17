@@ -158,7 +158,7 @@
             >;
 
             bindings = <
-                &kp S  &kp V  &kp S  &kp V  &kp H  &kp B
+                &kp S  &kp V  &kp S  &kp M  &kp H  &kp B
             >;
 
             max-delay-ms = <150>;
@@ -175,6 +175,22 @@
 
             bindings = <
                 &kp J  &kp Z
+            >;
+
+            max-delay-ms = <150>;
+        };
+
+        ad_f: ad_f {
+            compatible = "zmk,behavior-antecedent-morph";
+            label = "ADAPTIVE_F";
+            #binding-cells = <0>;
+            defaults = <&kp F>;
+            antecedents = <
+                D
+            >;
+
+            bindings = <
+                &kp V
             >;
 
             max-delay-ms = <150>;
@@ -340,7 +356,7 @@
 
         alpha {
             bindings = <
-        &kp W               &ad_g          &kp D                     &kp F                 &trans          &trans       &kp L                        &kp U                     &kp O          &kp Y
+        &kp W               &ad_g          &kp D                     &ad_f                 &trans          &trans       &kp L                        &kp U                     &kp O          &kp Y
         &lt_hmr_l_ad_c 2 0  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &trans          &trans       &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
 &trans  &trans              &trans         &kp M                     &mt_hmr_l LEFT_GUI P  &trans          &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &trans         &trans         &trans
                                            &trans                    &trans                &mt LSHIFT R    &lt 3 SPACE  &trans                       &trans
