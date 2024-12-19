@@ -119,6 +119,13 @@
             timeout-ms = <28>;
             layers = <0>;
         };
+
+        rr {
+            bindings = <&Rr>;
+            key-positions = <34 35>;
+            timeout-ms = <28>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -348,6 +355,13 @@
             #binding-cells = <0>;
             bindings = <&kp A &kp Y>;
             label = "AY";
+        };
+
+        Rr: Rr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp R>;
+            label = "RR";
         };
     };
 
