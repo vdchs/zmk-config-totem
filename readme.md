@@ -26,7 +26,7 @@ Instead, I shifted the layout towards combos using 2 neighbouring keys. There ar
 •q•j•z•    •  •ü•ay•
 •x•v•b•    •ex•'•ä•
     •k•    •  •
-      • rr • 
+      •    • 
 ```
 - For German specific letters `ö` and `ß` I use diagonal 2 key combos. I don't type German very often, but I like to keep them under my fingertips just in case. 
 - In addition to these 2 key combos, there are a number of 3 key combos to produce more very common bigrams, for example to type `qu` or `ck`.

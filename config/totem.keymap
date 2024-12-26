@@ -168,7 +168,7 @@
                 &kp S  &kp V  &kp S  &kp M  &kp H  &kp B
             >;
 
-            max-delay-ms = <150>;
+            max-delay-ms = <250>;
         };
 
         ad_g: ad_g {
@@ -184,7 +184,7 @@
                 &kp J  &kp Z
             >;
 
-            max-delay-ms = <150>;
+            max-delay-ms = <250>;
         };
 
         ad_f: ad_f {
@@ -200,7 +200,7 @@
                 &kp V
             >;
 
-            max-delay-ms = <150>;
+            max-delay-ms = <250>;
         };
 
         mt_hmr_l: mt_hmr_l {
@@ -355,13 +355,6 @@
             #binding-cells = <0>;
             bindings = <&kp A &kp Y>;
             label = "AY";
-        };
-
-        Rr: Rr {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp R &kp R>;
-            label = "RR";
         };
     };
 
