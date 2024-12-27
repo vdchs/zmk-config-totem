@@ -115,7 +115,7 @@
 
         ay {
             bindings = <&Ay>;
-            key-positions = <8 9>;
+            key-positions = <9 7>;
             timeout-ms = <28>;
             layers = <0>;
         };
