@@ -106,16 +106,24 @@
             layers = <0>;
         };
 
-        ae_func {
-            bindings = <&lt_hmr_r 4 RA(Q)>;
+        func_r {
+            bindings = <&mo 4>;
             key-positions = <18 19>;
             timeout-ms = <28>;
             layers = <0>;
+            require-prior-idle-ms = <50>;
         };
 
         ay {
             bindings = <&Ay>;
             key-positions = <9 7>;
+            timeout-ms = <28>;
+            layers = <0>;
+        };
+
+        ae {
+            bindings = <&kp RA(Q)>;
+            key-positions = <19 17>;
             timeout-ms = <28>;
             layers = <0>;
         };
