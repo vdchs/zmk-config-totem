@@ -111,7 +111,7 @@
             key-positions = <18 19>;
             timeout-ms = <28>;
             layers = <0>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <150>;
         };
 
         ay {
