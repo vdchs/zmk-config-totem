@@ -5,7 +5,8 @@ I also took some inspiration from Hands Down Promethium and moved `R` to a thumb
 
 The keyboard I use it on is the Totem by Geist. Hence this firmware repo.
 
-![grafik](https://github.com/user-attachments/assets/81a5aa6d-513b-49e9-b02b-96f011a3189e)
+![IMG_0850](https://github.com/user-attachments/assets/fabea18d-0d0b-48ce-ae25-01305320f4cc)
+
 
 ## Base layer
 ```
