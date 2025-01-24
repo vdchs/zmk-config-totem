@@ -133,22 +133,6 @@
             flavor = "tap-preferred";
         };
 
-        magic: magic {
-            compatible = "zmk,behavior-antecedent-morph";
-            label = "MAGIC";
-            #binding-cells = <0>;
-            defaults = <&key_repeat>;
-            antecedents = <
-                SPACE      D      T      B      U      A      Y      M      RA(Q)  RA(S)  DOT
-            >;
-
-            bindings = <
-                &sk LSHFT  &kp M  &kp Z  &kp J  &kp E  &kp Y  &kp I  &kp B  &kp U  &kp T  &DotDot
-            >;
-
-            max-delay-ms = <500>;
-        };
-
         ad_c: ad_c {
             compatible = "zmk,behavior-antecedent-morph";
             label = "ADAPTIVE_C";
