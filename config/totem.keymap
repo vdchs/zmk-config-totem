@@ -114,13 +114,6 @@
             require-prior-idle-ms = <150>;
         };
 
-        ay {
-            bindings = <&Ay>;
-            key-positions = <9 7>;
-            timeout-ms = <28>;
-            layers = <0>;
-        };
-
         ae {
             bindings = <&kp RA(Q)>;
             key-positions = <19 17>;
@@ -339,13 +332,6 @@
             tap-ms = <30>;
         };
 
-        DotDot: DotDot {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp DOT &kp DOT>;
-            label = "DotDot";
-        };
-
         Ex: Ex {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -365,13 +351,6 @@
             #binding-cells = <0>;
             bindings = <&kp C &kp K>;
             label = "CK";
-        };
-
-        Ay: Ay {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp Y>;
-            label = "AY";
         };
     };
 
