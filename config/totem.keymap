@@ -120,6 +120,13 @@
             timeout-ms = <28>;
             layers = <0>;
         };
+
+        dqt {
+            bindings = <&kp DQT>;
+            key-positions = <18 16>;
+            timeout-ms = <28>;
+            layers = <0>;
+        };
     };
 
     behaviors {
