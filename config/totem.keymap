@@ -312,14 +312,13 @@
             require-prior-idle-ms = <30>;
         };
 
-        mt_thumb_r: mt_thumb_r {
+        mt_thumb: mt_thumb {
             compatible = "zmk,behavior-hold-tap";
-            label = "MT_THUMB_R";
+            label = "MT_THUMB";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <120>;
-            hold-trigger-key-positions = <20 21 10 0 1 11 22 12 2 23 24 3 13 4 14 25 33 32 34 36 37 26 5 15 16 6 7 6 8 9 16 17 18 19 27 28 29 19 30 31>;
             flavor = "balanced";
         };
     };
@@ -361,10 +360,10 @@
 
         alpha {
             bindings = <
-        &ad_w               &ad_g          &kp D                     &ad_f                 &trans                  &trans       &kp L                        &kp U                     &kp O          &kp Y
-        &lt_hmr_l_ad_c 2 0  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &trans                  &trans       &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
-&trans  &trans              &trans         &kp M                     &mt_hmr_l LEFT_GUI P  &trans                  &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &trans         &trans         &trans
-                                           &trans                    &trans                &mt_thumb_r LSHIFT R    &lt 3 SPACE  &trans                       &trans
+        &ad_w               &ad_g          &kp D                     &ad_f                 &trans                &trans       &kp L                        &kp U                     &kp O          &kp Y
+        &lt_hmr_l_ad_c 2 0  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &trans                &trans       &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
+&trans  &trans              &trans         &kp M                     &mt_hmr_l LEFT_GUI P  &trans                &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &trans         &trans         &trans
+                                           &trans                    &trans                &mt_thumb LSHIFT R    &lt 3 SPACE  &trans                       &trans
             >;
         };
 
