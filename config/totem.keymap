@@ -318,8 +318,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <190>;
+            tapping-term-ms = <120>;
             hold-trigger-key-positions = <20 21 10 0 1 11 22 12 2 23 24 3 13 4 14 25 33 32 34 36 37 26 5 15 16 6 7 6 8 9 16 17 18 19 27 28 29 19 30 31>;
+            flavor = "balanced";
         };
     };
 
