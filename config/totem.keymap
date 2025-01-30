@@ -53,7 +53,7 @@
 
         k {
             bindings = <&kp K>;
-            key-positions = <23 24>;
+            key-positions = <11 13>;
             timeout-ms = <28>;
             layers = <0>;
         };
