@@ -74,8 +74,7 @@ A thing to point out is that the keys for `-` and `=` produce `->` and `=>` on h
 ```
 % @ | &    ^ \ ` ~
 # $ * !    - = : ;
-    ? /    _ +
-      R 
+    ? /    _ + 
 ```
 
 ## The nav layer
