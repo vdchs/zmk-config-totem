@@ -37,9 +37,23 @@
             layers = <0>;
         };
 
+        z {
+            bindings = <&kp Z>;
+            key-positions = <2 3>;
+            timeout-ms = <28>;
+            layers = <0>;
+        };
+
         b {
             bindings = <&kp B>;
             key-positions = <12 13>;
+            timeout-ms = <28>;
+            layers = <0>;
+        };
+
+        k {
+            bindings = <&kp K>;
+            key-positions = <23 24>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -366,7 +380,7 @@
         alpha {
             bindings = <
         &ad_w               &ad_g          &kp D                     &ad_f                 &trans                &trans       &kp L                        &kp U                     &kp O          &kp Y
-        &lt_hmr_l_ad_c 2 0  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &kp K                 &kp Z        &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
+        &lt_hmr_l_ad_c 2 0  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &trans                &trans       &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
 &trans  &trans              &trans         &kp M                     &mt_hmr_l LEFT_GUI P  &trans                &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &trans         &trans         &trans
                                            &trans                    &trans                &mt_thumb LSHIFT R    &lt 3 SPACE  &trans                       &trans
             >;
