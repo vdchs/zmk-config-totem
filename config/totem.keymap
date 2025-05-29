@@ -146,7 +146,7 @@
                 &kp S  &kp V  &kp S  &kp M  &kp H  &kp B
             >;
 
-            max-delay-ms = <250>;
+            max-delay-ms = <200>;
         };
 
         ad_g: ad_g {
@@ -162,7 +162,7 @@
                 &kp J  &kp Z  &kp I
             >;
 
-            max-delay-ms = <250>;
+            max-delay-ms = <200>;
         };
 
         ad_f: ad_f {
@@ -178,7 +178,7 @@
                 &kp V
             >;
 
-            max-delay-ms = <250>;
+            max-delay-ms = <200>;
         };
 
         ad_w: ad_w {
@@ -194,7 +194,7 @@
                 &kp J
             >;
 
-            max-delay-ms = <250>;
+            max-delay-ms = <200>;
         };
 
         mt_hmr_l: mt_hmr_l {
