@@ -10,7 +10,7 @@
         compatible = "zmk,combos";
 
         sz {
-            bindings = <&kp RA(S)>;
+            bindings = <&szR>;
             key-positions = <1 12>;
             timeout-ms = <28>;
             layers = <0>;
@@ -314,6 +314,15 @@
             tapping-term-ms = <140>;
             flavor = "balanced";
         };
+
+        szR: szR {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SZR";
+            bindings = <&kp RA(S)>, <&kp LS(R)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -362,10 +371,10 @@
 
         sym {
             bindings = <
-        &kp PRCNT  &kp AT    &kp PIPE   &kp AMPS  &trans       &trans  &kp CARET                &kp BSLH                 &kp GRAVE  &kp TILDE
-        &kp HASH   &kp DLLR  &kp STAR   &kp EXCL  &trans       &trans  &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON  &kp SEMI
-&trans  &trans     &trans    &kp QMARK  &kp FSLH  &trans       &trans  &kp UNDER                &kp PLUS                 &trans     &trans     &trans
-                             &trans     &trans    &kp LS(R)    &trans  &trans                   &trans
+        &kp PRCNT  &kp AT    &kp PIPE   &kp AMPS  &trans    &trans  &kp CARET                &kp BSLH                 &kp GRAVE  &kp TILDE
+        &kp HASH   &kp DLLR  &kp STAR   &kp EXCL  &trans    &trans  &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON  &kp SEMI
+&trans  &trans     &trans    &kp QMARK  &kp FSLH  &trans    &trans  &kp UNDER                &kp PLUS                 &trans     &trans     &trans
+                             &trans     &trans    &trans    &trans  &trans                   &trans
             >;
         };
 
