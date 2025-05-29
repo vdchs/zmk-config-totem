@@ -323,6 +323,16 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        mt_append: mt_append {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_APPEND";
+            bindings = <&append>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -355,6 +365,13 @@
             bindings = <&kp C &kp K>;
             label = "CK";
         };
+
+        append: end_append {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&kp END &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "END_APPEND";
+        };
     };
 
     keymap {
@@ -372,8 +389,8 @@
         sym {
             bindings = <
         &kp PRCNT  &kp AT    &kp PIPE   &kp AMPS  &trans    &trans  &kp CARET                &kp BSLH                 &kp GRAVE  &kp TILDE
-        &kp HASH   &kp DLLR  &kp STAR   &kp EXCL  &trans    &trans  &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON  &kp SEMI
-&trans  &trans     &trans    &kp QMARK  &kp FSLH  &trans    &trans  &kp UNDER                &kp PLUS                 &trans     &trans     &trans
+        &kp HASH   &kp DLLR  &kp STAR   &kp EXCL  &trans    &trans  &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON  &mt_append SEMI SEMI
+&trans  &trans     &trans    &kp QMARK  &kp FSLH  &trans    &trans  &kp UNDER                &kp PLUS                 &trans     &trans                &trans
                              &trans     &trans    &trans    &trans  &trans                   &trans
             >;
         };
