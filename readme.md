@@ -10,8 +10,8 @@ The keyboard I use it on is the Totem by Geist. Hence this firmware repo.
 
 ## Base layer
 ```
-w g d f     l u o y
-c s t h     n e a i
+w g d f     l* u o y
+c s t h     n  e a i
     m p     , .  
       r     _ 
 ```
@@ -24,10 +24,10 @@ With so few keys, not all keys fit into the base layer. There are basically 2 di
 Instead, I shifted the layout towards combos using 2 neighbouring keys. There are a lot of them.
 
 ```
-•q•j•z•    •  •ü•ay•
-•x•v•b•    •ex•'•ä•
-    •k•    •  •
-      •    • 
+•q*•j*•z*•    •  •ü•ay•
+•x•v*•b*•     •ex•'*•ä•
+     •k*•     •  •
+        •     • 
 ```
 - For German specific letters `ö` and `ß` I use diagonal 2 key combos. I don't type German very often, but I like to keep them under my fingertips just in case. 
 - In addition to these 2 key combos, there are a number of 3 key combos to produce more very common bigrams, for example to type `qu` or `ck`.
@@ -41,6 +41,15 @@ Full map of adaptive keys:
 ```
 Input:     kc  gc  bc  dc  pc  mc  bg  tg  df  dw  yg
 Output:    ks  gs  bv  dm  ph  mb  bj  tz  dv  dj  yi
+```
+
+## Special hold functions
+In the keymap I've marked some keys with a *. These keys I can hold for some special functionality.
+This is not meant for speed, but solely for comfort. 
+```
+- =           produce an arrow (->/=>) when held
+;             appends the semi to the end of a line (HOME+;)
+consonants '  can be held to be duplicated (zz, '')
 ```
 
 ## Home Row Mods
@@ -69,11 +78,9 @@ This layer also houses parentheses. These are positioned in such a way that they
 ## The sym layer
 This layer is a hot pot of trying to put the most used symbols on the home row while trying to retain some sort of logic to it. It has everything that's left.
 
-A thing to point out is that the keys for `-` and `=` produce `->` and `=>` on hold for convenience.
-
 ```
-% @ | &    ^ \ ` ~
-# $ * !    - = : ;
+% @ | &    ^  \  ` ~
+# $ * !    -* =* : ;*
     ? /    _ + 
 ```
 
