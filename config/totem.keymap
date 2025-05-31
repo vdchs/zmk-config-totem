@@ -100,7 +100,7 @@
         };
 
         apos {
-            bindings = <&kp APOS>;
+            bindings = <&mt_double APOS APOS>;
             key-positions = <18 17>;
             timeout-ms = <28>;
             layers = <0>;
