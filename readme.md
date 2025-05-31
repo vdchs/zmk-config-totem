@@ -44,11 +44,11 @@ Output:    ks  gs  bv  dm  ph  mb  bj  tz  dv  dj  yi
 ```
 
 ## Special hold functions
-In the keymap I've marked some keys with a *. These keys I can hold for some special functionality.
+In the keymap I've marked some keys with a `*`. These keys I can hold for some special functionality.
 This is not meant for speed, but solely for comfort. 
 ```
 - =           produce an arrow (->/=>) when held
-;             appends the semi to the end of a line (HOME+;)
+;             appends the symbol to the end of a line (HOME+;)
 consonants '  can be held to be duplicated (zz, '')
 ```
 
