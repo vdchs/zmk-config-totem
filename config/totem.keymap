@@ -31,35 +31,35 @@
         };
 
         j {
-            bindings = <&kp J>;
+            bindings = <&mt_double J J>;
             key-positions = <1 2>;
             timeout-ms = <28>;
             layers = <0>;
         };
 
         z {
-            bindings = <&kp Z>;
+            bindings = <&mt_double Z Z>;
             key-positions = <2 3>;
             timeout-ms = <28>;
             layers = <0>;
         };
 
         b {
-            bindings = <&kp B>;
+            bindings = <&mt_double B B>;
             key-positions = <12 13>;
             timeout-ms = <28>;
             layers = <0>;
         };
 
         k {
-            bindings = <&kp K>;
+            bindings = <&mt_double K K>;
             key-positions = <23 24>;
             timeout-ms = <28>;
             layers = <0>;
         };
 
         q {
-            bindings = <&kp Q>;
+            bindings = <&mt_double Q Q>;
             key-positions = <0 1>;
             layers = <0>;
         };
@@ -93,7 +93,7 @@
         };
 
         v {
-            bindings = <&kp V>;
+            bindings = <&mt_double V V>;
             key-positions = <11 12>;
             timeout-ms = <28>;
             layers = <0>;
@@ -333,6 +333,16 @@
             tapping-term-ms = <190>;
             flavor = "tap-preferred";
         };
+
+        mt_double: mt_double {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_DOUBLE";
+            bindings = <&double>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -371,6 +381,13 @@
             #binding-cells = <1>;
             bindings = <&kp END &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "END_APPEND";
+        };
+
+        double: double {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "DOUBLE";
         };
     };
 
