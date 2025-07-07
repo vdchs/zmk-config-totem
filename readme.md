@@ -103,5 +103,5 @@ F1 F2   F3   F4    F7  F8  F9 F10
 ## Are you really daily driving this thing?
 Yes. :)
 
-![image](https://github.com/user-attachments/assets/f339cba4-fa79-4aa9-9fa5-42cae4b6ae4a)
+![image](https://github.com/user-attachments/assets/a91f58c4-ae5b-4e71-9365-1e59b63b73c1)
 
