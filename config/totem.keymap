@@ -124,7 +124,7 @@
         rr {
             bindings = <&double R>;
             key-positions = <34 35>;
-            timeout-ms = <28>;
+            timeout-ms = <45>;
             layers = <0>;
         };
     };
