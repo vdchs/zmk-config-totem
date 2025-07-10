@@ -120,6 +120,13 @@
             timeout-ms = <28>;
             layers = <0>;
         };
+
+        rr {
+            bindings = <&double R>;
+            key-positions = <34 35>;
+            timeout-ms = <28>;
+            layers = <0>;
+        };
     };
 
     behaviors {
