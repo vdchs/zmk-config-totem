@@ -224,11 +224,11 @@
             #binding-cells = <0>;
             defaults = <&kp H>;
             antecedents = <
-                M
+                M     B
             >;
 
             bindings = <
-                &kp P
+                &kp P  &kp R
             >;
 
             max-delay-ms = <200>;
