@@ -135,7 +135,7 @@
             layers = <0>;
         };
 
-        k {
+        k2 {
             bindings = <&kp K>;
             key-positions = <25 13>;
             timeout-ms = <28>;
