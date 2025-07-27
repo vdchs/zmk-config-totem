@@ -31,21 +31,21 @@
         };
 
         j {
-            bindings = <&mt_double J J>;
+            bindings = <&mt LS(J) J>;
             key-positions = <1 25>;
             timeout-ms = <28>;
             layers = <0>;
         };
 
         z {
-            bindings = <&mt_double Z Z>;
+            bindings = <&mt LS(Z) Z>;
             key-positions = <3 25>;
             timeout-ms = <28>;
             layers = <0>;
         };
 
         b {
-            bindings = <&mt_double B B>;
+            bindings = <&mt LS(B) B>;
             key-positions = <25 12>;
             timeout-ms = <28>;
             layers = <0>;
@@ -86,7 +86,7 @@
         };
 
         v {
-            bindings = <&mt_double V V>;
+            bindings = <&mt LS(V) V>;
             key-positions = <25 11>;
             timeout-ms = <28>;
             layers = <0>;
@@ -129,7 +129,7 @@
         };
 
         k {
-            bindings = <&mt_double K K>;
+            bindings = <&mt LS(K) K>;
             key-positions = <25 13>;
             timeout-ms = <28>;
             layers = <0>;
@@ -454,19 +454,19 @@
 
         sym {
             bindings = <
-        &kp PRCNT  &kp AT    &kp PIPE  &kp AMPS  &trans    &trans  &kp CARET  &kp BSLH                 &kp GRAVE  &kp TILDE
-        &kp HASH   &kp DLLR  &kp STAR  &kp EXCL  &trans    &trans  &kp PLUS   &mt_arrowfy EQUAL EQUAL  &kp COLON  &mt_append SEMI SEMI
-&trans  &trans     &trans    &trans    &kp FSLH  &trans    &trans  &kp UNDER  &trans                   &trans     &trans                &trans
-                             &trans    &trans    &trans    &trans  &trans     &trans
+        &kp PRCNT  &kp AT    &kp PIPE  &kp AMPS   &trans      &trans    &kp CARET  &kp TILDE                &kp GRAVE  &mt_arrowfy TILDE MINUS
+        &kp HASH   &kp DLLR  &kp STAR  &kp EXCL   &trans      &trans    &kp PLUS   &mt_arrowfy EQUAL EQUAL  &kp COLON  &mt_append SEMI SEMI
+&trans  &trans     &trans    &trans    &kp QMARK  &kp BSLH    &kp FSLH  &kp UNDER  &trans                   &trans     &trans                   &trans
+                             &trans    &trans     &trans      &trans    &trans     &trans
             >;
         };
 
         num {
             bindings = <
-        &kp LPAR  &kp RPAR  &kp LBKT  &kp RBKT  &trans    &trans  &kp N7    &kp N8    &kp N9  &mt_arrowfy MINUS MINUS
-        &trans    &kp N3    &kp N2    &kp N1    &trans    &trans  &kp N4    &kp N5    &kp N6  &kp QMARK
-&trans  &trans    &trans    &trans    &kp RPAR  &kp N0    &trans  &kp RBRC  &kp LBRC  &trans  &trans                   &trans
-                            &trans    &trans    &trans    &trans  &trans    &trans
+        &kp LBRC  &kp RBRC  &kp LPAR  &kp RPAR  &trans    &trans     &kp N7    &kp N8  &kp N9  &trans
+        &trans    &kp N3    &kp N2    &kp N1    &trans    &trans     &kp N4    &kp N5  &kp N6  &trans
+&trans  &trans    &trans    &trans    &kp LBKT  &kp N0    &kp SPACE  &kp RBKT  &trans  &trans  &trans  &trans
+                            &trans    &trans    &trans    &trans     &trans    &trans
             >;
         };
 
