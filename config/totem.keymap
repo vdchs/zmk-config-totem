@@ -87,7 +87,7 @@
 
         v {
             bindings = <&mt_double V V>;
-            key-positions = <12 1>;
+            key-positions = <1 25>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -131,13 +131,6 @@
         k {
             bindings = <&mt_double K K>;
             key-positions = <25 13>;
-            timeout-ms = <28>;
-            layers = <0>;
-        };
-
-        comma {
-            bindings = <&kp COMMA>;
-            key-positions = <26 16>;
             timeout-ms = <28>;
             layers = <0>;
         };
