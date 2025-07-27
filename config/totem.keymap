@@ -342,7 +342,7 @@
             label = "LT_HMR_L_AD_C";
             bindings = <&mo>, <&ad_c>;
 
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "balanced";
             hold-trigger-key-positions = <15 5 6 7 17 16 26 27 28 29 18 8 9 19 30 31 32 33 34 36 37>;
@@ -354,7 +354,7 @@
             label = "MT_HMR_L_AD_H";
             bindings = <&kp>, <&ad_h>;
 
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "balanced";
             hold-trigger-key-positions = <15 5 6 7 17 16 26 27 28 29 18 8 9 19 30 31 32 33 34 36 37>;
@@ -452,10 +452,10 @@
 
         alpha {
             bindings = <
-        &ad_w             &ad_g          &kp D                     &ad_f                     &trans                &trans       &mt_double L L          &kp U                     &kp O          &kp Y
-        &lt_hmr_l_ad_c 2  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l_ad_h LEFT_ALT   &trans                &trans       &mt_hmr_r LEFT_ALT N    &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
-&trans  &trans            &trans         &trans                    &mt_hmr_l LEFT_GUI COMMA  &mt_thumb LSHIFT R    &lt 3 SPACE  &mt_hmr_r LEFT_GUI DOT  &trans                    &trans         &trans         &trans
-                                         &trans                    &trans                    &trans                &trans       &trans                  &trans
+        &ad_w               &ad_g          &kp D                     &ad_f                       &trans                &trans       &mt_double L L          &kp U                     &kp O          &kp Y
+        &lt_hmr_l_ad_c 2 0  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l_ad_h LEFT_ALT 0   &trans                &trans       &mt_hmr_r LEFT_ALT N    &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
+&trans  &trans              &trans         &trans                    &mt_hmr_l LEFT_GUI COMMA    &mt_thumb LSHIFT R    &lt 3 SPACE  &mt_hmr_r LEFT_GUI DOT  &trans                    &trans         &trans         &trans
+                                           &trans                    &trans                      &trans                &trans       &trans                  &trans
             >;
         };
 
