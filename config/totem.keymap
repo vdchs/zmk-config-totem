@@ -46,7 +46,7 @@
 
         b {
             bindings = <&mt_double B B>;
-            key-positions = <12 13>;
+            key-positions = <12 25>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -130,7 +130,7 @@
 
         m {
             bindings = <&mt_double M M>;
-            key-positions = <25 12>;
+            key-positions = <12 11>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -151,7 +151,7 @@
 
         p {
             bindings = <&mt_double P P>;
-            key-positions = <11 12>;
+            key-positions = <12 13>;
             timeout-ms = <28>;
             layers = <0>;
         };
