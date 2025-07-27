@@ -94,7 +94,7 @@
 
         v {
             bindings = <&mt_double V V>;
-            key-positions = <11 12>;
+            key-positions = <11 25>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -137,7 +137,7 @@
 
         k2 {
             bindings = <&mt_double K K>;
-            key-positions = <25 3>;
+            key-positions = <25 13>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -151,7 +151,7 @@
 
         p {
             bindings = <&mt_double P P>;
-            key-positions = <25 13>;
+            key-positions = <11 12>;
             timeout-ms = <28>;
             layers = <0>;
         };
