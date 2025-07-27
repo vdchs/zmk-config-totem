@@ -11,7 +11,7 @@
 
         sz {
             bindings = <&szR>;
-            key-positions = <1 12>;
+            key-positions = <1 25>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -39,21 +39,14 @@
 
         z {
             bindings = <&mt_double Z Z>;
-            key-positions = <2 3>;
+            key-positions = <3 25>;
             timeout-ms = <28>;
             layers = <0>;
         };
 
         b {
             bindings = <&mt_double B B>;
-            key-positions = <12 25>;
-            timeout-ms = <28>;
-            layers = <0>;
-        };
-
-        k {
-            bindings = <&mt_double K K>;
-            key-positions = <23 24>;
+            key-positions = <2 3>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -94,7 +87,7 @@
 
         v {
             bindings = <&mt_double V V>;
-            key-positions = <11 25>;
+            key-positions = <12 1>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -135,7 +128,7 @@
             layers = <0>;
         };
 
-        k2 {
+        k {
             bindings = <&mt_double K K>;
             key-positions = <25 13>;
             timeout-ms = <28>;
