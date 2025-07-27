@@ -167,11 +167,11 @@
             #binding-cells = <0>;
             defaults = <&kp C>;
             antecedents = <
-                G      B      K      D      P      M
+                G      B      D      P      M
             >;
 
             bindings = <
-                &kp S  &kp V  &kp S  &kp M  &kp H  &kp B
+                &kp S  &kp V  &kp M  &kp H  &kp B
             >;
 
             max-delay-ms = <200>;
