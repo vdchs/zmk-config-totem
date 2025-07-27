@@ -39,14 +39,14 @@
 
         z {
             bindings = <&mt_double Z Z>;
-            key-positions = <3 25>;
+            key-positions = <3 2>;
             timeout-ms = <28>;
             layers = <0>;
         };
 
         b {
             bindings = <&mt_double B B>;
-            key-positions = <2 3>;
+            key-positions = <3 25>;
             timeout-ms = <28>;
             layers = <0>;
         };
