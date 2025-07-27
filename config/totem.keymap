@@ -227,7 +227,7 @@
 
         ad_h: ad_h {
             compatible = "zmk,behavior-antecedent-morph";
-            label = "ADAPTIVE_W";
+            label = "ADAPTIVE_H";
             #binding-cells = <0>;
             defaults = <&kp H>;
             antecedents = <
