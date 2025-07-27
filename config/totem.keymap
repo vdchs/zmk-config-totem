@@ -11,7 +11,7 @@
 
         sz {
             bindings = <&szR>;
-            key-positions = <1 25>;
+            key-positions = <1 2>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -32,7 +32,7 @@
 
         j {
             bindings = <&mt_double J J>;
-            key-positions = <1 2>;
+            key-positions = <1 25>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -87,7 +87,7 @@
 
         v {
             bindings = <&mt_double V V>;
-            key-positions = <1 25>;
+            key-positions = <25 11>;
             timeout-ms = <28>;
             layers = <0>;
         };
