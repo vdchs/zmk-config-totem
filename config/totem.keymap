@@ -31,21 +31,21 @@
         };
 
         j {
-            bindings = <&mt LS(J) J>;
+            bindings = <&mt_tpref LS(J) J>;
             key-positions = <1 25>;
             timeout-ms = <28>;
             layers = <0>;
         };
 
         z {
-            bindings = <&mt LS(Z) Z>;
+            bindings = <&mt_tpref LS(Z) Z>;
             key-positions = <3 2>;
             timeout-ms = <28>;
             layers = <0>;
         };
 
         b {
-            bindings = <&mt LS(B) B>;
+            bindings = <&mt_tpref LS(B) B>;
             key-positions = <25 12>;
             timeout-ms = <28>;
             layers = <0>;
@@ -129,14 +129,14 @@
         };
 
         k {
-            bindings = <&mt LS(K) K>;
+            bindings = <&mt_tpref LS(K) K>;
             key-positions = <25 13>;
             timeout-ms = <28>;
             layers = <0>;
         };
 
         f {
-            bindings = <&mt LS(F) F>;
+            bindings = <&mt_tpref LS(F) F>;
             key-positions = <25 3>;
             timeout-ms = <28>;
             layers = <0>;
@@ -384,6 +384,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <190>;
             flavor = "tap-preferred";
+        };
+
+        mt_tpref: mt_tpref {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_TPREF";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <190>;
         };
     };
 
