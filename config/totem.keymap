@@ -183,11 +183,11 @@
             #binding-cells = <0>;
             defaults = <&kp G>;
             antecedents = <
-                B      T      Y
+                B      T      Y      F
             >;
 
             bindings = <
-                &kp J  &kp Z  &kp I
+                &kp J  &kp Z  &kp I  &kp R
             >;
 
             max-delay-ms = <200>;
@@ -199,11 +199,9 @@
             #binding-cells = <0>;
             defaults = <&kp D>;
             antecedents = <
-                F
             >;
 
             bindings = <
-                &kp R
             >;
 
             max-delay-ms = <200>;
