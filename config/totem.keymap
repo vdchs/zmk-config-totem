@@ -393,6 +393,18 @@
             flavor = "tap-preferred";
             tapping-term-ms = <190>;
         };
+
+        mt_hmr_l_ad_w: mt_hmr_l_ad_w {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_HMR_L_AD_W";
+            bindings = <&kp>, <&ad_w>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <6 7 17 16 27 18 8 9 19>;
+            require-prior-idle-ms = <30>;
+        };
     };
 
     macros {
@@ -446,10 +458,10 @@
 
         alpha {
             bindings = <
-        &ad_w               &ad_g          &kp D                     &ad_p                      &trans                &trans       &mt_double L L          &kp U                     &kp O          &kp Y
-        &lt_hmr_l_ad_c 2 0  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l_ad_h LEFT_ALT 0  &trans                &trans       &mt_hmr_r LEFT_ALT N    &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
-&trans  &trans              &trans         &trans                    &mt_hmr_l LEFT_GUI COMMA   &mt_thumb LSHIFT R    &lt 3 SPACE  &mt_hmr_r LEFT_GUI DOT  &trans                    &trans         &trans         &trans
-                                           &trans                    &trans                     &trans                &trans       &trans                  &trans
+        &mt_hmr_l_ad_w LGUI 0  &ad_g          &kp D                     &ad_p                      &trans                &trans       &mt_double L L        &kp U                     &kp O          &mt_hmr_r LGUI Y
+        &lt_hmr_l_ad_c 2 0     &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l_ad_h LEFT_ALT 0  &trans                &trans       &mt_hmr_r LEFT_ALT N  &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
+&trans  &trans                 &trans         &trans                    &kp COMMA                  &mt_thumb LSHIFT R    &lt 3 SPACE  &kp DOT               &trans                    &trans         &trans            &trans
+                                              &trans                    &trans                     &trans                &trans       &trans                &trans
             >;
         };
 
