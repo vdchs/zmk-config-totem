@@ -1,2 +1,2 @@
-# A push to making 20 keys work
+# A push to making 18 keys work
 I had an idea how to push this layout further. This is very much a work in progress and does not type as smoothly as the 22 one (yet).
