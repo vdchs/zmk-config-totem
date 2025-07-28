@@ -45,7 +45,7 @@
         };
 
         b {
-            bindings = <&mt_tpref LS(B) B>;
+            bindings = <&mt_double B B>;
             key-positions = <12 13>;
             timeout-ms = <28>;
             layers = <0>;
@@ -86,7 +86,7 @@
         };
 
         v {
-            bindings = <&mt_double V V>;
+            bindings = <&mt_tpref LS(V) V>;
             key-positions = <11 25>;
             timeout-ms = <28>;
             layers = <0>;
