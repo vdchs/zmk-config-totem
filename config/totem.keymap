@@ -183,6 +183,13 @@
             timeout-ms = <28>;
             layers = <0>;
         };
+
+        sm {
+            bindings = <&sm>;
+            key-positions = <11 12 25>;
+            timeout-ms = <28>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -426,6 +433,15 @@
             hold-trigger-key-positions = <6 7 17 16 27 18 8 9 19>;
             require-prior-idle-ms = <30>;
         };
+
+        low_m: low_m {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LOW_M";
+            bindings = <&kp M>, <&kp M>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -478,6 +494,13 @@
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp SPACE>;
             label = "SPACIFY";
+        };
+
+        sm: sm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &low_m>;
+            label = "SM";
         };
     };
 
