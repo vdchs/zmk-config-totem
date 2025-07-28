@@ -172,14 +172,14 @@
 
         comma {
             bindings = <&kp COMMA>;
-            key-positions = <16 26>;
+            key-positions = <26 17>;
             timeout-ms = <28>;
             layers = <0>;
         };
 
         comma_ {
             bindings = <&spacify COMMA>;
-            key-positions = <26 17>;
+            key-positions = <26 16>;
             timeout-ms = <28>;
             layers = <0>;
         };
