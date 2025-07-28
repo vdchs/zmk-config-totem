@@ -190,6 +190,34 @@
             timeout-ms = <28>;
             layers = <0>;
         };
+
+        num_lbkt {
+            bindings = <&kp LBKT>;
+            key-positions = <2 3>;
+            timeout-ms = <28>;
+            layers = <2>;
+        };
+
+        num_rbkt {
+            bindings = <&kp RBKT>;
+            key-positions = <6 7>;
+            timeout-ms = <28>;
+            layers = <2>;
+        };
+
+        num_rbrc {
+            bindings = <&kp RBRC>;
+            key-positions = <16 17>;
+            timeout-ms = <28>;
+            layers = <2>;
+        };
+
+        num_lbrc {
+            bindings = <&kp LBRC>;
+            key-positions = <12 13>;
+            timeout-ms = <28>;
+            layers = <2>;
+        };
     };
 
     behaviors {
@@ -527,10 +555,10 @@
 
         num {
             bindings = <
-        &kp LBKT  &kp DOT  &kp LPAR  &kp RPAR  &trans    &trans     &kp N7  &kp N8  &kp N9  &kp RBKT
-        &kp LBRC  &kp N3   &kp N2    &kp N1    &trans    &trans     &kp N4  &kp N5  &kp N6  &kp RBRC
-&trans  &trans    &trans   &trans    &trans    &kp N0    &kp SPACE  &trans  &trans  &trans  &trans    &trans
-                           &trans    &trans    &trans    &trans     &trans  &trans
+        &trans  &kp DOT  &kp LPAR  &kp RPAR  &trans    &trans     &kp N7  &kp N8  &kp N9  &trans
+        &trans  &kp N3   &kp N2    &kp N1    &trans    &trans     &kp N4  &kp N5  &kp N6  &trans
+&trans  &trans  &trans   &trans    &trans    &kp N0    &kp SPACE  &trans  &trans  &trans  &trans  &trans
+                         &trans    &trans    &trans    &trans     &trans  &trans
             >;
         };
 
