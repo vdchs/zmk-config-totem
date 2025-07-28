@@ -164,7 +164,7 @@
         };
 
         dot {
-            bindings = <&kp COMMA>;
+            bindings = <&kp DOT>;
             key-positions = <16 17>;
             timeout-ms = <28>;
             layers = <0>;
