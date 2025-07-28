@@ -148,6 +148,20 @@
             timeout-ms = <28>;
             layers = <0>;
         };
+
+        num_comma {
+            bindings = <&kp COMMA>;
+            key-positions = <1 25>;
+            timeout-ms = <28>;
+            layers = <2>;
+        };
+
+        sym_ast {
+            bindings = <&kp STAR>;
+            key-positions = <12 11>;
+            timeout-ms = <28>;
+            layers = <1>;
+        };
     };
 
     behaviors {
@@ -441,37 +455,37 @@
 
         sym {
             bindings = <
-        &kp PRCNT  &kp AT    &kp PIPE  &kp AMPS   &trans           &trans     &kp CARET  &kp TILDE                &kp GRAVE  &mt_arrowfy MINUS MINUS
-        &kp HASH   &kp DLLR  &kp STAR  &kp EXCL   &trans           &trans     &kp PLUS   &mt_arrowfy EQUAL EQUAL  &kp COLON  &mt_append SEMI SEMI
-&trans  &trans     &trans    &trans    &kp QMARK  &mt BSLH FSLH    &kp SPACE  &kp UNDER  &trans                   &trans     &trans                   &trans
-                             &trans    &trans     &trans           &trans     &trans     &trans
+        &kp PRCNT  &kp AT    &kp PIPE   &kp AMPS  &trans                 &trans     &kp UNDER  &mt_arrowfy MINUS MINUS  &mt_tpref TILDE GRAVE  &kp CARET
+        &kp HASH   &kp DLLR  &kp QMARK  &kp EXCL  &trans                 &trans     &kp PLUS   &mt_arrowfy EQUAL EQUAL  &kp COLON              &mt_append SEMI SEMI
+&trans  &trans     &trans    &trans     &trans    &mt_tpref BSLH FSLH    &kp SPACE  &trans     &trans                   &trans                 &trans                &trans
+                             &trans     &trans    &trans                 &trans     &trans     &trans
             >;
         };
 
         num {
             bindings = <
-        &kp LBRC  &kp RBRC  &kp LPAR  &kp RPAR  &trans    &trans     &kp N7    &kp N8  &kp N9  &trans
-        &trans    &kp N3    &kp N2    &kp N1    &trans    &trans     &kp N4    &kp N5  &kp N6  &trans
-&trans  &trans    &trans    &trans    &kp LBKT  &kp N0    &kp SPACE  &kp RBKT  &trans  &trans  &trans  &trans
-                            &trans    &trans    &trans    &trans     &trans    &trans
+        &kp LBKT  &kp DOT  &kp LPAR  &kp RPAR  &trans    &trans     &kp N7  &kp N8  &kp N9  &kp RBKT
+        &kp LBRC  &kp N3   &kp N2    &kp N1    &trans    &trans     &kp N4  &kp N5  &kp N6  &kp RBRC
+&trans  &trans    &trans   &trans    &trans    &kp N0    &kp SPACE  &trans  &trans  &trans  &trans    &trans
+                           &trans    &trans    &trans    &trans     &trans  &trans
             >;
         };
 
         nav {
             bindings = <
-        &trans   &kp TAB   &trans            &trans          &trans        &trans  &kp HOME   &kp END    &kp DEL  &trans
-        &kp ESC  &kp BSPC  &kp LEFT_CONTROL  &mt LALT ENTER  &trans        &trans  &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT
-&trans  &trans   &trans    &trans            &kp LEFT_GUI    &kp LSHIFT    &trans  &kp PG_DN  &kp PG_UP  &trans   &trans     &trans
-                           &trans            &trans          &trans        &trans  &trans     &trans
+        &trans   &kp TAB   &kp PG_DN         &kp PG_UP       &trans        &trans  &kp HOME  &kp END   &kp DEL  &trans
+        &kp ESC  &kp BSPC  &kp LEFT_CONTROL  &mt LALT ENTER  &trans        &trans  &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT
+&trans  &trans   &trans    &trans            &trans          &kp LSHIFT    &trans  &trans    &trans    &trans   &trans     &trans
+                           &trans            &trans          &trans        &trans  &trans    &trans
             >;
         };
 
         func {
             bindings = <
-        &trans  &kp C_VOL_DN  &kp C_VOL_UP         &kp C_MUTE       &trans    &trans  &kp PSCRN        &kp F11       &kp F12  &trans
-        &kp F1  &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8  &kp F9   &kp F10
-&trans  &trans  &trans        &trans               &mt LGUI F5      &trans    &trans  &mt RGUI F6      &trans        &trans   &trans   &trans
-                              &trans               &trans           &trans    &trans  &trans           &trans
+        &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans    &trans  &kp PSCRN  &kp F11  &kp F12  &trans
+        &kp F1  &kp F2        &kp F3        &kp F4      &trans    &trans  &kp F7     &kp F8   &kp F9   &kp F10
+&trans  &trans  &trans        &trans        &trans      &kp F5    &kp F6  &trans     &trans   &trans   &trans   &trans
+                              &trans        &trans      &trans    &trans  &trans     &trans
             >;
         };
     };
