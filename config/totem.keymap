@@ -86,8 +86,8 @@
         };
 
         v {
-            bindings = <&mt LS(V) V>;
-            key-positions = <25 11>;
+            bindings = <&mt_double V V>;
+            key-positions = <13 12>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -136,8 +136,8 @@
         };
 
         f {
-            bindings = <&mt_double F F>;
-            key-positions = <12 13>;
+            bindings = <&mt LS(F) F>;
+            key-positions = <25 3>;
             timeout-ms = <28>;
             layers = <0>;
         };
