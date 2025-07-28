@@ -39,7 +39,7 @@
 
         z {
             bindings = <&mt LS(Z) Z>;
-            key-positions = <3 25>;
+            key-positions = <3 2>;
             timeout-ms = <28>;
             layers = <0>;
         };
