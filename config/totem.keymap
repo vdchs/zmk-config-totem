@@ -291,7 +291,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "balanced";
-            hold-trigger-key-positions = <6 7 17 16 27 18 8 9 19>;
+            hold-trigger-key-positions = <6 7 17 16 27 18 8 9 19 25 26>;
             require-prior-idle-ms = <200>;
         };
 
@@ -303,7 +303,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "balanced";
-            hold-trigger-key-positions = <10 0 1 11 12 2 3 24 13>;
+            hold-trigger-key-positions = <10 0 1 11 12 2 3 24 13 25 26>;
             require-prior-idle-ms = <200>;
         };
 
@@ -315,7 +315,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "balanced";
-            hold-trigger-key-positions = <6 7 17 16 27 18 8 9 19>;
+            hold-trigger-key-positions = <6 7 17 16 27 18 8 9 19 25 26>;
             require-prior-idle-ms = <30>;
         };
 
@@ -327,7 +327,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "balanced";
-            hold-trigger-key-positions = <0 1 11 12 2 3 24 13 10>;
+            hold-trigger-key-positions = <0 1 11 12 2 3 24 13 10 25 26>;
             require-prior-idle-ms = <30>;
         };
 
@@ -357,7 +357,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "balanced";
-            hold-trigger-key-positions = <6 7 17 16 27 18 8 9 19>;
+            hold-trigger-key-positions = <6 7 17 16 27 18 8 9 19 26 25>;
             require-prior-idle-ms = <30>;
         };
 
@@ -369,7 +369,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "balanced";
-            hold-trigger-key-positions = <6 7 17 16 27 18 8 9 19>;
+            hold-trigger-key-positions = <6 7 17 16 27 18 8 9 19 25 26>;
             require-prior-idle-ms = <30>;
         };
 
@@ -430,7 +430,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "balanced";
-            hold-trigger-key-positions = <6 7 17 16 27 18 8 9 19>;
+            hold-trigger-key-positions = <6 7 17 16 27 18 8 9 19 25 26>;
             require-prior-idle-ms = <30>;
         };
 
