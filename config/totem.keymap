@@ -123,7 +123,7 @@
 
         m {
             bindings = <&mt_double M M>;
-            key-positions = <12 11>;
+            key-positions = <12 25>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -137,7 +137,7 @@
 
         f {
             bindings = <&mt_tpref LS(F) F>;
-            key-positions = <25 12>;
+            key-positions = <12 11>;
             timeout-ms = <28>;
             layers = <0>;
         };
