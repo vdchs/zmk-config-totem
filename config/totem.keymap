@@ -127,6 +127,13 @@
             timeout-ms = <45>;
             layers = <0>;
         };
+
+        rr2 {
+            bindings = <&double R>;
+            key-positions = <33 36>;
+            timeout-ms = <45>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -212,7 +219,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "balanced";
-            hold-trigger-key-positions = <15 5 6 7 17 16 26 27 28 29 18 8 9 19 30 31 32 33 34 36 37>;
+            hold-trigger-key-positions = <15 5 6 7 17 16 26 27 28 29 18 8 9 19 30 31 32 33 34 36 37 35>;
             require-prior-idle-ms = <200>;
         };
 
@@ -224,7 +231,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "balanced";
-            hold-trigger-key-positions = <20 21 10 0 1 11 22 23 12 2 3 24 13 4 14 25 32 33 34 36 37>;
+            hold-trigger-key-positions = <20 21 10 0 1 11 22 23 12 2 3 24 13 4 14 25 32 33 34 36 37 35>;
             require-prior-idle-ms = <200>;
         };
 
@@ -254,7 +261,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "balanced";
-            hold-trigger-key-positions = <20 21 10 0 1 11 22 23 12 2 3 24 13 4 14 25 32 33 34 36 37>;
+            hold-trigger-key-positions = <20 21 10 0 1 11 22 23 12 2 3 24 13 4 14 25 32 33 34 36 37 35>;
             require-prior-idle-ms = <200>;
         };
 
@@ -266,7 +273,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "balanced";
-            hold-trigger-key-positions = <15 5 6 7 17 16 26 27 28 29 18 8 9 19 30 31 32 33 34 36 37>;
+            hold-trigger-key-positions = <15 5 6 7 17 16 26 27 28 29 18 8 9 19 30 31 32 33 34 36 37 35>;
             require-prior-idle-ms = <30>;
         };
 
@@ -278,7 +285,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "balanced";
-            hold-trigger-key-positions = <20 21 10 0 1 11 22 23 12 2 3 24 13 4 14 25 32 33 34 36 37>;
+            hold-trigger-key-positions = <20 21 10 0 1 11 22 23 12 2 3 24 13 4 14 25 32 33 34 36 37 35>;
             require-prior-idle-ms = <30>;
         };
 
@@ -308,7 +315,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "balanced";
-            hold-trigger-key-positions = <15 5 6 7 17 16 26 27 28 29 18 8 9 19 30 31 32 33 34 36 37>;
+            hold-trigger-key-positions = <15 5 6 7 17 16 26 27 28 29 18 8 9 19 30 31 32 33 34 36 37 35>;
             require-prior-idle-ms = <30>;
         };
 
@@ -406,7 +413,7 @@
         &ad_w               &ad_g          &kp D                     &ad_f                 &trans                &trans       &mt_double L L               &kp U                     &kp O          &kp Y
         &lt_hmr_l_ad_c 2 0  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &trans                &trans       &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
 &trans  &trans              &trans         &kp M                     &mt_hmr_l LEFT_GUI P  &trans                &trans       &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &trans         &trans         &trans
-                                           &trans                    &trans                &mt_thumb LSHIFT R    &lt 3 SPACE  &trans                       &trans
+                                           &trans                    &mt_thumb LSHIFT R    &mt_thumb LSHIFT R    &lt 3 SPACE  &lt 3 SPACE                  &trans
             >;
         };
 
@@ -424,7 +431,7 @@
         &trans  &trans  &kp LBKT  &kp RBKT  &trans    &trans  &kp N7    &kp N8    &kp N9  &trans
         &trans  &kp N3  &kp N2    &kp N1    &trans    &trans  &kp N4    &kp N5    &kp N6  &trans
 &trans  &trans  &trans  &kp LPAR  &kp RPAR  &trans    &trans  &kp RBRC  &kp LBRC  &trans  &trans  &trans
-                        &trans    &trans    &kp N0    &trans  &trans    &trans
+                        &trans    &kp N0    &kp N0    &trans  &trans    &trans
             >;
         };
 
@@ -433,7 +440,7 @@
         &trans   &kp TAB   &trans            &trans          &trans        &trans  &kp HOME   &kp END    &kp DEL  &trans
         &kp ESC  &kp BSPC  &kp LEFT_CONTROL  &mt LALT ENTER  &trans        &trans  &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT
 &trans  &trans   &trans    &trans            &kp LEFT_GUI    &trans        &trans  &kp PG_DN  &kp PG_UP  &trans   &trans     &trans
-                           &trans            &trans          &kp LSHIFT    &trans  &trans     &trans
+                           &trans            &kp LSHIFT      &kp LSHIFT    &trans  &trans     &trans
             >;
         };
 
