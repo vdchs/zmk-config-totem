@@ -546,10 +546,10 @@
 
         sym {
             bindings = <
-        &kp PRCNT  &kp AT    &kp PIPE   &kp AMPS  &trans                 &trans     &kp UNDER                &kp PLUS                 &mt_tpref TILDE GRAVE  &kp CARET
-        &kp HASH   &kp DLLR  &kp QMARK  &kp EXCL  &trans                 &trans     &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON              &mt_append SEMI SEMI
-&trans  &trans     &trans    &trans     &trans    &mt_tpref BSLH FSLH    &kp SPACE  &trans                   &trans                   &trans                 &trans                &trans
-                             &trans     &trans    &trans                 &trans     &trans                   &trans
+        &kp PRCNT  &kp AT    &kp PIPE   &kp AMPS  &trans                 &trans  &kp UNDER                &kp PLUS                 &mt_tpref TILDE GRAVE  &kp CARET
+        &kp HASH   &kp DLLR  &kp QMARK  &kp EXCL  &trans                 &trans  &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON              &mt_append SEMI SEMI
+&trans  &trans     &trans    &trans     &trans    &mt_tpref BSLH FSLH    &trans  &trans                   &trans                   &trans                 &trans                &trans
+                             &trans     &trans    &trans                 &trans  &trans                   &trans
             >;
         };
 
