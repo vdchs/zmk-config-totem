@@ -122,7 +122,7 @@
         };
 
         m {
-            bindings = <&mt_double M M>;
+            bindings = <&mt_tpref LS(M) M>;
             key-positions = <12 25>;
             timeout-ms = <28>;
             layers = <0>;
@@ -136,7 +136,7 @@
         };
 
         f {
-            bindings = <&mt_tpref LS(F) F>;
+            bindings = <&mt_double F F>;
             key-positions = <12 11>;
             timeout-ms = <28>;
             layers = <0>;
@@ -253,11 +253,11 @@
             #binding-cells = <0>;
             defaults = <&kp G>;
             antecedents = <
-                B      T      Y      F
+                B      T      Y
             >;
 
             bindings = <
-                &kp J  &kp Z  &kp I  &kp R
+                &kp J  &kp Z  &kp I
             >;
 
             max-delay-ms = <200>;
@@ -305,7 +305,7 @@
             >;
 
             bindings = <
-                &kp R  &kp B  &kp K  &kp T
+                &kp R  &kp B  &kp M  &kp T
             >;
 
             max-delay-ms = <200>;
