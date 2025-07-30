@@ -401,10 +401,10 @@
             require-prior-idle-ms = <30>;
         };
 
-        mt_thumb: mt_thumb {
+        lt_thumb: lt_thumb {
             compatible = "zmk,behavior-hold-tap";
-            label = "MT_THUMB";
-            bindings = <&mo>, <&kp>;
+            label = "LT_THUMB";
+            bindings = <&single_sl>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <140>;
@@ -537,6 +537,13 @@
             bindings = <&kp R &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "R_IFY";
         };
+
+        single_sl: single_sticky {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &sl MACRO_PLACEHOLDER>;
+            label = "SINGLE_STICKY";
+        };
     };
 
     keymap {
@@ -546,7 +553,7 @@
             bindings = <
         &mt_hmr_l_ad_w LGUI 0  &ad_g          &kp D                     &ad_p                      &trans           &trans       &mt_double L L        &kp U                     &kp O          &mt_hmr_r LGUI Y
         &lt_hmr_l_ad_c 3 0     &lt_hmr_l 2 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l_ad_h LEFT_ALT 0  &trans           &trans       &mt_hmr_r LEFT_ALT N  &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 2 A  &lt_hmr_r 3 I
-&trans  &trans                 &trans         &trans                    &sk LSHIFT                 &mt_thumb 1 R    &lt 4 SPACE  &sk LEFT_SHIFT        &trans                    &trans         &trans            &trans
+&trans  &trans                 &trans         &trans                    &sk LSHIFT                 &lt_thumb 1 R    &lt 4 SPACE  &sk LEFT_SHIFT        &trans                    &trans         &trans            &trans
                                               &trans                    &trans                     &trans           &trans       &trans                &trans
             >;
         };
