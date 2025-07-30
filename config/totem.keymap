@@ -31,14 +31,14 @@
         };
 
         j {
-            bindings = <&mt_tpref LS(J) J>;
+            bindings = <&mt_double J J>;
             key-positions = <1 25>;
             timeout-ms = <28>;
             layers = <0>;
         };
 
         z {
-            bindings = <&mt_tpref LS(Z) Z>;
+            bindings = <&mt_double Z Z>;
             key-positions = <3 2>;
             timeout-ms = <28>;
             layers = <0>;
@@ -58,7 +58,7 @@
         };
 
         x {
-            bindings = <&lt_hmr_l 4 X>;
+            bindings = <&lt_hmr_l 5 X>;
             key-positions = <10 11>;
             timeout-ms = <28>;
             layers = <0>;
@@ -86,7 +86,7 @@
         };
 
         v {
-            bindings = <&mt_tpref LS(V) V>;
+            bindings = <&mt_double V V>;
             key-positions = <11 25>;
             timeout-ms = <28>;
             layers = <0>;
@@ -100,7 +100,7 @@
         };
 
         func_r {
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             key-positions = <18 19>;
             timeout-ms = <28>;
             layers = <0>;
@@ -122,14 +122,14 @@
         };
 
         m {
-            bindings = <&mt_tpref LS(M) M>;
+            bindings = <&mt_double M M>;
             key-positions = <12 25>;
             timeout-ms = <28>;
             layers = <0>;
         };
 
         k {
-            bindings = <&mt_tpref LS(K) K>;
+            bindings = <&mt_double K K>;
             key-positions = <25 13>;
             timeout-ms = <28>;
             layers = <0>;
@@ -153,14 +153,14 @@
             bindings = <&kp COMMA>;
             key-positions = <1 25>;
             timeout-ms = <28>;
-            layers = <2>;
+            layers = <3>;
         };
 
         sym_ast {
             bindings = <&kp STAR>;
             key-positions = <12 11>;
             timeout-ms = <28>;
-            layers = <1>;
+            layers = <2>;
         };
 
         dot {
@@ -195,28 +195,28 @@
             bindings = <&kp LBKT>;
             key-positions = <2 3>;
             timeout-ms = <28>;
-            layers = <2>;
+            layers = <3>;
         };
 
         num_rbkt {
             bindings = <&kp RBKT>;
             key-positions = <6 7>;
             timeout-ms = <28>;
-            layers = <2>;
+            layers = <3>;
         };
 
         num_rbrc {
             bindings = <&kp RBRC>;
             key-positions = <16 17>;
             timeout-ms = <28>;
-            layers = <2>;
+            layers = <3>;
         };
 
         num_lbrc {
             bindings = <&kp LBRC>;
             key-positions = <12 13>;
             timeout-ms = <28>;
-            layers = <2>;
+            layers = <3>;
         };
     };
 
@@ -404,7 +404,7 @@
         mt_thumb: mt_thumb {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_THUMB";
-            bindings = <&kp>, <&kp>;
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <140>;
@@ -530,6 +530,13 @@
             bindings = <&kp S &low_m>;
             label = "SM";
         };
+
+        r_ify: r_ify {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&kp R &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "R_IFY";
+        };
     };
 
     keymap {
@@ -537,10 +544,19 @@
 
         alpha {
             bindings = <
-        &mt_hmr_l_ad_w LGUI 0  &ad_g          &kp D                     &ad_p                      &trans                &trans       &mt_double L L        &kp U                     &kp O          &mt_hmr_r LGUI Y
-        &lt_hmr_l_ad_c 2 0     &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l_ad_h LEFT_ALT 0  &trans                &trans       &mt_hmr_r LEFT_ALT N  &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
-&trans  &trans                 &trans         &trans                    &trans                     &mt_thumb LSHIFT R    &lt 3 SPACE  &trans                &trans                    &trans         &trans            &trans
-                                              &trans                    &trans                     &trans                &trans       &trans                &trans
+        &mt_hmr_l_ad_w LGUI 0  &ad_g          &kp D                     &ad_p                      &trans           &trans       &mt_double L L        &kp U                     &kp O          &mt_hmr_r LGUI Y
+        &lt_hmr_l_ad_c 3 0     &lt_hmr_l 2 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l_ad_h LEFT_ALT 0  &trans           &trans       &mt_hmr_r LEFT_ALT N  &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 2 A  &lt_hmr_r 3 I
+&trans  &trans                 &trans         &trans                    &sk LSHIFT                 &mt_thumb 1 R    &lt 4 SPACE  &sk LEFT_SHIFT        &trans                    &trans         &trans            &trans
+                                              &trans                    &trans                     &trans           &trans       &trans                &trans
+            >;
+        };
+
+        alpha-2 {
+            bindings = <
+        &trans  &r_ify J  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &r_ify V  &r_ify M  &r_ify K  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                          &trans    &trans    &trans    &trans  &trans  &trans
             >;
         };
 
