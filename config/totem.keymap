@@ -46,7 +46,7 @@
 
         b {
             bindings = <&mt_double B B>;
-            key-positions = <12 13>;
+            key-positions = <12 11>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -137,7 +137,7 @@
 
         f {
             bindings = <&mt_double F F>;
-            key-positions = <12 11>;
+            key-positions = <12 13>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -173,13 +173,6 @@
         comma_ {
             bindings = <&spacify COMMA>;
             key-positions = <26 16>;
-            timeout-ms = <28>;
-            layers = <0>;
-        };
-
-        sm {
-            bindings = <&sm>;
-            key-positions = <11 12 25>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -555,13 +548,6 @@
             label = "SPACIFY";
         };
 
-        sm: sm {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp M>;
-            label = "SM";
-        };
-
         r_ify: r_ify {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -574,13 +560,6 @@
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &sl MACRO_PLACEHOLDER>;
             label = "SINGLE_STICKY";
-        };
-
-        ia: ly {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp A>;
-            label = "LY";
         };
     };
 
