@@ -524,9 +524,9 @@
 
         alpha-2 {
             bindings = <
-        &trans  &r_ify J  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &r_ify V  &r_ify M  &r_ify K  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &r_ify J  &trans    &trans    &trans    &trans  &trans  &trans  &trans   &trans
+        &trans  &r_ify V  &r_ify M  &r_ify K  &trans    &trans  &kp LT  &kp GT  &kp DQT  &trans
+&trans  &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans   &trans  &trans
                           &trans    &trans    &trans    &trans  &trans  &trans
             >;
         };
