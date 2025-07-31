@@ -218,6 +218,20 @@
             timeout-ms = <28>;
             layers = <0>;
         };
+
+        num_gt {
+            bindings = <&kp GT>;
+            key-positions = <17 18>;
+            timeout-ms = <28>;
+            layers = <3>;
+        };
+
+        num_lt {
+            bindings = <&kp LT>;
+            key-positions = <11 12>;
+            timeout-ms = <28>;
+            layers = <3>;
+        };
     };
 
     behaviors {
@@ -524,9 +538,9 @@
 
         alpha-2 {
             bindings = <
-        &trans  &r_ify J  &trans    &trans    &trans    &trans  &trans  &trans  &trans   &trans
-        &trans  &r_ify V  &r_ify M  &r_ify K  &trans    &trans  &kp LT  &kp GT  &kp DQT  &trans
-&trans  &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans   &trans  &trans
+        &trans  &r_ify J  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &r_ify V  &r_ify M  &r_ify K  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
                           &trans    &trans    &trans    &trans  &trans  &trans
             >;
         };
