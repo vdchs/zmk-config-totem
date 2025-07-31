@@ -212,9 +212,9 @@
             layers = <3>;
         };
 
-        caps_word {
+        caps_l {
             bindings = <&caps_word>;
-            key-positions = <24 27>;
+            key-positions = <10 13 11 12>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -243,6 +243,23 @@
         y {
             bindings = <&kp Y>;
             key-positions = <26 19>;
+            timeout-ms = <28>;
+            layers = <0>;
+        };
+
+        lshift {
+            bindings = <&sk LSHIFT>;
+            key-positions = <10 13>;
+        };
+
+        rshift {
+            bindings = <&sk LSHIFT>;
+            key-positions = <16 19>;
+        };
+
+        caps_r {
+            bindings = <&caps_word>;
+            key-positions = <16 17 18 19>;
             timeout-ms = <28>;
             layers = <0>;
         };
