@@ -352,24 +352,6 @@
             require-prior-idle-ms = <30>;
         };
 
-        low_u: low_u {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LOW_U";
-            bindings = <&kp U>, <&kp U>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        low_x: low_x {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LOW_X";
-            bindings = <&kp X>, <&kp X>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         lt_hmr_l_ad_c: lt_hmr_l_ad_c {
             compatible = "zmk,behavior-hold-tap";
             label = "LT_HMR_L_AD_C";
@@ -446,15 +428,6 @@
             require-prior-idle-ms = <30>;
         };
 
-        low_m: low_m {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LOW_M";
-            bindings = <&kp M>, <&kp M>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         tap_shift: tap_shift {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_SHIFT";
@@ -476,14 +449,14 @@
         Ex: Ex {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp E &low_x>;
+            bindings = <&kp E &kp X>;
             label = "EX";
         };
 
         Qu: Qu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Q &low_u>;
+            bindings = <&kp Q &kp U>;
             label = "QU";
         };
 
@@ -518,7 +491,7 @@
         sm: sm {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S &low_m>;
+            bindings = <&kp S &kp M>;
             label = "SM";
         };
 
