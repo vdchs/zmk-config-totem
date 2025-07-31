@@ -100,7 +100,7 @@
         };
 
         func_r {
-            bindings = <&lt_hmr_l 5 Y>;
+            bindings = <&lt_hmr_r_ia 5 0>;
             key-positions = <18 19>;
             timeout-ms = <28>;
             layers = <0>;
@@ -233,13 +233,6 @@
             layers = <3>;
         };
 
-        w {
-            bindings = <&kp W>;
-            key-positions = <25 10>;
-            timeout-ms = <28>;
-            layers = <0>;
-        };
-
         lshift {
             bindings = <&sk LSHIFT>;
             key-positions = <10 13>;
@@ -253,20 +246,6 @@
         caps_r {
             bindings = <&caps_word>;
             key-positions = <16 17 18 19>;
-            timeout-ms = <28>;
-            layers = <0>;
-        };
-
-        ly {
-            bindings = <&ly>;
-            key-positions = <19 6>;
-            timeout-ms = <28>;
-            layers = <0>;
-        };
-
-        you {
-            bindings = <&you>;
-            key-positions = <19 18 17>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -486,6 +465,18 @@
             hold-trigger-key-positions = <6 7 17 16 27 18 8 9 19 25 26>;
             require-prior-idle-ms = <30>;
         };
+
+        lt_hmr_r_ia: lt_hmr_r_ia {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_HMR_R_IA";
+            bindings = <&mo>, <&ia>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <0 1 11 12 2 3 24 13 10 25 26>;
+            require-prior-idle-ms = <30>;
+        };
     };
 
     macros {
@@ -561,25 +552,11 @@
             label = "SINGLE_STICKY";
         };
 
-        ly: ly {
+        ia: ly {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L &kp Y>;
+            bindings = <&kp I &kp A>;
             label = "LY";
-        };
-
-        you: you {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp O &kp U>;
-            label = "YOU";
-        };
-
-        y_ify: y_ify {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp Y>;
-            label = "Y_IFY";
         };
     };
 
@@ -590,16 +567,16 @@
             bindings = <
         &mt_hmr_l_ad_w LGUI 0  &ad_g          &kp D                     &ad_p                      &trans           &trans       &mt_double L L        &kp U                     &kp O          &mt_hmr_r LGUI Y
         &lt_hmr_l_ad_c 3 0     &lt_hmr_l 2 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l_ad_h LEFT_ALT 0  &trans           &trans       &mt_hmr_r LEFT_ALT N  &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 2 A  &lt_hmr_r 3 I
-&trans  &trans                 &trans         &trans                    &sk LSHIFT                 &lt_thumb 1 R    &lt 4 SPACE  &sk LSHIFT            &trans                    &trans         &trans            &trans
+&trans  &trans                 &trans         &trans                    &trans                     &lt_thumb 1 R    &lt 4 SPACE  &trans                &trans                    &trans         &trans            &trans
                                               &trans                    &trans                     &trans           &trans       &trans                &trans
             >;
         };
 
         alpha-2 {
             bindings = <
-        &trans  &r_ify J  &trans    &trans    &trans    &trans  &trans  &y_ify U  &y_ify O  &trans
-        &trans  &r_ify V  &r_ify M  &r_ify K  &trans    &trans  &trans  &y_ify E  &y_ify A  &trans
-&trans  &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans    &trans    &trans  &trans
+        &trans  &r_ify J  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &r_ify V  &r_ify M  &r_ify K  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
                           &trans    &trans    &trans    &trans  &trans  &trans
             >;
         };
