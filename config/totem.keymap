@@ -211,6 +211,13 @@
             timeout-ms = <28>;
             layers = <3>;
         };
+
+        caps_word {
+            bindings = <&caps_word>;
+            key-positions = <24 27>;
+            timeout-ms = <28>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -427,23 +434,6 @@
             hold-trigger-key-positions = <6 7 17 16 27 18 8 9 19 25 26>;
             require-prior-idle-ms = <30>;
         };
-
-        tap_shift: tap_shift {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_SHIFT";
-            #binding-cells = <0>;
-            bindings = <&mt_sticky LSHIFT LSHFT>, <&caps_word>;
-        };
-
-        mt_sticky: mt_sticky {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_STICKY";
-            bindings = <&kp>, <&sk>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <190>;
-        };
     };
 
     macros {
@@ -527,7 +517,7 @@
             bindings = <
         &mt_hmr_l_ad_w LGUI 0  &ad_g          &kp D                     &ad_p                      &trans           &trans       &mt_double L L        &kp U                     &kp O          &mt_hmr_r LGUI Y
         &lt_hmr_l_ad_c 3 0     &lt_hmr_l 2 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l_ad_h LEFT_ALT 0  &trans           &trans       &mt_hmr_r LEFT_ALT N  &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 2 A  &lt_hmr_r 3 I
-&trans  &trans                 &trans         &trans                    &tap_shift                 &lt_thumb 1 R    &lt 4 SPACE  &tap_shift            &trans                    &trans         &trans            &trans
+&trans  &trans                 &trans         &trans                    &sk LSHIFT                 &lt_thumb 1 R    &lt 4 SPACE  &sk LSHIFT            &trans                    &trans         &trans            &trans
                                               &trans                    &trans                     &trans           &trans       &trans                &trans
             >;
         };
