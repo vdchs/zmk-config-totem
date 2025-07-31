@@ -58,8 +58,8 @@
         };
 
         x {
-            bindings = <&lt_hmr_l 5 X>;
-            key-positions = <10 11>;
+            bindings = <&double X>;
+            key-positions = <10 25>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -101,7 +101,7 @@
 
         func_r {
             bindings = <&lt_hmr_r_hold_only 5 0>;
-            key-positions = <18 19>;
+            key-positions = <19 16>;
             timeout-ms = <25>;
             layers = <0>;
             require-prior-idle-ms = <250>;
@@ -235,14 +235,14 @@
 
         lshift {
             bindings = <&sk LSHIFT>;
-            key-positions = <10 13>;
+            key-positions = <10 11>;
             timeout-ms = <28>;
             layers = <0>;
         };
 
         rshift {
             bindings = <&sk LSHIFT>;
-            key-positions = <16 19>;
+            key-positions = <19 18>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -251,6 +251,14 @@
             bindings = <&caps_word>;
             key-positions = <16 17 18 19>;
             timeout-ms = <28>;
+            layers = <0>;
+        };
+
+        func_l {
+            bindings = <&lt_hmr_l_hold_only 5 0>;
+            key-positions = <10 14>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <250>;
             layers = <0>;
         };
     };
@@ -479,6 +487,18 @@
             tapping-term-ms = <250>;
             flavor = "balanced";
             hold-trigger-key-positions = <0 1 11 12 2 3 24 13 10 25 26>;
+            require-prior-idle-ms = <30>;
+        };
+
+        lt_hmr_l_hold_only: lt_hmr_l_hold_only {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_HMR_L_HOLD_ONLY";
+            bindings = <&mo>, <&trans>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <25 26 27 16 6 7 17 8 18 9 19 25>;
             require-prior-idle-ms = <30>;
         };
     };
