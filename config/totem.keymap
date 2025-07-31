@@ -100,11 +100,11 @@
         };
 
         func_r {
-            bindings = <&lt_hmr_r_ia 5 0>;
+            bindings = <&lt_hmr_r_hold_only 5 0>;
             key-positions = <18 19>;
-            timeout-ms = <28>;
+            timeout-ms = <25>;
             layers = <0>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <250>;
         };
 
         ae {
@@ -236,11 +236,15 @@
         lshift {
             bindings = <&sk LSHIFT>;
             key-positions = <10 13>;
+            timeout-ms = <28>;
+            layers = <0>;
         };
 
         rshift {
             bindings = <&sk LSHIFT>;
             key-positions = <16 19>;
+            timeout-ms = <28>;
+            layers = <0>;
         };
 
         caps_r {
@@ -466,10 +470,10 @@
             require-prior-idle-ms = <30>;
         };
 
-        lt_hmr_r_ia: lt_hmr_r_ia {
+        lt_hmr_r_hold_only: lt_hmr_r_hold_only {
             compatible = "zmk,behavior-hold-tap";
-            label = "LT_HMR_R_IA";
-            bindings = <&mo>, <&ia>;
+            label = "LT_HMR_R_HOLD_ONLY";
+            bindings = <&mo>, <&trans>;
 
             #binding-cells = <2>;
             tapping-term-ms = <250>;
