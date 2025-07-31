@@ -58,7 +58,7 @@
         };
 
         x {
-            bindings = <&double X>;
+            bindings = <&mt_double X X>;
             key-positions = <10 25>;
             timeout-ms = <28>;
             layers = <0>;
