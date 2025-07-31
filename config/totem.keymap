@@ -10,7 +10,7 @@
         compatible = "zmk,combos";
 
         sz {
-            bindings = <&kp RS(S)>;
+            bindings = <&kp RA(S)>;
             key-positions = <1 2>;
             timeout-ms = <28>;
             layers = <0>;
