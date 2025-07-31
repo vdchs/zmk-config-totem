@@ -100,7 +100,7 @@
         };
 
         func_r {
-            bindings = <&mo 5>;
+            bindings = <&lt_hmr_l 5 Y>;
             key-positions = <18 19>;
             timeout-ms = <28>;
             layers = <0>;
@@ -236,13 +236,6 @@
         w {
             bindings = <&kp W>;
             key-positions = <25 10>;
-            timeout-ms = <28>;
-            layers = <0>;
-        };
-
-        y {
-            bindings = <&kp Y>;
-            key-positions = <19 18>;
             timeout-ms = <28>;
             layers = <0>;
         };
