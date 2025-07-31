@@ -263,6 +263,13 @@
             timeout-ms = <28>;
             layers = <0>;
         };
+
+        ly {
+            bindings = <&ly>;
+            key-positions = <19 6>;
+            timeout-ms = <28>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -552,6 +559,13 @@
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &sl MACRO_PLACEHOLDER>;
             label = "SINGLE_STICKY";
+        };
+
+        ly: ly {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp Y>;
+            label = "LY";
         };
     };
 
