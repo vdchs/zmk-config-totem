@@ -568,55 +568,55 @@
 
         alpha {
             bindings = <
+        &trans                 &trans         &trans                    &trans                     &trans           &trans       &trans                &trans                    &trans         &trans            
         &mt_hmr_l_ad_w LGUI 0  &ad_g          &kp D                     &ad_p                      &trans           &trans       &mt_double L L        &kp U                     &kp O          &mt_hmr_r LGUI Y
-        &lt_hmr_l_ad_c 3 0     &lt_hmr_l 2 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l_ad_h LEFT_ALT 0  &trans           &trans       &mt_hmr_r LEFT_ALT N  &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 2 A  &lt_hmr_r 3 I
-&trans  &trans                 &trans         &trans                    &trans                     &lt_thumb 1 R    &lt 4 SPACE  &trans                &trans                    &trans         &trans            &trans
-                                              &trans                    &trans                     &trans           &trans       &trans                &trans
+&trans  &lt_hmr_l_ad_c 3 0     &lt_hmr_l 2 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l_ad_h LEFT_ALT 0  &trans           &trans       &mt_hmr_r LEFT_ALT N  &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 2 A  &lt_hmr_r 3 I     &trans
+                                              &trans                    &lt_thumb 1 R              &trans           &trans       &lt 4 SPACE           &trans
             >;
         };
 
         alpha-2 {
             bindings = <
+        &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans 
         &trans  &r_ify J  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &r_ify V  &r_ify M  &r_ify K  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &r_ify V  &r_ify M  &r_ify K  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                           &trans    &trans    &trans    &trans  &trans  &trans
             >;
         };
 
         sym {
             bindings = <
-        &kp PRCNT  &kp AT    &kp PIPE   &kp AMPS  &trans                 &trans  &kp UNDER                &kp PLUS                 &mt_tpref TILDE GRAVE  &kp CARET
-        &kp HASH   &kp DLLR  &kp QMARK  &kp EXCL  &trans                 &trans  &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON              &mt_append SEMI SEMI
-&trans  &trans     &trans    &trans     &trans    &mt_tpref BSLH FSLH    &trans  &trans                   &trans                   &trans                 &trans                &trans
-                             &trans     &trans    &trans                 &trans  &trans                   &trans
+        &trans     &trans    &trans     &trans    &trans     &trans   &trans                           &trans                   &trans                 &trans                
+        &kp PRCNT  &kp AT    &kp PIPE   &kp AMPS  &trans     &trans  &kp UNDER                &kp PLUS                 &mt_tpref TILDE GRAVE  &kp CARET
+&trans  &kp HASH   &kp DLLR  &kp QMARK  &kp EXCL  &trans     &trans  &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON              &mt_append SEMI SEMI  &trans
+                             &trans     &mt_tpref BSLH FSLH  &trans                           &trans                   &trans                 &trans
             >;
         };
 
         num {
             bindings = <
+        &trans  &trans   &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  
         &trans  &kp DOT  &kp LPAR  &kp RPAR  &trans    &trans  &kp N7  &kp N8  &kp N9  &trans
-        &trans  &kp N3   &kp N2    &kp N1    &trans    &trans  &kp N4  &kp N5  &kp N6  &trans
-&trans  &trans  &trans   &trans    &trans    &kp N0    &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans    &trans    &trans    &trans  &trans  &trans
+&trans  &trans  &kp N3   &kp N2    &kp N1    &trans    &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+                         &trans    &kp N0    &trans    &trans  &trans  &trans
             >;
         };
 
         nav {
             bindings = <
-        &kp LGUI  &kp TAB   &kp PG_DN         &kp PG_UP       &trans        &trans  &kp HOME  &kp END   &kp DEL  &trans
-        &kp ESC   &kp BSPC  &kp LEFT_CONTROL  &mt LALT ENTER  &trans        &trans  &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT
-&trans  &trans    &trans    &trans            &trans          &kp LSHIFT    &trans  &trans    &trans    &trans   &trans     &trans
-                            &trans            &trans          &trans        &trans  &trans    &trans
+        &trans    &trans    &trans            &trans          &trans  &trans  &trans    &trans    &trans   &trans
+        &kp LGUI  &kp TAB   &kp PG_DN         &kp PG_UP       &trans  &trans  &kp HOME  &kp END   &kp DEL  &trans
+&trans  &kp ESC   &kp BSPC  &kp LEFT_CONTROL  &mt LALT ENTER  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans
+                            &trans            &kp LSHIFT      &trans  &trans  &trans    &trans
             >;
         };
 
         func {
             bindings = <
+        &trans  &trans        &trans        &trans      &trans    &trans  &trans     &trans   &trans   &trans
         &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans    &trans  &kp PSCRN  &kp F11  &kp F12  &trans
-        &kp F1  &kp F2        &kp F3        &kp F4      &trans    &trans  &kp F7     &kp F8   &kp F9   &kp F10
-&trans  &trans  &trans        &trans        &trans      &kp F5    &kp F6  &trans     &trans   &trans   &trans   &trans
-                              &trans        &trans      &trans    &trans  &trans     &trans
+&trans  &kp F1  &kp F2        &kp F3        &kp F4      &trans    &trans  &kp F7     &kp F8   &kp F9   &kp F10   &trans
+                              &trans        &kp F5      &trans    &trans  &kp F6     &trans
             >;
         };
     };
