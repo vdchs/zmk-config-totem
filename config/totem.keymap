@@ -242,7 +242,7 @@
 
         y {
             bindings = <&kp Y>;
-            key-positions = <26 19>;
+            key-positions = <19 18>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -267,6 +267,13 @@
         ly {
             bindings = <&ly>;
             key-positions = <19 6>;
+            timeout-ms = <28>;
+            layers = <0>;
+        };
+
+        you {
+            bindings = <&you>;
+            key-positions = <19 18 17>;
             timeout-ms = <28>;
             layers = <0>;
         };
@@ -567,6 +574,20 @@
             bindings = <&kp L &kp Y>;
             label = "LY";
         };
+
+        you: you {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp O &kp U>;
+            label = "YOU";
+        };
+
+        y_ify: y_ify {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp Y>;
+            label = "Y_IFY";
+        };
     };
 
     keymap {
@@ -583,9 +604,9 @@
 
         alpha-2 {
             bindings = <
-        &trans  &r_ify J  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &r_ify V  &r_ify M  &r_ify K  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &r_ify J  &trans    &trans    &trans    &trans  &trans  &y_ify U  &y_ify O  &trans
+        &trans  &r_ify V  &r_ify M  &r_ify K  &trans    &trans  &trans  &y_ify E  &y_ify A  &trans
+&trans  &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans    &trans    &trans  &trans
                           &trans    &trans    &trans    &trans  &trans  &trans
             >;
         };
