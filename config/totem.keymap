@@ -432,7 +432,17 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_SHIFT";
             #binding-cells = <0>;
-            bindings = <&kp LSHIFT>, <&caps_word>;
+            bindings = <&mt_sticky LSHIFT LSHFT>, <&caps_word>;
+        };
+
+        mt_sticky: mt_sticky {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_STICKY";
+            bindings = <&kp>, <&sk>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <190>;
         };
     };
 
