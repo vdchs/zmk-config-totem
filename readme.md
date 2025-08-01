@@ -46,6 +46,25 @@ All these combos only work with the same side thumb, so keys on the left half ar
       •    •
 ```
 
+### sym
+#### sym base
+```
+% @ | &   _ + ` ^
+# $ ? !   - = : ;
+      /   •
+```
+### sym held
+```
+• • • •    •  •  ~ •
+• • • •    -> => • end+;
+      \    •
+```
+#### sym two-finger-combos
+```
+• • • •   • • • •
+• •*• •   • • • •
+      •   •
+```
 
 ...
 tbc
