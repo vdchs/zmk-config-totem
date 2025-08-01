@@ -29,9 +29,10 @@ num  sym  ctl  alt      alt  ctl  sym  num
 #### alpha two-finger-combos
 ```
 • q  • ß  • z  •        • ex • ü  •    •
-•os-s• f  • b  •        • .  • '  •os-s•
+•os-⇧• f  • b  •        • .  • '  •os-⇧•
                •   rr   •
 ```
+There is one more combo for entering the `func` layer by pressing both the pinky and index finger on one hand. (1+4 or 7+10)
 
 #### alpha thumb-combos
 ```
@@ -70,7 +71,7 @@ This is basically there to avoid awkward bigrams where the right thumb `r` is fo
 #    $    ?    !        -    =    :    ;
                /        •
 ```
-### sym held
+#### sym held
 ```
 •    •    •    •        •    •    ~    •  
 •    •    •    •        ->   =>   •    end+;
@@ -81,6 +82,20 @@ This is basically there to avoid awkward bigrams where the right thumb `r` is fo
 •    •    •    •        •    •    •    •
 •    • *  •    •        •    •    •    •
                •        •
+```
+
+### nav
+```
+gui  tab  pdn  pgd      home end  del  •
+esc  bsp  ctl  alt      ←    ↓    ↑    →
+               ⇧        •
+```
+
+### func
+```
+•    dvol uvol mute     pscr f11  f12  •
+f1   f2   f3   f4       f7   f8   f9   f10
+               f5       f6
 ```
 
 ...
