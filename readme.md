@@ -21,7 +21,7 @@ c    s    t    h        n    e    a    i
 ```
 gui  •    •    •        •    •    •    gui
 num  sym  ctl  alt      alt  ctl  sym  num
-            Roll        nav
+               Roll     nav
 ```
 
 #### alpha two-finger-combos
