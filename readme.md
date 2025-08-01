@@ -1,4 +1,4 @@
-# A push to making even less keys work
+# A push to making even fewer keys work
 ## The general idea behind this layout
 This layout makes heavy use of combos for everything that is not on the alpha layer.
 
