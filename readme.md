@@ -4,7 +4,7 @@ This layout makes heavy use of combos for everything that is not on the alpha la
 
 In my head I tend to distinguish between 2 kinds of combos: two-finger-combos and thumb-combos. The former are a concept that worked really well in my 22 key version, the latter are new to this layout and the cornerstone of getting the number of keys down even further than before.
 
-This amount of combos comes with a lot of domnsides and just leaving it at that would result in a layout that is - frankly - bad. In order to mitigate the problems and elevate the layout to a usable one, I made use of adaptive keys (and some other neat tricks). The resulting layout comes with a substantial learning curve but a big payoff: it is my smallest layout so far; and should - in theory - still allow for typing speeds well above 100 wpm.
+This amount of combos comes with a lot of tradeoffs and just leaving it at that would result in a layout that is - frankly - bad. In order to compensate and elevate the layout to a usable one, I made use of adaptive keys (and some other neat tricks). The resulting layout comes with a substantial learning curve but a big payoff: it is my smallest layout so far; and should - in theory - still allow for typing speeds well above 100 wpm.
 
 I am not quite there yet. This is very much a work in progress and does not type as smoothly as the 22 version.
 
