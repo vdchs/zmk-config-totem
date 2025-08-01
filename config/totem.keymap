@@ -273,11 +273,11 @@
             #binding-cells = <0>;
             defaults = <&kp C>;
             antecedents = <
-                G      B      D      P
+                G      B      P
             >;
 
             bindings = <
-                &kp S  &kp V  &kp M  &kp H
+                &kp S  &kp V  &kp H
             >;
 
             max-delay-ms = <200>;
@@ -310,22 +310,6 @@
 
             bindings = <
                 &kp V
-            >;
-
-            max-delay-ms = <200>;
-        };
-
-        ad_w: ad_w {
-            compatible = "zmk,behavior-antecedent-morph";
-            label = "ADAPTIVE_W";
-            #binding-cells = <0>;
-            defaults = <&kp W>;
-            antecedents = <
-                D
-            >;
-
-            bindings = <
-                &kp J
             >;
 
             max-delay-ms = <200>;
@@ -457,18 +441,6 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <190>;
-        };
-
-        mt_hmr_l_ad_w: mt_hmr_l_ad_w {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_HMR_L_AD_W";
-            bindings = <&kp>, <&ad_w>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "balanced";
-            hold-trigger-key-positions = <6 7 17 16 27 18 8 9 19 26 5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 35 36 37 32 33 34>;
-            require-prior-idle-ms = <30>;
         };
 
         lt_hmr_r_hold_only: lt_hmr_r_hold_only {
