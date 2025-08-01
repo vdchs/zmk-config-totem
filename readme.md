@@ -8,6 +8,8 @@ This amount of combos comes with a lot of domnsides and just leaving it at that 
 
 I am not quite there yet. This is very much a work in progress and does not type as smoothly as the 22 version.
 
+Oh yeah, and this layout does feel a bit like playing DDR. 
+
 ## Layers
 ### alpha
 #### alpha base
@@ -37,6 +39,7 @@ num  sym  ctl  alt      alt  ctl  sym  num
 x    v    w    k        ,_   ,    •    •
                ★       ★
 ```
+All these combos only work with the same side thumb, so keys on the left half are paired with the left thumb key and vice versa.
 
 #### alpha r-roll layer
 ```
@@ -44,8 +47,7 @@ x    v    w    k        ,_   ,    •    •
 rx   rv   rm   rk       •    •    •    •
                •        •
 ```
-
-All these combos only work with the same side thumb, so keys on the left half are paired with the left thumb key and vice versa.
+This is basically there to avoid awkward bigrams where the right thumb `r` is followed by a thumb-combo-letter. It enables me to just roll the keys instead.
 
 ### num
 #### num base
