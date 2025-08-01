@@ -12,58 +12,73 @@ I am not quite there yet. This is very much a work in progress and does not type
 ### alpha
 #### alpha base
 ```
-m g d p   l u o y
-c s t h   n e a i
-      r   _
+m    g    d    p        l    u    o    y
+c    s    t    h        n    e    a    i
+               r        _
+```
+
+#### alpha held
+```
+gui  •    •    •        •    •    •    gui
+num  sym  ctl  alt      alt  ctl  sym  num
+            Roll        nav
 ```
 
 #### alpha two-finger-combos
 ```
-•q   •ß•z•    •ex•ü•    •
-•os-s•f•b•    •. •'•os-s•
-         • rr •
+• q  • ß  • z  •        • ex • ü  •    •
+•os-s• f  • b  •        • .  • '  •os-s•
+               •   rr   •
 ```
 
 #### alpha thumb-combos
 ```
-• j • •    •  • • • 
-x v w k    ,_ , • •
-      ★   ★
+•    j    •    •        •    •    •    • 
+x    v    w    k        ,_   ,    •    •
+               ★       ★
 ```
+
+#### r-roll layer
+```
+•    rj   •    •        •    •    •    •
+rx   rv   rm   rk       •    •    •    •
+               •        •
+```
+
 All these combos only work with the same side thumb, so keys on the left half are paired with the left thumb key and vice versa.
 
 ### num
 #### num base
 ```
-• . ( )    7 8 9 •
-• 3 2 1    4 5 6 •
-      0    _
+•    .    (    )        7    8    9    •
+•    3    2    1        4    5    6    •
+               0        _
 ```
 #### num two-finger-combos
 ```
-• • •[•    •]• • •
-• •<•{•    •}•>• •
-      •    •
+•    •    • [  •        • ]  •    •    •
+•    • <  • {  •        • }  • >  •    •
+               •        •
 ```
 
 ### sym
 #### sym base
 ```
-% @ | &   _ + ` ^
-# $ ? !   - = : ;
-      /   •
+%    @    |    &        _    +    `    ^
+#    $    ?    !        -    =    :    ;
+               /        •
 ```
 ### sym held
 ```
-• • • •    •  •  ~ •
-• • • •    -> => • end+;
-      \    •
+•    •    •    •        •    •    ~    •  
+•    •    •    •        ->   =>   •    end+;
+               \        •
 ```
 #### sym two-finger-combos
 ```
-• • • •   • • • •
-• •*• •   • • • •
-      •   •
+•    •    •    •        •    •    •    •
+•    • *  •    •        •    •    •    •
+               •        •
 ```
 
 ...
