@@ -38,7 +38,7 @@ x    v    w    k        ,_   ,    •    •
                ★       ★
 ```
 
-#### r-roll layer
+#### alpha r-roll layer
 ```
 •    rj   •    •        •    •    •    •
 rx   rv   rm   rk       •    •    •    •
