@@ -86,7 +86,7 @@ This is basically there to avoid awkward bigrams where the right thumb `r` is fo
 
 ### nav
 ```
-gui  tab  pgdn pgup      home end  del  •
+gui  tab  pgdn pgup     home end  del  •
 esc  bsp  ctl  alt      ←    ↓    ↑    →
                ⇧        •
 ```
