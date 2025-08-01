@@ -86,14 +86,14 @@ This is basically there to avoid awkward bigrams where the right thumb `r` is fo
 
 ### nav
 ```
-gui  tab  pdn  pgd      home end  del  •
+gui  tab  pgdn pgup      home end  del  •
 esc  bsp  ctl  alt      ←    ↓    ↑    →
                ⇧        •
 ```
 
 ### func
 ```
-•    dvol uvol mute     pscr f11  f12  •
+•    vold volu mute     pscr f11  f12  •
 f1   f2   f3   f4       f7   f8   f9   f10
                f5       f6
 ```
