@@ -31,7 +31,7 @@
         };
 
         j {
-            bindings = <&mt_double J J>;
+            bindings = <&mt_r_reverse_ify J J>;
             key-positions = <11 33>;
             timeout-ms = <28>;
             layers = <0>;
@@ -58,7 +58,7 @@
         };
 
         x {
-            bindings = <&mt_double X X>;
+            bindings = <&mt_r_reverse_ify X X>;
             key-positions = <33 21>;
             timeout-ms = <28>;
             layers = <0>;
@@ -86,7 +86,7 @@
         };
 
         v {
-            bindings = <&mt_double V V>;
+            bindings = <&mt_r_reverse_ify V V>;
             key-positions = <22 33>;
             timeout-ms = <28>;
             layers = <0>;
@@ -122,14 +122,14 @@
         };
 
         w {
-            bindings = <&mt_double W W>;
+            bindings = <&mt_r_reverse_ify W W>;
             key-positions = <23 33>;
             timeout-ms = <28>;
             layers = <0>;
         };
 
         k {
-            bindings = <&mt_double K K>;
+            bindings = <&mt_r_reverse_ify K K>;
             key-positions = <24 33>;
             timeout-ms = <28>;
             layers = <0>;
@@ -466,6 +466,16 @@
             hold-trigger-key-positions = <26 27 16 6 7 17 8 18 9 19 5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 35 36 37 32 33 34>;
             require-prior-idle-ms = <30>;
         };
+
+        mt_r_reverse_ify: mt_r_reverse_ify {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_R_REVERSE_IFY";
+            bindings = <&r_reverse_ify>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -532,6 +542,13 @@
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &sl MACRO_PLACEHOLDER>;
             label = "SINGLE_STICKY";
+        };
+
+        r_reverse_ify: r_reverse_ify {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp R>;
+            label = "R_REVERSE_IFY";
         };
     };
 
