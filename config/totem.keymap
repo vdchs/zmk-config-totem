@@ -305,11 +305,11 @@
             #binding-cells = <0>;
             defaults = <&kp P>;
             antecedents = <
-                D
+                D      T
             >;
 
             bindings = <
-                &kp V
+                &kp V  &kp W
             >;
 
             max-delay-ms = <200>;
