@@ -547,12 +547,12 @@
             >;
         };
 
-        alpha-2 {
+        rroll {
             bindings = <
-        &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &r_ify J  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &r_ify V  &r_ify M  &r_ify K  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                          &trans    &trans    &trans    &trans  &trans  &trans
+        &trans    &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
+        &trans    &r_ify J  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &r_ify X  &r_ify V  &r_ify W  &r_ify K  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans    &trans    &trans    &trans  &trans  &trans
             >;
         };
 
