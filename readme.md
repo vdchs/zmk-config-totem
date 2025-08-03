@@ -57,6 +57,8 @@ rx   rv   rm   rk       •    •    •    •
 ```
 This is basically there to avoid awkward bigrams where the right thumb `r` is followed by a thumb-combo-letter. It enables me to just roll the keys instead.
 
+Entering this layer is done with a `&sk` macro instead of an actual `&mo` key. This way the layer is always only triggered for one keypress, allowing for rolling "out" of this layer, too.
+
 ### num
 #### num base
 ```
