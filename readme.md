@@ -49,7 +49,7 @@ x    v    w    k        ,_   ,    •    •
 ```
 All these combos only work with the same side thumb, so keys on the left half are paired with the left thumb key and vice versa.
 
-#### alpha r-roll layer
+#### alpha Rroll layer
 ```
 •    rj   •    •        •    •    •    •
 rx   rv   rm   rk       •    •    •    •
@@ -58,6 +58,14 @@ rx   rv   rm   rk       •    •    •    •
 This is basically there to avoid awkward bigrams where the right thumb `r` is followed by a thumb-combo-letter. It enables me to just roll the keys instead.
 
 Entering this layer is done with a `&sk` macro instead of an actual `&mo` key. This way the layer is always only triggered for one keypress, allowing for rolling "out" of this layer, too.
+
+#### alpha thumb-combo held
+```
+•    jr   •    •        •    •    •    •
+xr   vr   mr   kr       •    •    •    •
+               •        •
+```
+This is basically the `Rroll` layer in reverse. Some of these bigrams are used infrequently and the function could be used more effectively. But I intentionally decided to keep this straight forward - the layout is complex enough as it is.
 
 ### num
 #### num base
