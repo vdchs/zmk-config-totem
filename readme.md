@@ -36,11 +36,11 @@ num  sym  ctl  alt      alt  ctl  sym  num
 #### alpha other combos
 ```
 •    •    •    •        •    •    •    •
-★☆   ★    ★    ★☆       ★☆   ★    ★    ★☆
+1|3  1    1    1|3      2|4  2    2    2|4
                •        •
 ```
-☆ func
-★ caps word
+1, 2 caps word\
+3, 4 func
 
 #### alpha two-finger-combo held
 ```
