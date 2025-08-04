@@ -32,12 +32,20 @@ num  sym  ctl  alt      alt  ctl  sym  num
 •os⇧ • f  • b  •        • .  • '  •os⇧ •
                •   rr   •
 ```
-There is one more combo for entering the `func` layer by pressing both the pinky and index finger on one hand. (1+4 or 7+10)
+
+#### alpha other combos
+```
+•    •    •    •        •    •    •    •
+★☆   ★    ★    ★☆       ★☆   ★    ★    ★☆
+               •        •
+```
+☆ func
+★ caps word
 
 #### alpha two-finger-combo held
 ```
 • qq •    • zz •        •    •    •    •
-•capw• ff • bb •        •... •    •capw•
+• ⇧  • ff • bb •        •... •    • ⇧  •
                •        •
 ```
 
