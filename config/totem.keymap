@@ -321,11 +321,11 @@
             #binding-cells = <0>;
             defaults = <&kp H>;
             antecedents = <
-                B      M      R      F
+                B      M      F
             >;
 
             bindings = <
-                &kp R  &kp B  &kp M  &kp T
+                &kp R  &kp B  &kp T
             >;
 
             max-delay-ms = <200>;
