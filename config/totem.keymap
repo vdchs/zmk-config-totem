@@ -249,7 +249,7 @@
 
         func_l {
             bindings = <&lt_hmr_l_hold_only 5 0>;
-            key-positions = <21 25>;
+            key-positions = <21 24>;
             timeout-ms = <25>;
             require-prior-idle-ms = <250>;
             layers = <0>;
