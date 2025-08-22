@@ -157,7 +157,7 @@
         };
 
         dot {
-            bindings = <&kp DOT>;
+            bindings = <&mt_ellipsis 0 DOT>;
             key-positions = <27 28>;
             timeout-ms = <28>;
             layers = <0>;
@@ -476,6 +476,16 @@
             tapping-term-ms = <175>;
             flavor = "tap-preferred";
         };
+
+        mt_ellipsis: mt_ellipsis {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_ELLIPSIS";
+            bindings = <&ellipsis>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -549,6 +559,13 @@
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp R>;
             label = "R_REVERSE_IFY";
+        };
+
+        ellipsis: ellipsis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOT &kp DOT &kp DOT>;
+            label = "ELLIPSIS";
         };
     };
 
