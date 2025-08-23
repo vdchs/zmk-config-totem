@@ -1,12 +1,12 @@
-# A push to making even fewer keys work
+# A (failed) push to making even fewer keys work
 ## The general idea behind this layout
 This layout makes heavy use of combos for everything that is not on the alpha layer.
 
 In my head I tend to distinguish between 2 kinds of combos: two-finger-combos and thumb-combos. The former are a concept that worked really well in my 22 key version, the latter are new to this layout and the cornerstone of getting the number of keys down even further than before.
 
-This amount of combos comes with a lot of tradeoffs and just leaving it at that would result in a layout that is - frankly - bad. In order to compensate and elevate the layout to a usable one, I made use of adaptive keys (and some other neat tricks). The resulting layout comes with a substantial learning curve but a big payoff: it is my smallest layout so far; and should - in theory - still allow for typing speeds well above 100 wpm.
+This amount of combos comes with a lot of tradeoffs and just leaving it at that would result in a layout that is - frankly - bad. In order to compensate and elevate the layout to a usable one, I made use of adaptive keys (and some other neat tricks). The resulting layout comes with a substantial learning curve and is my smallest layout so far.
 
-I am not quite there yet. This is very much a work in progress and does not type as smoothly as the 22 version.
+Update: After a few weeks of experimentation with this I am not happy with how this turned out. Initially I was pretty confident that this was an improvement over the 22 key version. The typing speeds were quite alright, breaking 100 wpm seemed totally doable, but in the end things never fell quite into place. I ended up dissatisfied with either M or W being on a combo and not finding a solution. For now I've abandoned this layout and went back to the main one. I left this branch up because is was a fun learning experience and maybe interesting for some.
 
 Oh yeah, and this layout does feel a bit like playing DDR. 
 
