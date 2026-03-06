@@ -134,6 +134,20 @@
             timeout-ms = <45>;
             layers = <0>;
         };
+
+        cword_l {
+            bindings = <&caps_word>;
+            key-positions = <19 16>;
+            timeout-ms = <28>;
+            layers = <0>;
+        };
+
+        cword_r {
+            bindings = <&caps_word>;
+            key-positions = <10 13>;
+            timeout-ms = <28>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -322,7 +336,7 @@
         mt_thumb: mt_thumb {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_THUMB";
-            bindings = <&kp>, <&kp>;
+            bindings = <&singleSk>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <140>;
@@ -420,6 +434,13 @@
             bindings = <&kp DOT &kp DOT &kp DOT>;
             label = "ELLIPSIS";
         };
+
+        singleSk: singleSk {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &sk MACRO_PLACEHOLDER>;
+            label = "SINGLESK";
+        };
     };
 
     keymap {
@@ -463,10 +484,10 @@
 
         func {
             bindings = <
-        &trans  &kp C_VOL_DN  &kp C_VOL_UP         &kp C_MUTE       &trans    &trans  &kp PSCRN        &kp F11       &kp F12  &trans
-        &kp F1  &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8  &kp F9   &kp F10
-&trans  &trans  &trans        &trans               &mt LGUI F5      &trans    &trans  &mt RGUI F6      &trans        &trans   &trans   &trans
-                              &trans               &trans           &trans    &trans  &trans           &trans
+        &trans  &kp C_VOL_DN  &kp C_VOL_UP         &kp C_MUTE       &trans        &trans  &kp PSCRN        &kp F11       &kp F12  &trans
+        &kp F1  &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans        &trans  &mt LEFT_ALT F7  &mt LCTRL F8  &kp F9   &kp F10
+&trans  &trans  &trans        &trans               &mt LGUI F5      &trans        &trans  &mt RGUI F6      &trans        &trans   &trans   &trans
+                              &trans               &kp LSHIFT       &kp LSHIFT    &trans  &trans           &trans
             >;
         };
     };
