@@ -457,7 +457,7 @@
 
         sym {
             bindings = <
-        &kp PRCNT  &kp AT    &kp PIPE   &kp AMPS  &trans    &trans  &kp CARET                &kp BSLH                 &kp GRAVE  &kp TILDE
+        &kp PRCNT  &kp AT    &kp PIPE   &kp AMPS  &trans    &trans  &kp CARET                &kp BSLH                 &kp DQT    &mt GRAVE TILDE
         &kp HASH   &kp DLLR  &kp STAR   &kp EXCL  &trans    &trans  &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON  &mt_append SEMI SEMI
 &trans  &trans     &trans    &kp QMARK  &kp FSLH  &trans    &trans  &kp UNDER                &kp PLUS                 &trans     &trans                &trans
                              &trans     &trans    &trans    &trans  &trans                   &trans
