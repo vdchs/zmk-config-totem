@@ -140,6 +140,7 @@
             key-positions = <19 16>;
             timeout-ms = <28>;
             layers = <0>;
+            require-prior-idle-ms = <150>;
         };
 
         cword_r {
@@ -147,6 +148,7 @@
             key-positions = <10 13>;
             timeout-ms = <28>;
             layers = <0>;
+            require-prior-idle-ms = <150>;
         };
     };
 
