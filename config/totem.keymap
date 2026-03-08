@@ -475,6 +475,13 @@
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &tog_off 1>;
             label = "KP_A2_OFF";
         };
+
+        wh_a2_off: wh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp H &tog_off 1>;
+            label = "WH";
+        };
     };
 
     keymap {
@@ -492,7 +499,7 @@
         alpha2 {
             bindings = <
         &trans  &kp_a2_off G  &trans  &trans      &trans    &trans  &trans        &trans        &trans  &trans
-        &trans  &trans        &trans  &trans      &trans    &trans  &kp_a2_off W  &trans        &trans  &kp_a2_off Y
+        &trans  &trans        &trans  &wh_a2_off  &trans    &trans  &kp_a2_off W  &trans        &trans  &kp_a2_off Y
 &trans  &trans  &trans        &trans  &trans      &trans    &trans  &trans        &kp_a2_off X  &trans  &trans        &trans
                               &trans  &tog_off 1  &trans    &trans  &trans        &trans
             >;
@@ -501,7 +508,7 @@
         a2_held {
             bindings = <
         &trans  &kp_a2_off G  &trans  &trans      &trans    &trans  &trans        &trans        &trans  &trans
-        &trans  &trans        &trans  &trans      &trans    &trans  &kp_a2_off W  &trans        &trans  &kp_a2_off Y
+        &trans  &trans        &trans  &wh_a2_off  &trans    &trans  &kp_a2_off W  &trans        &trans  &kp_a2_off Y
 &trans  &trans  &trans        &trans  &trans      &trans    &trans  &trans        &kp_a2_off X  &trans  &trans        &trans
                               &trans  &tog_off 1  &trans    &trans  &trans        &trans
             >;
