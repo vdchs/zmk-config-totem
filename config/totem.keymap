@@ -491,10 +491,10 @@
 
         alpha2 {
             bindings = <
-        &trans  &trans  &trans    &trans      &trans    &trans  &trans    &trans  &trans  &trans
-        &trans  &trans  &kp_a2 C  &trans      &trans    &trans  &kp_a2 W  &trans  &trans  &kp_a2 Y
-&trans  &trans  &trans  &trans    &trans      &trans    &trans  &trans    &trans  &trans  &trans    &trans
-                        &trans    &tog_off 1  &trans    &trans  &trans    &trans
+        &trans  &trans  &trans    &trans      &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &kp_a2 C  &trans      &trans    &trans  &trans  &trans  &trans  &kp_a2 Y
+&trans  &trans  &trans  &kp_a2 W  &trans      &trans    &trans  &trans  &trans  &trans  &trans    &trans
+                        &trans    &tog_off 1  &trans    &trans  &trans  &trans
             >;
         };
 
