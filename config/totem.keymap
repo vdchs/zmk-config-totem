@@ -124,20 +124,6 @@
             layers = <0>;
         };
 
-        rr {
-            bindings = <&double R>;
-            key-positions = <34 35>;
-            timeout-ms = <45>;
-            layers = <0>;
-        };
-
-        rr2 {
-            bindings = <&double R>;
-            key-positions = <33 36>;
-            timeout-ms = <45>;
-            layers = <0>;
-        };
-
         cword_l {
             bindings = <&caps_word>;
             key-positions = <19 16>;
