@@ -200,7 +200,7 @@
             max-delay-ms = <200>;
         };
 
-         ad_h: ad_h {
+        ad_h: ad_h {
             compatible = "zmk,behavior-antecedent-morph";
             label = "ADAPTIVE_H";
             #binding-cells = <0>;
@@ -375,7 +375,7 @@
             bindings = <&double>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <120>;
+            tapping-term-ms = <140>;
             flavor = "tap-preferred";
         };
 
@@ -395,7 +395,7 @@
             bindings = <&double>, <&ad_g>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <120>;
+            tapping-term-ms = <140>;
             flavor = "tap-preferred";
         };
 
@@ -405,8 +405,20 @@
             bindings = <&double>, <&ad_f>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <120>;
+            tapping-term-ms = <140>;
             flavor = "tap-preferred";
+        };
+
+        mt_hrm_l_ad_h: mt_hrm_l_ad_h {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_HRM_L_AD_H";
+            bindings = <&kp>, <&ad_h>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <15 5 6 7 17 16 26 27 28 29 18 8 9 19 30 31 32 33 34 36 37 35>;
+            require-prior-idle-ms = <30>;
         };
     };
 
