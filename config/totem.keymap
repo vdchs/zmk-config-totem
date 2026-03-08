@@ -343,7 +343,7 @@
         mt_thumb: mt_thumb {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_THUMB";
-            bindings = <&singleSk>, <&singleSl>;
+            bindings = <&singleSk>, <&tog>;
 
             #binding-cells = <2>;
             tapping-term-ms = <140>;
@@ -467,6 +467,13 @@
             bindings = <&macro_param_1to1 &sl MACRO_PLACEHOLDER>;
             label = "SINGLESL";
         };
+
+        kp_a2: kp_a2 {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &tog 1>;
+            label = "KP_A2";
+        };
     };
 
     keymap {
@@ -483,10 +490,10 @@
 
         alpha2 {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &kp W   &kp C   &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp Y
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &trans    &trans    &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans
+        &kp_a2 W  &kp_a2 C  &trans  &trans     &trans    &trans  &trans  &trans  &trans  &kp_a2 Y
+&trans  &trans    &trans    &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans    &trans
+                            &trans  &kp LSHFT  &trans    &trans  &trans  &trans
             >;
         };
 
