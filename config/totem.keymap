@@ -68,7 +68,7 @@
         };
 
         x {
-            bindings = <&lt_hmr_l 5 X>;
+            bindings = <&lt_hmr_l 6 X>;
             key-positions = <10 11>;
             timeout-ms = <28>;
             layers = <0 1>;
@@ -110,7 +110,7 @@
         };
 
         func_r {
-            bindings = <&mo 5>;
+            bindings = <&mo 6>;
             key-positions = <18 19>;
             timeout-ms = <28>;
             layers = <0 1>;
@@ -483,9 +483,9 @@
         alpha {
             bindings = <
         &trans         &ad_g          &kp D                     &ad_f                      &trans    &trans  &mt_double L L               &kp U                     &kp O          &trans
-        &lt_hmr_l 3 R  &lt_hmr_l 2 S  &mt_hmr_l LEFT_CONTROL T  &mt_hrm_l_ad_h LEFT_ALT 0  &trans    &trans  &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 2 A  &lt_hmr_r 3 I
+        &lt_hmr_l 4 R  &lt_hmr_l 3 S  &mt_hmr_l LEFT_CONTROL T  &mt_hrm_l_ad_h LEFT_ALT 0  &trans    &trans  &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 3 A  &lt_hmr_r 4 I
 &trans  &trans         &trans         &kp M                     &mt_hmr_l LEFT_GUI P       &trans    &trans  &mt_hmr_comma_gt LEFT_GUI 0  &mt_dot_lt_ellipsis 0 0   &trans         &trans         &trans
-                                      &trans                    &tog_on 1                  &trans    &trans  &lt 4 SPACE                  &trans
+                                      &trans                    &mt_thumb 2 1              &trans    &trans  &lt 5 SPACE                  &trans
             >;
         };
 
@@ -495,6 +495,15 @@
         &trans  &trans  &kp_a2 C  &trans      &trans    &trans  &kp_a2 W  &trans  &trans  &kp_a2 Y
 &trans  &trans  &trans  &trans    &trans      &trans    &trans  &trans    &trans  &trans  &trans    &trans
                         &trans    &tog_off 1  &trans    &trans  &trans    &trans
+            >;
+        };
+
+        a2_mo {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &kp C   &trans  &trans    &trans  &kp W   &trans  &trans  &kp Y
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
