@@ -103,7 +103,7 @@
         };
 
         sqt {
-            bindings = <&mt_double SQT SQT>;
+            bindings = <&kp SQT>;
             key-positions = <18 17>;
             timeout-ms = <28>;
             layers = <0>;
