@@ -367,28 +367,6 @@
             flavor = "tap-preferred";
         };
 
-        mt_dot_lt_ellipsis: mt_dot_lt_ellipsis {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_DOT_LT_ELLIPSIS";
-            bindings = <&ellipsis>, <&dot_lt>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "tap-preferred";
-        };
-
-        mt_hrm_l_ad_h: mt_hrm_l_ad_h {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_HRM_L_AD_H";
-            bindings = <&kp>, <&ad_h>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "balanced";
-            hold-trigger-key-positions = <15 5 6 7 17 16 26 27 28 29 18 8 9 19 30 31 32 33 34 36 37 35>;
-            require-prior-idle-ms = <30>;
-        };
-
         tog_on: tog_on {
             compatible = "zmk,behavior-toggle-layer";
             label = "TOG_ON";
@@ -400,6 +378,30 @@
             label = "TOG_OFF";
             #binding-cells = <1>;
             toggle-mode = "off";
+        };
+
+        mt_hmr_l_ssk: mt_hmr_l_ssk {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_HMR_L_SSK";
+            bindings = <&singleSk>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <15 5 6 7 17 16 26 27 28 29 18 8 9 19 30 31 32 33 34 36 37 35>;
+            require-prior-idle-ms = <200>;
+        };
+
+        mt_hmr_r_ssk: mt_hmr_r_ssk {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_HMR_R_SSK";
+            bindings = <&singleSk>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <20 21 10 0 1 11 22 23 12 2 3 24 13 4 14 25 32 33 34 36 37 35>;
+            require-prior-idle-ms = <200>;
         };
     };
 
@@ -448,13 +450,6 @@
             label = "DOUBLE";
         };
 
-        ellipsis: ellipsis {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp DOT &kp DOT &kp DOT>;
-            label = "ELLIPSIS";
-        };
-
         singleSk: singleSk {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -489,10 +484,10 @@
 
         alpha {
             bindings = <
-        &trans         &kp C          &kp D                     &ad_f                      &trans    &trans  &mt_double L L               &kp U                     &kp O          &trans
-        &lt_hmr_l 4 R  &lt_hmr_l 3 S  &mt_hmr_l LEFT_CONTROL T  &mt_hrm_l_ad_h LEFT_ALT 0  &trans    &trans  &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 3 A  &lt_hmr_r 4 I
-&trans  &trans         &trans         &kp M                     &mt_hmr_l LEFT_GUI P       &trans    &trans  &mt_hmr_comma_gt LEFT_GUI 0  &mt_dot_lt_ellipsis 0 0   &trans         &trans         &trans
-                                      &trans                    &mt_thumb 2 1              &trans    &trans  &lt 5 SPACE                  &trans
+        &trans         &kp C          &kp D                     &ad_f                   &trans    &trans  &mt_double L L               &kp U                     &kp O          &trans
+        &lt_hmr_l 4 R  &lt_hmr_l 3 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l_ssk LSHIFT H  &trans    &trans  &mt_hmr_r_ssk LSHIFT N       &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 3 A  &lt_hmr_r 4 I
+&trans  &trans         &trans         &mt_hmr_l LALT M          &mt_hmr_l LEFT_GUI P    &trans    &trans  &mt_hmr_comma_gt LEFT_GUI 0  &mt_hmr_r LALT DOT        &trans         &trans         &trans
+                                      &trans                    &mt_thumb 2 1           &trans    &trans  &lt 5 SPACE                  &trans
             >;
         };
 
