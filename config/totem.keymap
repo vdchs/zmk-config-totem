@@ -102,8 +102,8 @@
             layers = <0>;
         };
 
-        apos {
-            bindings = <&mt_double APOS APOS>;
+        sqt {
+            bindings = <&mt_double SQT SQT>;
             key-positions = <18 17>;
             timeout-ms = <28>;
             layers = <0>;
@@ -220,11 +220,11 @@
             #binding-cells = <0>;
             defaults = <&kp W>;
             antecedents = <
-                D
+                D      U
             >;
 
             bindings = <
-                &kp J
+                &kp J  &kp SQT
             >;
 
             max-delay-ms = <200>;
