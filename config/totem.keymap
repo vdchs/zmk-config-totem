@@ -420,16 +420,6 @@
             hold-trigger-key-positions = <15 5 6 7 17 16 26 27 28 29 18 8 9 19 30 31 32 33 34 36 37 35>;
             require-prior-idle-ms = <30>;
         };
-
-        mt_double_long_to: mt_double_long_to {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_DOUBLE_LONG_TO";
-            bindings = <&double>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <220>;
-            flavor = "tap-preferred";
-        };
     };
 
     macros {
@@ -497,9 +487,9 @@
 
         alpha {
             bindings = <
-        &ad_w               &mt_double_ad_g G 0  &mt_double D D            &mt_double_ad_f F 0        &trans    &trans  &mt_double L L               &kp U                     &mt_double_long_to O O  &kp Y
-        &lt_hmr_l_ad_c 2 0  &lt_hmr_l 1 S        &mt_hmr_l LEFT_CONTROL T  &mt_hrm_l_ad_h LEFT_ALT 0  &trans    &trans  &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A           &lt_hmr_r 2 I
-&trans  &trans              &trans               &mt_double M M            &mt_hmr_l LEFT_GUI P       &trans    &trans  &mt_hmr_comma_gt LEFT_GUI 0  &mt_dot_lt_ellipsis 0 0   &trans                  &trans         &trans
+        &ad_w               &mt_double_ad_g G 0  &mt_double D D            &mt_double_ad_f F 0        &trans    &trans  &mt_double L L               &kp U                     &kp O          &kp Y
+        &lt_hmr_l_ad_c 2 0  &lt_hmr_l 1 S        &mt_hmr_l LEFT_CONTROL T  &mt_hrm_l_ad_h LEFT_ALT 0  &trans    &trans  &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
+&trans  &trans              &trans               &mt_double M M            &mt_hmr_l LEFT_GUI P       &trans    &trans  &mt_hmr_comma_gt LEFT_GUI 0  &mt_dot_lt_ellipsis 0 0   &trans         &trans         &trans
                                                  &trans                    &mt_thumb LSHIFT R         &trans    &trans  &lt 3 SPACE                  &trans
             >;
         };
