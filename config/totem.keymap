@@ -67,8 +67,8 @@
             layers = <0 1>;
         };
 
-        c {
-            bindings = <&lt_hmr_l 5 C>;
+        func_l {
+            bindings = <&mo 5>;
             key-positions = <10 11>;
             timeout-ms = <28>;
             layers = <0 1>;
