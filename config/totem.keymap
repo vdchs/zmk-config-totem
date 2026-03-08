@@ -210,7 +210,7 @@
             >;
 
             bindings = <
-                &kp J  &kp SQT  &SQT
+                &kp J  &kp SQT  &kp SQT
             >;
 
             max-delay-ms = <200>;
