@@ -439,10 +439,10 @@
 
         alpha {
             bindings = <
-        &ad_w               &ad_g          &kp D                     &ad_f                 &trans         &trans       &mt_double L L               &kp U                     &kp O          &kp Y
-        &lt_hmr_l_ad_c 2 0  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &trans         &trans       &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
-&trans  &trans              &trans         &kp M                     &mt_hmr_l LEFT_GUI P  &trans         &trans       &mt_hmr_comma_gt LEFT_GUI 0  &mt_dot_lt_ellipsis 0 0   &trans         &trans         &trans
-                                           &trans                    &mt_thumb LSHIFT R    &key_repeat    &key_repeat  &lt 3 SPACE                  &trans
+        &ad_w               &ad_g          &kp D                     &ad_f                 &trans    &trans  &mt_double L L               &kp U                     &kp O          &kp Y
+        &lt_hmr_l_ad_c 2 0  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LEFT_ALT H  &trans    &trans  &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
+&trans  &trans              &trans         &kp M                     &mt_hmr_l LEFT_GUI P  &trans    &trans  &mt_hmr_comma_gt LEFT_GUI 0  &mt_dot_lt_ellipsis 0 0   &trans         &trans         &trans
+                                           &trans                    &mt_thumb LSHIFT R    &trans    &trans  &lt 3 SPACE                  &trans
             >;
         };
 
@@ -460,25 +460,25 @@
         &trans  &trans  &kp LBKT  &kp RBKT  &trans    &trans  &kp N7    &kp N8    &kp N9  &trans
         &trans  &kp N3  &kp N2    &kp N1    &trans    &trans  &kp N4    &kp N5    &kp N6  &trans
 &trans  &trans  &trans  &kp LPAR  &kp RPAR  &trans    &trans  &kp RBRC  &kp LBRC  &trans  &trans  &trans
-                        &trans    &kp N0    &kp N0    &trans  &trans    &trans
+                        &trans    &kp N0    &trans    &trans  &trans    &trans
             >;
         };
 
         nav {
             bindings = <
-        &trans   &kp TAB   &msc SCRL_UP      &msc SCRL_DOWN  &trans        &trans  &kp HOME   &kp END    &kp DEL  &trans
-        &kp ESC  &kp BSPC  &kp LEFT_CONTROL  &mt LALT ENTER  &trans        &trans  &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT
-&trans  &trans   &trans    &trans            &kp LEFT_GUI    &trans        &trans  &kp PG_DN  &kp PG_UP  &trans   &trans     &trans
-                           &trans            &kp LSHIFT      &kp LSHIFT    &trans  &trans     &trans
+        &trans   &kp TAB   &msc SCRL_UP      &msc SCRL_DOWN  &trans    &trans  &kp HOME   &kp END    &kp DEL  &trans
+        &kp ESC  &kp BSPC  &kp LEFT_CONTROL  &mt LALT ENTER  &trans    &trans  &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT
+&trans  &trans   &trans    &trans            &kp LEFT_GUI    &trans    &trans  &kp PG_DN  &kp PG_UP  &trans   &trans     &trans
+                           &trans            &kp LSHIFT      &trans    &trans  &trans     &trans
             >;
         };
 
         func {
             bindings = <
-        &trans  &kp C_VOL_DN  &kp C_VOL_UP         &kp C_MUTE       &trans        &trans  &kp PSCRN        &kp F11       &kp F12  &trans
-        &kp F1  &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans        &trans  &mt LEFT_ALT F7  &mt LCTRL F8  &kp F9   &kp F10
-&trans  &trans  &trans        &trans               &mt LGUI F5      &trans        &trans  &mt RGUI F6      &trans        &trans   &trans   &trans
-                              &trans               &kp LSHIFT       &kp LSHIFT    &trans  &trans           &trans
+        &trans  &kp C_VOL_DN  &kp C_VOL_UP         &kp C_MUTE       &trans    &trans  &kp PSCRN        &kp F11       &kp F12  &trans
+        &kp F1  &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8  &kp F9   &kp F10
+&trans  &trans  &trans        &trans               &mt LGUI F5      &trans    &trans  &mt RGUI F6      &trans        &trans   &trans   &trans
+                              &trans               &kp LSHIFT       &trans    &trans  &trans           &trans
             >;
         };
     };
