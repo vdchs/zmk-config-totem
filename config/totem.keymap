@@ -68,7 +68,7 @@
         };
 
         x {
-            bindings = <&lt_hmr_l 4 X>;
+            bindings = <&lt_hmr_l 5 X>;
             key-positions = <10 11>;
             timeout-ms = <28>;
             layers = <0>;
@@ -110,7 +110,7 @@
         };
 
         func_r {
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             key-positions = <18 19>;
             timeout-ms = <28>;
             layers = <0>;
@@ -343,7 +343,7 @@
         mt_thumb: mt_thumb {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_THUMB";
-            bindings = <&singleSk>, <&kp>;
+            bindings = <&singleSk>, <&singleSl>;
 
             #binding-cells = <2>;
             tapping-term-ms = <140>;
@@ -460,6 +460,13 @@
             bindings = <&macro_param_1to1 &sk MACRO_PLACEHOLDER>;
             label = "SINGLESK";
         };
+
+        singleSl: singleSl {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &sl MACRO_PLACEHOLDER>;
+            label = "SINGLESL";
+        };
     };
 
     keymap {
@@ -468,9 +475,18 @@
         alpha {
             bindings = <
         &ad_w               &ad_g          &kp D                     &ad_f                      &trans    &trans  &mt_double L L               &kp U                     &kp O          &kp Y
-        &lt_hmr_l_ad_c 2 0  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hrm_l_ad_h LEFT_ALT 0  &trans    &trans  &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
+        &lt_hmr_l_ad_c 3 0  &lt_hmr_l 2 S  &mt_hmr_l LEFT_CONTROL T  &mt_hrm_l_ad_h LEFT_ALT 0  &trans    &trans  &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 2 A  &lt_hmr_r 3 I
 &trans  &trans              &trans         &kp M                     &mt_hmr_l LEFT_GUI P       &trans    &trans  &mt_hmr_comma_gt LEFT_GUI 0  &mt_dot_lt_ellipsis 0 0   &trans         &trans         &trans
-                                           &trans                    &mt_thumb LSHIFT R         &trans    &trans  &lt 3 SPACE                  &trans
+                                           &trans                    &mt_thumb LSHIFT 1         &trans    &trans  &lt 4 SPACE                  &trans
+            >;
+        };
+
+        alpha2 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &kp W   &kp C   &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp Y
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
