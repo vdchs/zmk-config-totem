@@ -206,11 +206,11 @@
             #binding-cells = <0>;
             defaults = <&kp W>;
             antecedents = <
-                D      U
+                D      U        N
             >;
 
             bindings = <
-                &kp J  &kp SQT
+                &kp J  &kp SQT  &SQT
             >;
 
             max-delay-ms = <200>;
