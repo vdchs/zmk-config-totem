@@ -389,28 +389,6 @@
             flavor = "tap-preferred";
         };
 
-        mt_double_l_ad_g: mt_double_l_ad_g {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_DOUBLE_L_AD_G";
-            bindings = <&double>, <&ad_g>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <120>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 35 36 37 33>;
-        };
-
-        mt_double_l_ad_f: mt_double_l_ad_f {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_DOUBLE_L_AD_F";
-            bindings = <&double>, <&ad_f>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <120>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 35 36 37 33>;
-        };
-
         mt_hrm_l_ad_h: mt_hrm_l_ad_h {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_HRM_L_AD_H";
@@ -421,28 +399,6 @@
             flavor = "balanced";
             hold-trigger-key-positions = <15 5 6 7 17 16 26 27 28 29 18 8 9 19 30 31 32 33 34 36 37 35>;
             require-prior-idle-ms = <30>;
-        };
-
-        mt_double_l: mt_double_l {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_DOUBLE_L";
-            bindings = <&double>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <120>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <5 15 26 27 5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 36 37 35 33>;
-        };
-
-        mt_double_o: mt_double_o {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_DOUBLE_O";
-            bindings = <&double>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <140>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34 36>;
         };
     };
 
@@ -511,10 +467,10 @@
 
         alpha {
             bindings = <
-        &ad_w               &mt_double_l_ad_g G 0  &mt_double_l D D          &mt_double_l_ad_f F 0      &trans    &trans  &mt_double L L               &kp U                     &mt_double_o O O  &kp Y
-        &lt_hmr_l_ad_c 2 0  &lt_hmr_l 1 S          &mt_hmr_l LEFT_CONTROL T  &mt_hrm_l_ad_h LEFT_ALT 0  &trans    &trans  &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A     &lt_hmr_r 2 I
-&trans  &trans              &trans                 &mt_double_l M M          &mt_hmr_l LEFT_GUI P       &trans    &trans  &mt_hmr_comma_gt LEFT_GUI 0  &mt_dot_lt_ellipsis 0 0   &trans            &trans         &trans
-                                                   &trans                    &mt_thumb LSHIFT R         &trans    &trans  &lt 3 SPACE                  &trans
+        &ad_w               &ad_g          &kp D                     &ad_f                      &trans    &trans  &mt_double L L               &kp U                     &kp O          &kp Y
+        &lt_hmr_l_ad_c 2 0  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hrm_l_ad_h LEFT_ALT 0  &trans    &trans  &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
+&trans  &trans              &trans         &kp M                     &mt_hmr_l LEFT_GUI P       &trans    &trans  &mt_hmr_comma_gt LEFT_GUI 0  &mt_dot_lt_ellipsis 0 0   &trans         &trans         &trans
+                                           &trans                    &mt_thumb LSHIFT R         &trans    &trans  &lt 3 SPACE                  &trans
             >;
         };
 
