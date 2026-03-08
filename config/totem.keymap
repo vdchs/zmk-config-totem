@@ -16,83 +16,83 @@
             bindings = <&szR>;
             key-positions = <1 12>;
             timeout-ms = <28>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         ue {
             bindings = <&kp RA(Y)>;
             key-positions = <7 8>;
             timeout-ms = <28>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         oe {
             bindings = <&kp RA(P)>;
             key-positions = <8 17>;
             timeout-ms = <28>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         j {
             bindings = <&mt_double J J>;
             key-positions = <1 2>;
             timeout-ms = <28>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         z {
             bindings = <&mt_double Z Z>;
             key-positions = <2 3>;
             timeout-ms = <28>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         b {
             bindings = <&mt_double B B>;
             key-positions = <12 13>;
             timeout-ms = <28>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         k {
             bindings = <&mt_double K K>;
             key-positions = <23 24>;
             timeout-ms = <28>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         q {
             bindings = <&mt_double Q Q>;
             key-positions = <0 1>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         x {
             bindings = <&lt_hmr_l 5 X>;
             key-positions = <10 11>;
             timeout-ms = <28>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         ex {
             bindings = <&Ex>;
             key-positions = <16 17>;
             timeout-ms = <28>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         qu {
             bindings = <&Qu>;
             key-positions = <1 2 3>;
             timeout-ms = <28>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         ck {
             bindings = <&Ck>;
             key-positions = <11 12 13>;
             timeout-ms = <28>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         v {
@@ -106,14 +106,14 @@
             bindings = <&kp SQT>;
             key-positions = <18 17>;
             timeout-ms = <28>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         func_r {
             bindings = <&mo 5>;
             key-positions = <18 19>;
             timeout-ms = <28>;
-            layers = <0>;
+            layers = <0 1>;
             require-prior-idle-ms = <150>;
         };
 
@@ -121,14 +121,14 @@
             bindings = <&kp RA(Q)>;
             key-positions = <19 17>;
             timeout-ms = <28>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         cword_l {
             bindings = <&caps_word>;
             key-positions = <19 16>;
             timeout-ms = <28>;
-            layers = <0>;
+            layers = <0 1>;
             require-prior-idle-ms = <150>;
         };
 
@@ -136,7 +136,7 @@
             bindings = <&caps_word>;
             key-positions = <10 13>;
             timeout-ms = <28>;
-            layers = <0>;
+            layers = <0 1>;
             require-prior-idle-ms = <150>;
         };
     };
