@@ -35,21 +35,21 @@
 
         v {
             bindings = <&kp V>;
-            key-positions = <23 24>;
+            key-positions = <2 3>;
             timeout-ms = <28>;
             layers = <0 1 2>;
         };
 
         b {
             bindings = <&kp B>;
-            key-positions = <2 3>;
+            key-positions = <12 13>;
             timeout-ms = <28>;
             layers = <0 1 2>;
         };
 
         k {
             bindings = <&kp K>;
-            key-positions = <12 13>;
+            key-positions = <23 24>;
             timeout-ms = <28>;
             layers = <0 1 2>;
         };
