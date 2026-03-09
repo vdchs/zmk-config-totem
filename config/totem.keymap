@@ -16,83 +16,83 @@
             bindings = <&szR>;
             key-positions = <1 12>;
             timeout-ms = <28>;
-            layers = <0 1>;
+            layers = <0 1 2>;
         };
 
         ue {
             bindings = <&kp RA(Y)>;
             key-positions = <7 8>;
             timeout-ms = <28>;
-            layers = <0 1>;
+            layers = <0 1 2>;
         };
 
         oe {
             bindings = <&kp RA(P)>;
             key-positions = <8 17>;
             timeout-ms = <28>;
-            layers = <0 1>;
+            layers = <0 1 2>;
         };
 
         j {
             bindings = <&kp J>;
             key-positions = <2 3>;
             timeout-ms = <28>;
-            layers = <0 1>;
+            layers = <0 1 2>;
         };
 
         b {
             bindings = <&mt_double B B>;
             key-positions = <12 13>;
             timeout-ms = <28>;
-            layers = <0 1>;
+            layers = <0 1 2>;
         };
 
         k {
             bindings = <&mt_double K K>;
             key-positions = <23 24>;
             timeout-ms = <28>;
-            layers = <0 1>;
+            layers = <0 1 2>;
         };
 
         q {
             bindings = <&mt_double Q Q>;
             key-positions = <1 2>;
-            layers = <0 1>;
+            layers = <0 1 2>;
         };
 
         func_l {
             bindings = <&mo 6>;
             key-positions = <10 11>;
             timeout-ms = <28>;
-            layers = <0 1>;
+            layers = <0 1 2>;
         };
 
         ex {
             bindings = <&Ex>;
             key-positions = <16 17>;
             timeout-ms = <28>;
-            layers = <0 1>;
+            layers = <0 1 2>;
         };
 
         qu {
             bindings = <&Qu>;
             key-positions = <1 2 3>;
             timeout-ms = <28>;
-            layers = <0 1>;
+            layers = <0 1 2>;
         };
 
         ck {
             bindings = <&Ck>;
             key-positions = <11 12 13>;
             timeout-ms = <28>;
-            layers = <0 1>;
+            layers = <0 1 2>;
         };
 
         g {
             bindings = <&kp G>;
             key-positions = <11 12>;
             timeout-ms = <28>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         sqt {
@@ -106,7 +106,7 @@
             bindings = <&mo 6>;
             key-positions = <18 19>;
             timeout-ms = <28>;
-            layers = <0 1>;
+            layers = <0 1 2>;
             require-prior-idle-ms = <150>;
         };
 
@@ -114,14 +114,14 @@
             bindings = <&kp RA(Q)>;
             key-positions = <19 17>;
             timeout-ms = <28>;
-            layers = <0 1>;
+            layers = <0 1 2>;
         };
 
         cword_l {
             bindings = <&caps_word>;
             key-positions = <19 16>;
             timeout-ms = <28>;
-            layers = <0 1>;
+            layers = <0 1 2>;
             require-prior-idle-ms = <150>;
         };
 
@@ -129,7 +129,7 @@
             bindings = <&caps_word>;
             key-positions = <10 13>;
             timeout-ms = <28>;
-            layers = <0 1>;
+            layers = <0 1 2>;
             require-prior-idle-ms = <150>;
         };
     };
@@ -469,7 +469,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        alpha {
+        base {
             bindings = <
         &trans         &kp C          &kp D                     &ad_f                   &trans    &trans  &mt_double L L               &kp U                     &kp O          &trans
         &lt_hmr_l 4 R  &lt_hmr_l 3 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l_ssk LSHIFT H  &trans    &trans  &mt_hmr_r_ssk LSHIFT N       &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 3 A  &lt_hmr_r 4 I
@@ -478,7 +478,7 @@
             >;
         };
 
-        alpha2 {
+        alt {
             bindings = <
         &trans  &kp_a2_off V  &trans  &trans      &trans    &trans  &trans        &trans        &trans  &trans
         &trans  &trans        &trans  &trans      &trans    &trans  &kp_a2_off W  &trans        &trans  &kp_a2_off Y
@@ -487,7 +487,7 @@
             >;
         };
 
-        a2_held {
+        alt_held {
             bindings = <
         &trans  &kp_a2_off V  &trans  &trans      &trans    &trans  &trans        &trans        &trans  &trans
         &trans  &trans        &trans  &trans      &trans    &trans  &kp_a2_off W  &trans        &trans  &kp_a2_off Y
