@@ -33,23 +33,23 @@
             layers = <0 1 2>;
         };
 
-        j {
-            bindings = <&kp J>;
-            key-positions = <2 3>;
+        v {
+            bindings = <&kp V>;
+            key-positions = <23 24>;
             timeout-ms = <28>;
             layers = <0 1 2>;
         };
 
         b {
-            bindings = <&mt_double B B>;
-            key-positions = <12 13>;
+            bindings = <&kp B>;
+            key-positions = <2 3>;
             timeout-ms = <28>;
             layers = <0 1 2>;
         };
 
         k {
-            bindings = <&mt_double K K>;
-            key-positions = <23 24>;
+            bindings = <&kp K>;
+            key-positions = <12 13>;
             timeout-ms = <28>;
             layers = <0 1 2>;
         };
@@ -481,7 +481,7 @@
         alt {
             bindings = <
         &trans  &trans  &trans  &trans           &trans    &trans  &trans         &trans         &trans  &trans
-        &trans  &trans  &trans  &kp_alt_off V    &trans    &trans  &kp_alt_off W  &trans         &trans  &kp_alt_off Y
+        &trans  &trans  &trans  &kp_alt_off J    &trans    &trans  &kp_alt_off W  &trans         &trans  &kp_alt_off Y
 &trans  &trans  &trans  &trans  &trans           &trans    &trans  &kp_alt_off Z  &kp_alt_off X  &trans  &trans         &trans
                         &trans  &singleSk LSHFT  &trans    &trans  &trans         &trans
             >;
@@ -490,7 +490,7 @@
         alt_held {
             bindings = <
         &trans  &trans  &trans  &trans         &trans    &trans  &trans         &trans         &trans  &trans
-        &trans  &trans  &trans  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &trans         &trans  &kp_alt_off Y
+        &trans  &trans  &trans  &kp_alt_off J  &trans    &trans  &kp_alt_off W  &trans         &trans  &kp_alt_off Y
 &trans  &trans  &trans  &trans  &trans         &trans    &trans  &kp_alt_off Z  &kp_alt_off X  &trans  &trans         &trans
                         &trans  &tog_off 1     &trans    &trans  &trans         &trans
             >;
