@@ -480,10 +480,10 @@
 
         alt {
             bindings = <
-        &trans  &trans  &trans  &trans           &trans    &trans  &trans         &trans         &trans  &trans
-        &trans  &trans  &trans  &kp_alt_off J    &trans    &trans  &kp_alt_off W  &trans         &trans  &kp_alt_off Y
-&trans  &trans  &trans  &trans  &trans           &trans    &trans  &kp_alt_off Z  &kp_alt_off X  &trans  &trans         &trans
-                        &trans  &singleSk LSHFT  &trans    &trans  &trans         &trans
+        &trans  &trans  &trans  &trans         &trans    &trans  &trans         &trans         &trans  &trans
+        &trans  &trans  &trans  &kp_alt_off J  &trans    &trans  &kp_alt_off W  &trans         &trans  &kp_alt_off Y
+&trans  &trans  &trans  &trans  &trans         &trans    &trans  &kp_alt_off Z  &kp_alt_off X  &trans  &trans         &trans
+                        &trans  &tog_off 1     &trans    &trans  &trans         &trans
             >;
         };
 
@@ -492,7 +492,7 @@
         &trans  &trans  &trans  &trans         &trans    &trans  &trans         &trans         &trans  &trans
         &trans  &trans  &trans  &kp_alt_off J  &trans    &trans  &kp_alt_off W  &trans         &trans  &kp_alt_off Y
 &trans  &trans  &trans  &trans  &trans         &trans    &trans  &kp_alt_off Z  &kp_alt_off X  &trans  &trans         &trans
-                        &trans  &tog_off 1     &trans    &trans  &trans         &trans
+                        &trans  &trans         &trans    &trans  &trans         &trans
             >;
         };
 
