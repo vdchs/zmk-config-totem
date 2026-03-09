@@ -99,7 +99,7 @@
             bindings = <&kp SQT>;
             key-positions = <18 17>;
             timeout-ms = <28>;
-            layers = <0 1>;
+            layers = <0 1 2>;
         };
 
         func_r {
