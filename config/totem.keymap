@@ -33,8 +33,8 @@
             layers = <0 1 2>;
         };
 
-        v {
-            bindings = <&kp V>;
+        p {
+            bindings = <&kp P>;
             key-positions = <2 3>;
             timeout-ms = <28>;
             layers = <0 1 2>;
@@ -498,7 +498,7 @@
         alt {
             bindings = <
         &trans  &trans  &trans         &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans  &trans  &kp_alt_off DOT
-        &trans  &trans  &kp_alt_off K  &kp_alt_off P  &trans    &trans  &kp_alt_off W  &trans  &trans  &kp_alt_off Y
+        &trans  &trans  &kp_alt_off K  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &trans  &trans  &kp_alt_off Y
 &trans  &trans  &trans  &trans         &trans         &trans    &trans  &trans         &trans  &trans  &trans           &trans
                         &trans         &tog_off 1     &trans    &trans  &trans         &trans
             >;
@@ -507,7 +507,7 @@
         alt_held {
             bindings = <
         &trans  &trans  &trans         &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans  &trans  &kp_alt_off DOT
-        &trans  &trans  &kp_alt_off K  &kp_alt_off P  &trans    &trans  &kp_alt_off W  &trans  &trans  &kp_alt_off Y
+        &trans  &trans  &kp_alt_off K  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &trans  &trans  &kp_alt_off Y
 &trans  &trans  &trans  &trans         &trans         &trans    &trans  &trans         &trans  &trans  &trans           &trans
                         &trans         &trans         &trans    &trans  &trans         &trans
             >;
