@@ -457,12 +457,12 @@
             label = "SINGLESL";
         };
 
-        kp_a2_off: kp_a2_off {
+        kp_alt_off: kp_alt_off {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &tog_off 1>;
-            label = "KP_A2_OFF";
-            wait-ms = <5>;
+            label = "KP_ALT_OFF";
+            wait-ms = <0>;
         };
     };
 
@@ -480,19 +480,19 @@
 
         alt {
             bindings = <
-        &trans  &kp_a2_off V  &trans  &trans      &trans    &trans  &trans        &trans        &trans  &trans
-        &trans  &trans        &trans  &trans      &trans    &trans  &kp_a2_off W  &trans        &trans  &kp_a2_off Y
-&trans  &trans  &trans        &trans  &trans      &trans    &trans  &kp_a2_off Z  &kp_a2_off X  &trans  &trans        &trans
-                              &trans  &tog_off 1  &trans    &trans  &trans        &trans
+        &trans  &kp_alt_off V  &trans  &trans      &trans    &trans  &trans         &trans         &trans  &trans
+        &trans  &trans         &trans  &trans      &trans    &trans  &kp_alt_off W  &trans         &trans  &kp_alt_off Y
+&trans  &trans  &trans         &trans  &trans      &trans    &trans  &kp_alt_off Z  &kp_alt_off X  &trans  &trans         &trans
+                               &trans  &tog_off 1  &trans    &trans  &trans         &trans
             >;
         };
 
         alt_held {
             bindings = <
-        &trans  &kp_a2_off V  &trans  &trans      &trans    &trans  &trans        &trans        &trans  &trans
-        &trans  &trans        &trans  &trans      &trans    &trans  &kp_a2_off W  &trans        &trans  &kp_a2_off Y
-&trans  &trans  &trans        &trans  &trans      &trans    &trans  &kp_a2_off Z  &kp_a2_off X  &trans  &trans        &trans
-                              &trans  &tog_off 1  &trans    &trans  &trans        &trans
+        &trans  &kp_alt_off V  &trans  &trans      &trans    &trans  &trans         &trans         &trans  &trans
+        &trans  &trans         &trans  &trans      &trans    &trans  &kp_alt_off W  &trans         &trans  &kp_alt_off Y
+&trans  &trans  &trans         &trans  &trans      &trans    &trans  &kp_alt_off Z  &kp_alt_off X  &trans  &trans         &trans
+                               &trans  &tog_off 1  &trans    &trans  &trans         &trans
             >;
         };
 
@@ -516,10 +516,10 @@
 
         nav {
             bindings = <
-        &trans   &kp TAB          &msc SCRL_UP      &msc SCRL_DOWN  &trans    &trans  &kp HOME   &kp END    &kp DEL  &trans
-        &kp ESC  &kp_a2_off BSPC  &kp LEFT_CONTROL  &mt LALT ENTER  &trans    &trans  &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT
-&trans  &trans   &trans           &trans            &kp LEFT_GUI    &trans    &trans  &kp PG_DN  &kp PG_UP  &trans   &trans     &trans
-                                  &trans            &kp LSHIFT      &trans    &trans  &trans     &trans
+        &trans   &kp TAB           &msc SCRL_UP      &msc SCRL_DOWN  &trans    &trans  &kp HOME   &kp END    &kp DEL  &trans
+        &kp ESC  &kp_alt_off BSPC  &kp LEFT_CONTROL  &mt LALT ENTER  &trans    &trans  &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT
+&trans  &trans   &trans            &trans            &kp LEFT_GUI    &trans    &trans  &kp PG_DN  &kp PG_UP  &trans   &trans     &trans
+                                   &trans            &kp LSHIFT      &trans    &trans  &trans     &trans
             >;
         };
 
