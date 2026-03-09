@@ -33,13 +33,6 @@
             layers = <0 1>;
         };
 
-        j {
-            bindings = <&mt_double J J>;
-            key-positions = <1 2>;
-            timeout-ms = <28>;
-            layers = <0 1>;
-        };
-
         z {
             bindings = <&mt_double Z Z>;
             key-positions = <2 3>;
@@ -63,7 +56,7 @@
 
         q {
             bindings = <&mt_double Q Q>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
             layers = <0 1>;
         };
 
@@ -495,7 +488,7 @@
             bindings = <
         &trans  &kp_a2_off G  &trans  &trans      &trans    &trans  &trans        &trans        &trans  &trans
         &trans  &trans        &trans  &wh_a2_off  &trans    &trans  &kp_a2_off W  &trans        &trans  &kp_a2_off Y
-&trans  &trans  &trans        &trans  &trans      &trans    &trans  &trans        &kp_a2_off X  &trans  &trans        &trans
+&trans  &trans  &trans        &trans  &trans      &trans    &trans  &kp_a2_off J  &kp_a2_off X  &trans  &trans        &trans
                               &trans  &tog_off 1  &trans    &trans  &trans        &trans
             >;
         };
@@ -504,7 +497,7 @@
             bindings = <
         &trans  &kp_a2_off G  &trans  &trans      &trans    &trans  &trans        &trans        &trans  &trans
         &trans  &trans        &trans  &wh_a2_off  &trans    &trans  &kp_a2_off W  &trans        &trans  &kp_a2_off Y
-&trans  &trans  &trans        &trans  &trans      &trans    &trans  &trans        &kp_a2_off X  &trans  &trans        &trans
+&trans  &trans  &trans        &trans  &trans      &trans    &trans  &kp_a2_off J  &kp_a2_off X  &trans  &trans        &trans
                               &trans  &tog_off 1  &trans    &trans  &trans        &trans
             >;
         };
