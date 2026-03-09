@@ -488,27 +488,27 @@
 
         base {
             bindings = <
-        &mt_hmr_l LGUI F  &ad_c          &kp D                     &kp M             &trans    &trans  &mt_double L L    &kp U                     &kp O          &mt_hmr_r LGUI COMMA
+        &mt_hmr_l LGUI F  &ad_c          &kp D                     &kp M             &trans    &trans  &mt_double L L    &kp U                     &kp O          &mt_hmr_r LGUI DOT
         &lt_hmr_l 4 R     &lt_hmr_l 3 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LALT H  &trans    &trans  &mt_hmr_r LALT N  &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 3 A  &lt_hmr_r 4 I
-&trans  &trans            &trans         &trans                    &trans            &trans    &trans  &trans            &trans                    &trans         &trans                &trans
+&trans  &trans            &trans         &trans                    &trans            &trans    &trans  &trans            &trans                    &trans         &trans              &trans
                                          &trans                    &mt_thumb 2 1     &trans    &trans  &lt 5 SPACE       &trans
             >;
         };
 
         alt {
             bindings = <
-        &trans  &trans  &trans         &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans  &trans  &kp_alt_off DOT
+        &trans  &trans  &trans         &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans  &trans  &kp_alt_off COMMA
         &trans  &trans  &kp_alt_off K  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &trans  &trans  &kp_alt_off Y
-&trans  &trans  &trans  &trans         &trans         &trans    &trans  &trans         &trans  &trans  &trans           &trans
+&trans  &trans  &trans  &trans         &trans         &trans    &trans  &trans         &trans  &trans  &trans             &trans
                         &trans         &tog_off 1     &trans    &trans  &trans         &trans
             >;
         };
 
         alt_held {
             bindings = <
-        &trans  &trans  &trans         &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans  &trans  &kp_alt_off DOT
+        &trans  &trans  &trans         &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans  &trans  &kp_alt_off COMMA
         &trans  &trans  &kp_alt_off K  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &trans  &trans  &kp_alt_off Y
-&trans  &trans  &trans  &trans         &trans         &trans    &trans  &trans         &trans  &trans  &trans           &trans
+&trans  &trans  &trans  &trans         &trans         &trans    &trans  &trans         &trans  &trans  &trans             &trans
                         &trans         &trans         &trans    &trans  &trans         &trans
             >;
         };
