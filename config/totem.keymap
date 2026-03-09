@@ -88,8 +88,8 @@
             layers = <0 1>;
         };
 
-        v {
-            bindings = <&mt_double V V>;
+        g {
+            bindings = <&kp G>;
             key-positions = <11 12>;
             timeout-ms = <28>;
             layers = <0>;
@@ -479,7 +479,7 @@
 
         alpha2 {
             bindings = <
-        &trans  &kp_a2_off G  &trans  &trans      &trans    &trans  &trans        &trans        &trans  &trans
+        &trans  &kp_a2_off V  &trans  &trans      &trans    &trans  &trans        &trans        &trans  &trans
         &trans  &trans        &trans  &trans      &trans    &trans  &kp_a2_off W  &trans        &trans  &kp_a2_off Y
 &trans  &trans  &trans        &trans  &trans      &trans    &trans  &kp_a2_off Z  &kp_a2_off X  &trans  &trans        &trans
                               &trans  &tog_off 1  &trans    &trans  &trans        &trans
@@ -488,7 +488,7 @@
 
         a2_held {
             bindings = <
-        &trans  &kp_a2_off G  &trans  &trans      &trans    &trans  &trans        &trans        &trans  &trans
+        &trans  &kp_a2_off V  &trans  &trans      &trans    &trans  &trans        &trans        &trans  &trans
         &trans  &trans        &trans  &trans      &trans    &trans  &kp_a2_off W  &trans        &trans  &kp_a2_off Y
 &trans  &trans  &trans        &trans  &trans      &trans    &trans  &kp_a2_off Z  &kp_a2_off X  &trans  &trans        &trans
                               &trans  &tog_off 1  &trans    &trans  &trans        &trans
