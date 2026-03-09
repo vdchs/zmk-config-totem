@@ -54,8 +54,8 @@
             layers = <0 1 2>;
         };
 
-        q {
-            bindings = <&mt_double Q Q>;
+        j {
+            bindings = <&kp J>;
             key-positions = <1 2>;
             layers = <0 1 2>;
         };
@@ -131,6 +131,12 @@
             timeout-ms = <28>;
             layers = <0 1 2>;
             require-prior-idle-ms = <150>;
+        };
+
+        q {
+            bindings = <&kp Q>;
+            key-positions = <1 0>;
+            layers = <0 1 2>;
         };
     };
 
@@ -482,28 +488,28 @@
 
         base {
             bindings = <
-        &trans         &kp C          &kp D                     &ad_f                 &trans    &trans  &mt_double L L               &kp U                     &kp O          &trans
-        &lt_hmr_l 4 R  &lt_hmr_l 3 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LALT H      &trans    &trans  &mt_hmr_r LALT N             &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 3 A  &lt_hmr_r 4 I
-&trans  &trans         &trans         &kp M                     &mt_hmr_l LEFT_GUI P  &trans    &trans  &mt_hmr_comma_gt LEFT_GUI 0  &dot_lt                   &trans         &trans         &trans
-                                      &trans                    &mt_thumb 2 1         &trans    &trans  &lt 5 SPACE                  &trans
+        &kp M          &ad_c          &kp D                     &ad_f             &trans    &trans  &mt_double L L    &kp U                     &kp O          &kp Y
+        &lt_hmr_l 4 R  &lt_hmr_l 3 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LALT H  &trans    &trans  &mt_hmr_r LALT N  &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 3 A  &lt_hmr_r 4 I
+&trans  &trans         &trans         &trans                    &trans            &trans    &trans  &trans            &trans                    &trans         &trans         &trans
+                                      &trans                    &mt_thumb 2 1     &trans    &trans  &lt 5 SPACE       &trans
             >;
         };
 
         alt {
             bindings = <
-        &trans  &trans  &trans  &trans         &trans    &trans  &trans         &trans         &trans  &trans
-        &trans  &trans  &trans  &kp_alt_off J  &trans    &trans  &kp_alt_off W  &trans         &trans  &kp_alt_off Y
-&trans  &trans  &trans  &trans  &trans         &trans    &trans  &kp_alt_off Z  &kp_alt_off X  &trans  &trans         &trans
-                        &trans  &tog_off 1     &trans    &trans  &trans         &trans
+        &kp_alt_off DOT    &trans  &trans         &kp X          &trans    &trans  &kp_alt_off Z  &trans  &trans  &kp_alt_off DOT
+        &kp_alt_off COMMA  &trans  &kp_alt_off K  &kp_alt_off P  &trans    &trans  &kp_alt_off W  &trans  &trans  &kp_alt_off COMMA
+&trans  &trans             &trans  &trans         &trans         &trans    &trans  &trans         &trans  &trans  &trans             &trans
+                                   &trans         &tog_off 1     &trans    &trans  &trans         &trans
             >;
         };
 
         alt_held {
             bindings = <
-        &trans  &trans  &trans  &trans         &trans    &trans  &trans         &trans         &trans  &trans
-        &trans  &trans  &trans  &kp_alt_off J  &trans    &trans  &kp_alt_off W  &trans         &trans  &kp_alt_off Y
-&trans  &trans  &trans  &trans  &trans         &trans    &trans  &kp_alt_off Z  &kp_alt_off X  &trans  &trans         &trans
-                        &trans  &trans         &trans    &trans  &trans         &trans
+        &kp_alt_off DOT    &trans  &trans         &kp X          &trans    &trans  &kp_alt_off Z  &trans  &trans  &kp_alt_off DOT
+        &kp_alt_off COMMA  &trans  &kp_alt_off K  &kp_alt_off P  &trans    &trans  &kp_alt_off W  &trans  &trans  &kp_alt_off COMMA
+&trans  &trans             &trans  &trans         &trans         &trans    &trans  &trans         &trans  &trans  &trans             &trans
+                                   &trans         &trans         &trans    &trans  &trans         &trans
             >;
         };
 
