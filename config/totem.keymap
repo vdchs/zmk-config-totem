@@ -118,31 +118,17 @@
             require-prior-idle-ms = <150>;
         };
 
-        dot {
-            bindings = <&kp DOT>;
-            key-positions = <27 28>;
-            timeout-ms = <28>;
-            layers = <0 1 2>;
-        };
-
-        comma {
-            bindings = <&kp COMMA>;
-            key-positions = <17 27>;
-            timeout-ms = <28>;
-            layers = <0 1 2>;
-        };
-
         you {
             bindings = <&you>;
             key-positions = <17 18 19>;
-            timeout-ms = <28>;
+            timeout-ms = <32>;
             layers = <0 1 2>;
         };
 
         ion {
             bindings = <&ion>;
             key-positions = <17 18 16>;
-            timeout-ms = <28>;
+            timeout-ms = <32>;
             layers = <0 1 2>;
         };
     };
