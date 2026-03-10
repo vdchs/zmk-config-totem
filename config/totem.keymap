@@ -2,7 +2,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 &mt { tapping-term-ms = <190>; };
 
@@ -488,28 +487,28 @@
 
         base {
             bindings = <
-        &mt_hmr_l LGUI F  &ad_c          &kp D                     &kp M             &trans    &trans  &mt_double L L    &kp U                     &kp O          &mt_hmr_r LGUI DOT
-        &lt_hmr_l 4 R     &lt_hmr_l 3 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LALT H  &trans    &trans  &mt_hmr_r LALT N  &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 3 A  &lt_hmr_r 4 I
-&trans  &trans            &trans         &trans                    &trans            &trans    &trans  &trans            &trans                    &trans         &trans              &trans
-                                         &trans                    &mt_thumb 2 1     &trans    &trans  &lt 5 SPACE       &trans
+        &trans         &trans         &trans                    &trans            &trans    &trans  &trans            &trans                    &trans         &trans
+        &lt_hmr_l 4 R  &lt_hmr_l 3 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LALT H  &trans    &trans  &mt_hmr_r LALT N  &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 3 A  &lt_hmr_r 4 I
+&trans  &trans         &ad_c          &kp D                     &mt_hmr_l LGUI M  &trans    &trans  &mt_hmr_r LGUI L  &kp U                     &kp O          &trans         &trans
+                                      &trans                    &mt_thumb 2 1     &trans    &trans  &lt 5 SPACE       &trans
             >;
         };
 
         alt {
             bindings = <
-        &trans  &trans  &trans         &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans  &trans  &kp_alt_off COMMA
-        &trans  &trans  &kp_alt_off K  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &trans  &trans  &kp_alt_off Y
-&trans  &trans  &trans  &trans         &trans         &trans    &trans  &trans         &trans  &trans  &trans             &trans
-                        &trans         &tog_off 1     &trans    &trans  &trans         &trans
+        &trans         &trans  &trans         &trans         &trans    &trans  &trans         &trans  &trans  &trans
+        &kp_alt_off F  &trans  &kp_alt_off K  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &trans  &trans  &kp_alt_off Y
+&trans  &trans         &trans  &trans         &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans  &trans  &trans         &trans
+                               &trans         &tog_off 1     &trans    &trans  &trans         &trans
             >;
         };
 
         alt_held {
             bindings = <
-        &trans  &trans  &trans         &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans  &trans  &kp_alt_off COMMA
-        &trans  &trans  &kp_alt_off K  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &trans  &trans  &kp_alt_off Y
-&trans  &trans  &trans  &trans         &trans         &trans    &trans  &trans         &trans  &trans  &trans             &trans
-                        &trans         &trans         &trans    &trans  &trans         &trans
+        &trans         &trans  &trans         &trans         &trans    &trans  &trans         &trans  &trans  &trans
+        &kp_alt_off F  &trans  &kp_alt_off K  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &trans  &trans  &kp_alt_off Y
+&trans  &trans         &trans  &trans         &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans  &trans  &trans         &trans
+                               &trans         &trans         &trans    &trans  &trans         &trans
             >;
         };
 
@@ -524,28 +523,28 @@
 
         num {
             bindings = <
-        &trans  &trans  &kp LBKT  &kp RBKT  &trans    &trans  &kp N7    &kp N8    &kp N9  &trans
-        &trans  &kp N3  &kp N2    &kp N1    &trans    &trans  &kp N4    &kp N5    &kp N6  &trans
-&trans  &trans  &trans  &kp LPAR  &kp RPAR  &trans    &trans  &kp RBRC  &kp LBRC  &trans  &trans  &trans
-                        &trans    &kp N0    &trans    &trans  &trans    &trans
+        &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &kp N3  &kp N2    &kp N1    &trans    &trans  &kp N7  &kp N8  &kp N9  &trans
+&trans  &trans  &trans  &kp LPAR  &kp RPAR  &trans    &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+                        &trans    &kp N0    &trans    &trans  &trans  &trans
             >;
         };
 
         nav {
             bindings = <
-        &trans   &kp TAB           &msc SCRL_UP      &msc SCRL_DOWN  &trans    &trans  &kp HOME   &kp END    &kp DEL  &trans
-        &kp ESC  &kp_alt_off BSPC  &kp LEFT_CONTROL  &mt LALT ENTER  &trans    &trans  &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT
-&trans  &trans   &trans            &trans            &kp LEFT_GUI    &trans    &trans  &kp PG_DN  &kp PG_UP  &trans   &trans     &trans
-                                   &trans            &kp LSHFT       &trans    &trans  &trans     &trans
+        &trans   &trans            &trans            &trans          &trans    &trans  &trans    &trans    &trans   &trans
+        &kp ESC  &kp_alt_off BSPC  &kp LEFT_CONTROL  &mt LALT ENTER  &trans    &trans  &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT
+&trans  &trans   &kp TAB           &trans            &kp LGUI        &trans    &trans  &kp HOME  &kp END   &kp DEL  &trans     &trans
+                                   &trans            &kp LSHFT       &trans    &trans  &trans    &trans
             >;
         };
 
         func {
             bindings = <
-        &trans  &kp C_VOL_DN  &kp C_VOL_UP         &kp C_MUTE       &trans    &trans  &kp PSCRN        &kp F11       &kp F12  &trans
-        &kp F1  &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8  &kp F9   &kp F10
-&trans  &trans  &trans        &trans               &mt LGUI F5      &trans    &trans  &mt RGUI F6      &trans        &trans   &trans   &trans
-                              &trans               &kp LSHIFT       &trans    &trans  &trans           &trans
+        &trans  &trans     &trans               &trans           &trans    &trans  &trans           &trans        &trans   &trans
+        &kp F1  &kp F2     &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8  &kp F9   &kp F10
+&trans  &trans  &kp PSCRN  &trans               &mt LGUI F5      &trans    &trans  &mt RGUI F6      &kp F11       &kp F12  &trans   &trans
+                           &trans               &kp LSHIFT       &trans    &trans  &trans           &trans
             >;
         };
     };
