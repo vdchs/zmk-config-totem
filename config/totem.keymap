@@ -124,13 +124,6 @@
             timeout-ms = <32>;
             layers = <0 1 2>;
         };
-
-        ion {
-            bindings = <&ion>;
-            key-positions = <17 18 16>;
-            timeout-ms = <35>;
-            layers = <0 1 2>;
-        };
     };
 
     behaviors {
@@ -460,13 +453,6 @@
             #binding-cells = <0>;
             bindings = <&kp Y &kp O &kp U>;
             label = "YOU";
-        };
-
-        ion: ion {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp O &kp N>;
-            label = "ION";
         };
     };
 
