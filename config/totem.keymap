@@ -504,19 +504,19 @@
 
         alt {
             bindings = <
-        &trans         &trans  &trans         &trans         &trans    &trans  &trans         &trans  &trans             &trans
-        &kp_alt_off F  &trans  &kp_alt_off K  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &trans  &kp_alt_off O      &kp_alt_off Y
-&trans  &trans         &kp Q   &trans         &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans  &kp_alt_off COMMA  &trans         &trans
-                               &trans         &tog_off 1     &trans    &trans  &trans         &trans
+        &trans         &trans         &trans         &trans         &trans    &trans  &trans         &trans  &trans             &trans
+        &kp_alt_off F  &trans         &kp_alt_off K  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &trans  &kp_alt_off O      &kp_alt_off Y
+&trans  &trans         &kp_alt_off Q  &trans         &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans  &kp_alt_off COMMA  &trans         &trans
+                                      &trans         &tog_off 1     &trans    &trans  &trans         &trans
             >;
         };
 
         alt_held {
             bindings = <
-        &trans         &trans  &trans         &trans         &trans    &trans  &trans         &trans  &trans           &trans
-        &kp_alt_off F  &trans  &kp_alt_off K  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &trans  &kp_alt_off O    &kp_alt_off Y
-&trans  &trans         &kp Q   &trans         &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans  &kp_alt_off DOT  &trans         &trans
-                               &trans         &trans         &trans    &trans  &trans         &trans
+        &trans         &trans         &trans         &trans         &trans    &trans  &trans         &trans  &trans             &trans
+        &kp_alt_off F  &trans         &kp_alt_off K  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &trans  &kp_alt_off O      &kp_alt_off Y
+&trans  &trans         &kp_alt_off Q  &trans         &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans  &kp_alt_off COMMA  &trans         &trans
+                                      &trans         &trans         &trans    &trans  &trans         &trans
             >;
         };
 
