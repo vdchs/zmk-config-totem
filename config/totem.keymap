@@ -128,7 +128,7 @@
         ion {
             bindings = <&ion>;
             key-positions = <17 18 16>;
-            timeout-ms = <32>;
+            timeout-ms = <35>;
             layers = <0 1 2>;
         };
     };
