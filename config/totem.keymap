@@ -157,43 +157,27 @@
             #binding-cells = <0>;
             defaults = <&kp C>;
             antecedents = <
-                G      B      K      D      P      M
+                B      P      M      F
             >;
 
             bindings = <
-                &kp S  &kp V  &kp S  &kp M  &kp H  &kp B
+                &kp V  &kp H  &kp B  &kp R
             >;
 
             max-delay-ms = <200>;
         };
 
-        ad_g: ad_g {
+        ad_e: ad_e {
             compatible = "zmk,behavior-antecedent-morph";
-            label = "ADAPTIVE_G";
+            label = "ADAPTIVE_E";
             #binding-cells = <0>;
-            defaults = <&kp G>;
+            defaults = <&kp E>;
             antecedents = <
-                B      T      Y
+                O
             >;
 
             bindings = <
-                &kp J  &kp Z  &kp I
-            >;
-
-            max-delay-ms = <200>;
-        };
-
-        ad_f: ad_f {
-            compatible = "zmk,behavior-antecedent-morph";
-            label = "ADAPTIVE_F";
-            #binding-cells = <0>;
-            defaults = <&kp F>;
-            antecedents = <
-                D
-            >;
-
-            bindings = <
-                &kp V
+                &kp U
             >;
 
             max-delay-ms = <200>;
@@ -210,22 +194,6 @@
 
             bindings = <
                 &kp R
-            >;
-
-            max-delay-ms = <200>;
-        };
-
-        ad_w: ad_w {
-            compatible = "zmk,behavior-antecedent-morph";
-            label = "ADAPTIVE_W";
-            #binding-cells = <0>;
-            defaults = <&kp W>;
-            antecedents = <
-                D      U        N
-            >;
-
-            bindings = <
-                &kp J  &kp SQT  &kp SQT
             >;
 
             max-delay-ms = <200>;
