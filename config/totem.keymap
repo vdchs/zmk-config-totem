@@ -102,8 +102,8 @@
 
         // ----- NUM -----
 
-        lbkt {
-            bindings = <&kp LBKT>;
+        rpar {
+            bindings = <&kp RPAR>;
             key-positions = <17 18>;
             timeout-ms = <28>;
             layers = <4>;
@@ -111,21 +111,14 @@
 
         rbkt {
             bindings = <&kp RBKT>;
-            key-positions = <17 18>;
-            timeout-ms = <28>;
-            layers = <4>;
-        };
-
-        lbrc {
-            bindings = <&kp LBRC>;
-            key-positions = <17 18>;
+            key-positions = <18 28>;
             timeout-ms = <28>;
             layers = <4>;
         };
 
         rbrc {
             bindings = <&kp LBRC>;
-            key-positions = <17 18>;
+            key-positions = <28 18>;
             timeout-ms = <28>;
             layers = <4>;
         };
@@ -470,10 +463,10 @@
 
         num {
             bindings = <
-        &trans  &trans  &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &kp N3  &kp N2    &kp N1    &trans    &trans  &kp N7  &kp N8  &kp N9  &trans
-&trans  &trans  &trans  &kp LPAR  &kp RPAR  &trans    &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
-                        &trans    &kp N0    &trans    &trans  &trans  &trans
+        &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &kp N3    &kp N2    &kp N1    &trans    &trans  &kp N7  &kp N8  &kp N9  &trans
+&trans  &trans  &kp LBKT  &kp LBRC  &kp LPAR  &trans    &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+                          &trans    &kp N0    &trans    &trans  &trans  &trans
             >;
         };
 
