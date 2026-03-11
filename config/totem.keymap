@@ -103,7 +103,7 @@
         // ----- NUM -----
 
         rpar {
-            bindings = <&kp RPAR>;
+            bindings = <&ad_par>;
             key-positions = <17 18>;
             timeout-ms = <28>;
             layers = <4>;
@@ -192,6 +192,22 @@
             max-delay-ms = <200>;
         };
 
+        ad_c: ad_c {
+            compatible = "zmk,behavior-antecedent-morph";
+            label = "ADAPTIVE_C";
+            #binding-cells = <0>;
+            defaults = <&kp C>;
+            antecedents = <
+                B      P      M      F
+            >;
+
+            bindings = <
+                &kp V  &kp H  &kp B  &kp R
+            >;
+
+            max-delay-ms = <200>;
+        };
+
         ad_dot: ad_dot {
             compatible = "zmk,behavior-antecedent-morph";
             label = "ADAPTIVE_DOT";
@@ -208,21 +224,22 @@
             max-delay-ms = <200>;
         };
 
-        ad_c: ad_c {
+        ad_par: ad_par {
             compatible = "zmk,behavior-antecedent-morph";
-            label = "ADAPTIVE_C";
+            label = "ADAPTIVE_PAR_CLOSER";
             #binding-cells = <0>;
-            defaults = <&kp C>;
+            defaults = <&kp RPAR>;
             antecedents = <
-                B      P      M      F
+                LBKT      LBRC
             >;
 
             bindings = <
-                &kp V  &kp H  &kp B  &kp R
+                &kp RPKT  &kp RBRC
             >;
 
             max-delay-ms = <200>;
         };
+
 
         // ----- MT/LT -----
 
