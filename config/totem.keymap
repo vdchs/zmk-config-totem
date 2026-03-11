@@ -80,8 +80,8 @@
             layers = <0 1 2>;
         };
 
-        sqt {
-            bindings = <&kp SQT>;
+        comma {
+            bindings = <&kp COMMA>;
             key-positions = <18 17>;
             timeout-ms = <28>;
             layers = <0 1 2>;
@@ -470,18 +470,18 @@
 
         alt {
             bindings = <
-        &trans         &trans         &trans  &trans         &trans    &trans  &trans         &trans         &trans             &trans
-        &kp_alt_off F  &kp_alt_off J  &trans  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &kp_alt_off E  &kp_alt_off O      &kp_alt_off Y
-&trans  &trans         &kp_alt_off Q  &trans  &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans         &kp_alt_off COMMA  &trans         &trans
+        &trans         &trans         &trans  &trans         &trans    &trans  &trans         &trans         &trans           &trans
+        &kp_alt_off F  &kp_alt_off J  &trans  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &kp_alt_off E  &kp_alt_off O    &kp_alt_off Y
+&trans  &trans         &kp_alt_off Q  &trans  &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans         &kp_alt_off SQT  &trans         &trans
                                       &trans  &tog_off 1     &trans    &trans  &trans         &trans
             >;
         };
 
         alt_held {
             bindings = <
-        &trans         &trans         &trans  &trans         &trans    &trans  &trans         &trans         &trans             &trans
-        &kp_alt_off F  &kp_alt_off J  &trans  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &kp_alt_off E  &kp_alt_off O      &kp_alt_off Y
-&trans  &trans         &kp_alt_off Q  &trans  &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans         &kp_alt_off COMMA  &trans         &trans
+        &trans         &trans         &trans  &trans         &trans    &trans  &trans         &trans         &trans           &trans
+        &kp_alt_off F  &kp_alt_off J  &trans  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &kp_alt_off E  &kp_alt_off O    &kp_alt_off Y
+&trans  &trans         &kp_alt_off Q  &trans  &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans         &kp_alt_off SQT  &trans         &trans
                                       &trans  &trans         &trans    &trans  &trans         &trans
             >;
         };
