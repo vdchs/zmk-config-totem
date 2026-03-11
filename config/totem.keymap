@@ -123,6 +123,20 @@
             layers = <5>;
         };
 
+        lt {
+            bindings = <&kp RBRC>;
+            key-positions = <28 18>;
+            timeout-ms = <28>;
+            layers = <5>;
+        };
+
+        gt {
+            bindings = <&kp RBRC>;
+            key-positions = <28 18>;
+            timeout-ms = <28>;
+            layers = <5>;
+        };
+
         // ----- LAYERS -----
 
         func_l {
@@ -230,11 +244,11 @@
             #binding-cells = <0>;
             defaults = <&kp RPAR>;
             antecedents = <
-                LBKT      LBRC
+                LBKT      LBRC      LT
             >;
 
             bindings = <
-                &kp RPKT  &kp RBRC
+                &kp RBKT  &kp RBRC  &kp GT
             >;
 
             max-delay-ms = <200>;
