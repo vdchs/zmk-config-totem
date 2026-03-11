@@ -100,6 +100,36 @@
             layers = <0 1 2>;
         };
 
+        // ----- NUM -----
+
+        lbkt {
+            bindings = <&kp LBKT>;
+            key-positions = <17 18>;
+            timeout-ms = <28>;
+            layers = <4>;
+        };
+
+        rbkt {
+            bindings = <&kp RBKT>;
+            key-positions = <17 18>;
+            timeout-ms = <28>;
+            layers = <4>;
+        };
+
+        lbrc {
+            bindings = <&kp LBRC>;
+            key-positions = <17 18>;
+            timeout-ms = <28>;
+            layers = <4>;
+        };
+
+        rbrc {
+            bindings = <&kp LBRC>;
+            key-positions = <17 18>;
+            timeout-ms = <28>;
+            layers = <4>;
+        };
+
         // ----- LAYERS -----
 
         func_l {
