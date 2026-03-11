@@ -106,34 +106,34 @@
             bindings = <&ad_par>;
             key-positions = <17 18>;
             timeout-ms = <28>;
-            layers = <4>;
+            layers = <5>;
         };
 
         rbkt {
             bindings = <&kp RBKT>;
             key-positions = <28 29>;
             timeout-ms = <28>;
-            layers = <4>;
+            layers = <5>;
         };
 
         rbrc {
             bindings = <&kp RBRC>;
             key-positions = <28 18>;
             timeout-ms = <28>;
-            layers = <4>;
+            layers = <5>;
         };
 
         // ----- LAYERS -----
 
         func_l {
-            bindings = <&lt_ssk_slow 6 LSHFT>;
+            bindings = <&lt_ssk_slow 7 LSHFT>;
             key-positions = <10 11>;
             timeout-ms = <28>;
             layers = <0 1 2>;
         };
 
         func_r {
-            bindings = <&lt_ssk_slow 6 LSHFT>;
+            bindings = <&lt_ssk_slow 7 LSHFT>;
             key-positions = <18 19>;
             timeout-ms = <28>;
             layers = <0 1 2>;
@@ -429,11 +429,11 @@
             label = "SINGLESL";
         };
 
-        kp_alt_off: kp_alt_off {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &tog_off 1>;
-            label = "KP_ALT_OFF";
+        kp_tog_off: kp_tog_off {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_2to1 &tog_off MACRO_PLACEHOLDER>;
+            label = "KP_TOG_OFF";
             wait-ms = <0>;
         };
     };
@@ -444,36 +444,54 @@
         base {
             bindings = <
         &trans         &trans         &trans                    &trans            &trans    &trans  &trans            &trans                         &trans         &trans
-        &lt_hmr_l 4 R  &lt_hmr_l 3 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LALT H  &trans    &trans  &mt_hmr_r LALT N  &mt_hmr_r_ad_e LEFT_CONTROL 0  &lt_hmr_r 3 A  &lt_hmr_r 4 I
+        &lt_hmr_l 5 R  &lt_hmr_l 3 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LALT H  &trans    &trans  &mt_hmr_r LALT N  &mt_hmr_r_ad_e LEFT_CONTROL 0  &lt_hmr_r 3 A  &lt_hmr_r 5 I
 &trans  &trans         &ad_c          &kp D                     &mt_hmr_l LGUI M  &trans    &trans  &mt_hmr_r LGUI L  &ad_u                          &ad_dot        &trans         &trans
-                                      &trans                    &mt_thumb 2 1     &trans    &trans  &lt 5 SPACE       &trans
+                                      &trans                    &mt_thumb 2 1     &trans    &trans  &lt 6 SPACE       &trans
             >;
         };
 
         alt {
             bindings = <
-        &trans         &trans         &trans         &trans         &trans    &trans  &trans         &trans         &trans           &trans
-        &kp_alt_off F  &kp_alt_off R  &kp_alt_off J  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &kp_alt_off E  &kp_alt_off O    &kp_alt_off Y
-&trans  &trans         &kp_alt_off Q  &trans         &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans         &kp_alt_off SQT  &trans         &trans
-                                      &trans         &tog_off 1     &trans    &trans  &trans         &trans
+        &trans           &trans           &trans           &trans           &trans    &trans  &trans           &trans           &trans             &trans
+        &kp_tog_off F 1  &kp_tog_off R 1  &kp_tog_off J 1  &kp_tog_off V 1  &trans    &trans  &kp_tog_off W 1  &kp_tog_off E 1  &kp_tog_off O 1    &kp_tog_off Y 1
+&trans  &trans           &kp_tog_off Q 1  &trans           &kp_tog_off X 1  &trans    &trans  &kp_tog_off Z 1  &trans           &kp_tog_off SQT 1  &trans           &trans
+                                          &trans           &tog_off 1       &trans    &trans  &trans           &trans
             >;
         };
 
         alt_held {
             bindings = <
-        &trans         &trans         &trans         &trans         &trans    &trans  &trans         &trans         &trans           &trans
-        &kp_alt_off F  &kp_alt_off R  &kp_alt_off J  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &kp_alt_off E  &kp_alt_off O    &kp_alt_off Y
-&trans  &trans         &kp_alt_off Q  &trans         &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans         &kp_alt_off SQT  &trans         &trans
-                                      &trans         &trans         &trans    &trans  &trans         &trans
+        &trans           &trans           &trans           &trans           &trans    &trans  &trans           &trans           &trans             &trans
+        &kp_tog_off F 1  &kp_tog_off R 1  &kp_tog_off J 1  &kp_tog_off V 1  &trans    &trans  &kp_tog_off W 1  &kp_tog_off E 1  &kp_tog_off O 1    &kp_tog_off Y 1
+&trans  &trans           &kp_tog_off Q 1  &trans           &kp_tog_off X 1  &trans    &trans  &kp_tog_off Z 1  &trans           &kp_tog_off SQT 1  &trans           &trans
+                                          &trans           &trans           &trans    &trans  &trans           &trans
             >;
         };
 
         sym {
             bindings = <
-        &kp PRCNT  &kp AT    &kp PIPE   &kp AMPS  &trans    &trans  &kp CARET                &kp BSLH                 &kp DQT    &mt GRAVE TILDE
-        &kp HASH   &kp DLLR  &kp STAR   &kp EXCL  &trans    &trans  &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON  &mt_append SEMI SEMI
-&trans  &trans     &trans    &kp QMARK  &kp FSLH  &trans    &trans  &kp UNDER                &kp PLUS                 &trans     &trans                &trans
-                             &trans     &trans    &trans    &trans  &trans                   &trans
+        &trans    &trans    &trans     &trans         &trans    &trans  &trans                   &trans                   &trans     &trans
+        &kp HASH  &kp PIPE  &kp AMPS   &kp EXCL       &trans    &trans  &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON  &mt_append SEMI SEMI
+&trans  &trans    &kp AT    &kp QMARK  &kp FSLH       &trans    &trans  &kp UNDER                &kp PLUS                 &kp DQT    &trans                &trans
+                            &trans     &mt_thumb 4 4  &trans    &trans  &trans                   &trans
+            >;
+        };
+
+        sym2 {
+            bindings = <
+        &trans              &trans               &trans              &trans              &trans    &trans  &trans               &trans  &trans               &trans
+        &kp_tog_off DLLR 4  &kp_tog_off PRCNT 4  &kp_tog_off STAR 4  &trans              &trans    &trans  &kp_tog_off CARET 4  &trans  &kp_tog_off GRAVE 4  &kp_tog_off TILDE 4
+&trans  &trans              &trans               &trans              &kp_tog_off BSLH 4  &trans    &trans  &trans               &trans  &trans               &trans               &trans
+                                                 &trans              &tog_off 4          &trans    &trans  &trans               &trans
+            >;
+        };
+
+        sym2_held {
+            bindings = <
+        &trans              &trans               &trans              &trans              &trans    &trans  &trans               &trans  &trans               &trans
+        &kp_tog_off DLLR 4  &kp_tog_off PRCNT 4  &kp_tog_off STAR 4  &trans              &trans    &trans  &kp_tog_off CARET 4  &trans  &kp_tog_off GRAVE 4  &kp_tog_off TILDE 4
+&trans  &trans              &trans               &trans              &kp_tog_off BSLH 4  &trans    &trans  &trans               &trans  &trans               &trans               &trans
+                                                 &trans              &trans              &trans    &trans  &trans               &trans
             >;
         };
 
@@ -489,7 +507,7 @@
         nav {
             bindings = <
         &trans   &trans            &trans            &trans          &trans    &trans  &trans    &trans    &trans   &trans
-        &kp ESC  &kp_alt_off BSPC  &kp LEFT_CONTROL  &mt LALT ENTER  &trans    &trans  &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT
+        &kp ESC  &kp_tog_off BSPC  &kp LEFT_CONTROL  &mt LALT ENTER  &trans    &trans  &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT
 &trans  &trans   &kp TAB           &trans            &kp LGUI        &trans    &trans  &kp HOME  &kp END   &kp DEL  &trans     &trans
                                    &trans            &kp LSHFT       &trans    &trans  &trans    &trans
             >;
