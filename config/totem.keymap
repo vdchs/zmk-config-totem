@@ -159,11 +159,11 @@
             #binding-cells = <0>;
             defaults = <&kp E>;
             antecedents = <
-                O
+                O      A
             >;
 
             bindings = <
-                &kp U
+                &kp U  &kp U
             >;
 
             max-delay-ms = <200>;
