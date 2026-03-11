@@ -48,7 +48,7 @@
         };
 
         // ----- UMLAUTE -----
-        
+
         ae {
             bindings = <&kp RA(Q)>;
             key-positions = <19 17>;
@@ -78,6 +78,7 @@
         };
 
         // ----- BIGRAMS -----
+
         ex {
             bindings = <&Ex>;
             key-positions = <16 17>;
@@ -134,7 +135,6 @@
     };
 
     behaviors {
-
         // ----- ADAPTIVE KEYS ------
 
         ad_e: ad_e {
@@ -164,22 +164,6 @@
 
             bindings = <
                 &kp E
-            >;
-
-            max-delay-ms = <200>;
-        };
-
-        ad_h: ad_h {
-            compatible = "zmk,behavior-antecedent-morph";
-            label = "ADAPTIVE_H";
-            #binding-cells = <0>;
-            defaults = <&kp H>;
-            antecedents = <
-                R
-            >;
-
-            bindings = <
-                &kp R
             >;
 
             max-delay-ms = <200>;
@@ -218,7 +202,7 @@
         };
 
         // ----- MT/LT -----
-        
+
         mt_arrowfy: mt_arrowfy {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_ARROW";
@@ -297,40 +281,6 @@
             flavor = "tap-preferred";
         };
 
-        mt_double: mt_double {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_DOUBLE";
-            bindings = <&double>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "tap-preferred";
-        };
-
-        mt_hmr_l_ssk: mt_hmr_l_ssk {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_HMR_L_SSK";
-            bindings = <&singleSk>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "balanced";
-            hold-trigger-key-positions = <15 5 6 7 17 16 26 27 28 29 18 8 9 19 30 31 32 33 34 36 37 35>;
-            require-prior-idle-ms = <200>;
-        };
-
-        mt_hmr_r_ssk: mt_hmr_r_ssk {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_HMR_R_SSK";
-            bindings = <&singleSk>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "balanced";
-            hold-trigger-key-positions = <20 21 10 0 1 11 22 23 12 2 3 24 13 4 14 25 32 33 34 36 37 35>;
-            require-prior-idle-ms = <200>;
-        };
-
         lt_ssk_slow: lt_ssk_slow {
             compatible = "zmk,behavior-hold-tap";
             label = "LT_SSK_SLOW";
@@ -371,7 +321,6 @@
     };
 
     macros {
-
         // ----- BIGRAMS -----
 
         Ex: Ex {
@@ -464,19 +413,19 @@
 
         alt {
             bindings = <
-        &trans         &trans         &trans  &trans         &trans    &trans  &trans         &trans         &trans           &trans
-        &kp_alt_off F  &kp_alt_off J  &trans  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &kp_alt_off E  &kp_alt_off O    &kp_alt_off Y
-&trans  &trans         &kp_alt_off Q  &trans  &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans         &kp_alt_off SQT  &trans         &trans
-                                      &trans  &tog_off 1     &trans    &trans  &trans         &trans
+        &trans         &trans         &trans         &trans         &trans    &trans  &trans         &trans         &trans           &trans
+        &kp_alt_off F  &kp_alt_off R  &kp_alt_off J  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &kp_alt_off E  &kp_alt_off O    &kp_alt_off Y
+&trans  &trans         &kp_alt_off Q  &trans         &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans         &kp_alt_off SQT  &trans         &trans
+                                      &trans         &tog_off 1     &trans    &trans  &trans         &trans
             >;
         };
 
         alt_held {
             bindings = <
-        &trans         &trans         &trans  &trans         &trans    &trans  &trans         &trans         &trans           &trans
-        &kp_alt_off F  &kp_alt_off J  &trans  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &kp_alt_off E  &kp_alt_off O    &kp_alt_off Y
-&trans  &trans         &kp_alt_off Q  &trans  &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans         &kp_alt_off SQT  &trans         &trans
-                                      &trans  &trans         &trans    &trans  &trans         &trans
+        &trans         &trans         &trans         &trans         &trans    &trans  &trans         &trans         &trans           &trans
+        &kp_alt_off F  &kp_alt_off R  &kp_alt_off J  &kp_alt_off V  &trans    &trans  &kp_alt_off W  &kp_alt_off E  &kp_alt_off O    &kp_alt_off Y
+&trans  &trans         &kp_alt_off Q  &trans         &kp_alt_off X  &trans    &trans  &kp_alt_off Z  &trans         &kp_alt_off SQT  &trans         &trans
+                                      &trans         &trans         &trans    &trans  &trans         &trans
             >;
         };
 
