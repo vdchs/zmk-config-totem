@@ -487,7 +487,7 @@
         &trans    &trans    &trans     &trans         &trans    &trans  &trans                   &trans                   &trans     &trans
         &kp HASH  &kp PIPE  &kp AMPS   &kp EXCL       &trans    &trans  &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON  &mt_append SEMI SEMI
 &trans  &trans    &kp AT    &kp QMARK  &kp FSLH       &trans    &trans  &kp UNDER                &kp PLUS                 &kp DQT    &trans                &trans
-                            &trans     &mt_thumb 4 4  &trans    &trans  &trans                   &trans
+                            &trans     &mt_thumb 5 4  &trans    &trans  &trans                   &trans
             >;
         };
 
