@@ -1,8 +1,8 @@
 include:
-  - board: seeeduino_xiao_ble
-    shield: totem_left
-  - board: seeeduino_xiao_ble
-    shield: totem_right
+  #- board: seeeduino_xiao_ble
+  #  shield: totem_left
+  #- board: seeeduino_xiao_ble
+  #  shield: totem_right
   - board: seeeduino_xiao_ble
     shield: totem_dongle
   # - board: seeeduino_xiao_ble
