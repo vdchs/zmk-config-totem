@@ -111,13 +111,13 @@
 
         rbkt {
             bindings = <&kp RBKT>;
-            key-positions = <18 28>;
+            key-positions = <28 29>;
             timeout-ms = <28>;
             layers = <4>;
         };
 
         rbrc {
-            bindings = <&kp LBRC>;
+            bindings = <&kp RBRC>;
             key-positions = <28 18>;
             timeout-ms = <28>;
             layers = <4>;
@@ -239,7 +239,6 @@
 
             max-delay-ms = <200>;
         };
-
 
         // ----- MT/LT -----
 
