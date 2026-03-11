@@ -460,7 +460,7 @@
         &trans         &trans         &trans                    &trans            &trans    &trans  &trans            &trans                         &trans         &trans
         &lt_hmr_l 5 R  &lt_hmr_l 3 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LALT H  &trans    &trans  &mt_hmr_r LALT N  &mt_hmr_r_ad_e LEFT_CONTROL 0  &lt_hmr_r 3 A  &lt_hmr_r 5 I
 &trans  &trans         &ad_c          &kp D                     &mt_hmr_l LGUI M  &trans    &trans  &mt_hmr_r LGUI L  &ad_u                          &ad_dot        &trans         &trans
-                                      &trans                    &mt_thumb 2 1     &trans    &trans  &lt 6 SPACE       &trans
+                                      &trans                    &mt_thumb 2 1     &trans    &trans  &lt 7 SPACE       &trans
             >;
         };
 
