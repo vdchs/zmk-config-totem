@@ -57,8 +57,8 @@
         };
 
         sz {
-            bindings = <&szR>;
-            key-positions = <22 12>;
+            bindings = <&kp RA(S)>;
+            key-positions = <22 23>;
             timeout-ms = <28>;
             layers = <0 1 2>;
         };
