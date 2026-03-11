@@ -185,6 +185,22 @@
             max-delay-ms = <200>;
         };
 
+        ad_dot: ad_dot {
+            compatible = "zmk,behavior-antecedent-morph";
+            label = "ADAPTIVE_DOT";
+            #binding-cells = <0>;
+            defaults = <&kp DOT>;
+            antecedents = <
+                U
+            >;
+
+            bindings = <
+                &kp E
+            >;
+
+            max-delay-ms = <200>;
+        };
+
         mt_hmr_l: mt_hmr_l {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_HMR_L";
@@ -463,7 +479,7 @@
             bindings = <
         &trans         &trans         &trans                    &trans            &trans    &trans  &trans            &trans                         &trans         &trans
         &lt_hmr_l 4 R  &lt_hmr_l 3 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LALT H  &trans    &trans  &mt_hmr_r LALT N  &mt_hmr_r_ad_e LEFT_CONTROL 0  &lt_hmr_r 3 A  &lt_hmr_r 4 I
-&trans  &trans         &ad_c          &kp D                     &mt_hmr_l LGUI M  &trans    &trans  &mt_hmr_r LGUI L  &kp U                          &kp DOT        &trans         &trans
+&trans  &trans         &ad_c          &kp D                     &mt_hmr_l LGUI M  &trans    &trans  &mt_hmr_r LGUI L  &kp U                          &ad_dot        &trans         &trans
                                       &trans                    &mt_thumb 2 1     &trans    &trans  &lt 5 SPACE       &trans
             >;
         };
