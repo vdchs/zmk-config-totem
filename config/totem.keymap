@@ -124,15 +124,15 @@
         };
 
         lt {
-            bindings = <&kp RBRC>;
-            key-positions = <28 18>;
+            bindings = <&kp LT>;
+            key-positions = <12 13>;
             timeout-ms = <28>;
             layers = <5>;
         };
 
         gt {
-            bindings = <&kp RBRC>;
-            key-positions = <28 18>;
+            bindings = <&kp GT>;
+            key-positions = <16 17>;
             timeout-ms = <28>;
             layers = <5>;
         };
