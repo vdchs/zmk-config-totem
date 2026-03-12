@@ -140,14 +140,14 @@
         // ----- LAYERS -----
 
         func_l {
-            bindings = <&lt_ssk_slow 7 LSHFT>;
+            bindings = <&lt_ssk_slow 8 LSHFT>;
             key-positions = <10 11>;
             timeout-ms = <28>;
             layers = <0 1 2>;
         };
 
         func_r {
-            bindings = <&lt_ssk_slow 7 LSHFT>;
+            bindings = <&lt_ssk_slow 8 LSHFT>;
             key-positions = <18 19>;
             timeout-ms = <28>;
             layers = <0 1 2>;
@@ -435,7 +435,7 @@
         base {
             bindings = <
         &trans         &trans         &trans                    &trans            &trans    &trans  &trans            &trans                         &trans         &trans
-        &lt_hmr_l 5 R  &lt_hmr_l 3 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LALT H  &trans    &trans  &mt_hmr_r LALT N  &mt_hmr_r_ad_e LEFT_CONTROL 0  &lt_hmr_r 3 A  &lt_hmr_r 5 I
+        &lt_hmr_l 6 R  &lt_hmr_l 3 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LALT H  &trans    &trans  &mt_hmr_r LALT N  &mt_hmr_r_ad_e LEFT_CONTROL 0  &lt_hmr_r 3 A  &lt_hmr_r 6 I
 &trans  &trans         &ad_c          &kp D                     &mt_hmr_l LGUI M  &trans    &trans  &mt_hmr_r LGUI L  &kp DOT                        &kp O          &trans         &trans
                                       &trans                    &mt_thumb 2 1     &trans    &trans  &lt 7 SPACE       &trans
             >;
