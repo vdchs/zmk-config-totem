@@ -93,10 +93,10 @@
             layers = <0 1 2>;
         };
 
-        you {
-            bindings = <&you>;
-            key-positions = <17 18 19>;
-            timeout-ms = <32>;
+        ck {
+            bindings = <&ck>;
+            key-positions = <12 13 14>;
+            timeout-ms = <28>;
             layers = <0 1 2>;
         };
 
@@ -374,18 +374,11 @@
             label = "QU";
         };
 
-        Ck: ck {
+        ck: ck {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp C &kp K>;
             label = "CK";
-        };
-
-        you: you {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp O &kp U>;
-            label = "YOU";
         };
 
         // ----- OTHER -----
