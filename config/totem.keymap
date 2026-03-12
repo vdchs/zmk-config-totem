@@ -95,7 +95,7 @@
 
         ck {
             bindings = <&ck>;
-            key-positions = <12 13 14>;
+            key-positions = <12 13 11>;
             timeout-ms = <28>;
             layers = <0 1 2>;
         };
