@@ -206,6 +206,38 @@
             max-delay-ms = <200>;
         };
 
+        ad_a: ad_a {
+            compatible = "zmk,behavior-antecedent-morph";
+            label = "ADAPTIVE_A";
+            #binding-cells = <0>;
+            defaults = <&kp A>;
+            antecedents = <
+                Y      I
+            >;
+
+            bindings = <
+                &kp O  &kp O
+            >;
+
+            max-delay-ms = <200>;
+        };
+
+        ad_o: ad_o {
+            compatible = "zmk,behavior-antecedent-morph";
+            label = "ADAPTIVE_O";
+            #binding-cells = <0>;
+            defaults = <&kp O>;
+            antecedents = <
+                Y      I
+            >;
+
+            bindings = <
+                &kp A  &kp A
+            >;
+
+            max-delay-ms = <200>;
+        };
+
         ad_c: ad_c {
             compatible = "zmk,behavior-antecedent-morph";
             label = "ADAPTIVE_C";
@@ -266,6 +298,18 @@
             compatible = "zmk,behavior-hold-tap";
             label = "MT_HMR_R";
             bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <20 21 10 0 1 11 22 23 12 2 3 24 13 4 14 25 32 33 34 36 37 35>;
+            require-prior-idle-ms = <200>;
+        };
+
+        lt_hmr_r_ad_a: lt_hmr_r_ad_a {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_HMR_R_AD_A";
+            bindings = <&mo>, <&ad_a>;
 
             #binding-cells = <2>;
             tapping-term-ms = <250>;
@@ -434,9 +478,9 @@
 
         base {
             bindings = <
-        &trans         &trans         &trans                    &trans            &trans    &trans  &trans            &trans                         &trans         &trans
-        &lt_hmr_l 6 R  &lt_hmr_l 3 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LALT H  &trans    &trans  &mt_hmr_r LALT N  &mt_hmr_r_ad_e LEFT_CONTROL 0  &lt_hmr_r 3 A  &lt_hmr_r 6 I
-&trans  &trans         &ad_c          &kp D                     &mt_hmr_l LGUI M  &trans    &trans  &mt_hmr_r LGUI L  &kp DOT                        &kp O          &trans         &trans
+        &trans         &trans         &trans                    &trans            &trans    &trans  &trans            &trans                         &trans              &trans
+        &lt_hmr_l 6 R  &lt_hmr_l 3 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LALT H  &trans    &trans  &mt_hmr_r LALT N  &mt_hmr_r_ad_e LEFT_CONTROL 0  &lt_hmr_r_ad_a 3 0  &lt_hmr_r 6 I
+&trans  &trans         &ad_c          &kp D                     &mt_hmr_l LGUI M  &trans    &trans  &mt_hmr_r LGUI L  &kp DOT                        &ad_o               &trans         &trans
                                       &trans                    &mt_thumb 2 1     &trans    &trans  &lt 7 SPACE       &trans
             >;
         };
