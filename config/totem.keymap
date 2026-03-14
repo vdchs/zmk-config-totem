@@ -487,6 +487,13 @@
             label = "KP_TOG_OFF";
             wait-ms = <0>;
         };
+
+        th_tog_off: th {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&kp T &kp H &macro_param_1to1 &tog_off MACRO_PLACEHOLDER>;
+            label = "TH";
+        };
     };
 
     keymap {
@@ -495,27 +502,27 @@
         base {
             bindings = <
         &trans         &trans         &trans                    &trans            &trans    &trans  &trans            &trans                         &trans              &trans
-        &lt_hmr_l 6 R  &lt_hmr_l 3 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LALT H  &trans    &trans  &mt_hmr_r LALT N  &mt_hmr_r_ad_e LEFT_CONTROL 0  &lt_hmr_r_ad_a 3 0  &lt_hmr_r 6 I
-&trans  &trans         &ad_c          &ad_d                     &mt_hmr_l LGUI M  &trans    &trans  &mt_hmr_r LGUI W  &kp DOT                        &ad_o               &trans         &trans
+        &lt_hmr_l 6 R  &lt_hmr_l 3 S  &mt_hmr_l LEFT_CONTROL T  &mt_hmr_l LALT L  &trans    &trans  &mt_hmr_r LALT N  &mt_hmr_r_ad_e LEFT_CONTROL 0  &lt_hmr_r_ad_a 3 0  &lt_hmr_r 6 I
+&trans  &trans         &ad_c          &ad_d                     &mt_hmr_l LGUI M  &trans    &trans  &mt_hmr_r LGUI F  &kp DOT                        &ad_o               &trans         &trans
                                       &trans                    &mt_thumb 2 1     &trans    &trans  &lt 7 SPACE       &trans
             >;
         };
 
         alt {
             bindings = <
-        &trans           &trans           &trans           &trans           &trans    &trans  &trans           &trans             &trans           &trans
-        &kp_tog_off F 1  &trans           &kp_tog_off J 1  &kp_tog_off V 1  &trans    &trans  &kp_tog_off L 1  &kp_tog_off E 1    &trans           &kp_tog_off Y 1
-&trans  &trans           &kp_tog_off Q 1  &trans           &kp_tog_off X 1  &trans    &trans  &kp_tog_off Z 1  &kp_tog_off SQT 1  &kp_tog_off U 1  &trans           &trans
-                                          &trans           &tog_off 1       &trans    &trans  &trans           &trans
+        &trans         &trans           &trans           &trans           &trans    &trans  &trans           &trans             &trans           &trans
+        &th_tog_off 1  &kp_tog_off W 1  &kp_tog_off J 1  &kp_tog_off V 1  &trans    &trans  &kp_tog_off H 1  &kp_tog_off E 1    &trans           &kp_tog_off Y 1
+&trans  &trans         &kp_tog_off Q 1  &trans           &kp_tog_off X 1  &trans    &trans  &kp_tog_off Z 1  &kp_tog_off SQT 1  &kp_tog_off U 1  &trans           &trans
+                                        &trans           &tog_off 1       &trans    &trans  &trans           &trans
             >;
         };
 
         alt_held {
             bindings = <
-        &trans           &trans           &trans           &trans           &trans    &trans  &trans           &trans             &trans           &trans
-        &kp_tog_off F 1  &trans           &kp_tog_off J 1  &kp_tog_off V 1  &trans    &trans  &kp_tog_off L 1  &kp_tog_off E 1    &trans           &kp_tog_off Y 1
-&trans  &trans           &kp_tog_off Q 1  &trans           &kp_tog_off X 1  &trans    &trans  &kp_tog_off Z 1  &kp_tog_off SQT 1  &kp_tog_off U 1  &trans           &trans
-                                          &trans           &trans           &trans    &trans  &trans           &trans
+        &trans         &trans           &trans           &trans           &trans    &trans  &trans           &trans             &trans           &trans
+        &th_tog_off 1  &kp_tog_off W 1  &kp_tog_off J 1  &kp_tog_off V 1  &trans    &trans  &kp_tog_off H 1  &kp_tog_off E 1    &trans           &kp_tog_off Y 1
+&trans  &trans         &kp_tog_off Q 1  &trans           &kp_tog_off X 1  &trans    &trans  &kp_tog_off Z 1  &kp_tog_off SQT 1  &kp_tog_off U 1  &trans           &trans
+                                        &trans           &trans           &trans    &trans  &trans           &trans
             >;
         };
 
