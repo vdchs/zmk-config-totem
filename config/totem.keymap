@@ -487,19 +487,19 @@
 
         alt {
             bindings = <
-        &trans           &trans           &trans           &trans           &trans    &trans  &trans           &trans             &trans           &trans
-        &kp_tog_off F 1  &kp_tog_off R 1  &kp_tog_off J 1  &kp_tog_off V 1  &trans    &trans  &kp_tog_off W 1  &kp_tog_off E 1    &trans           &kp_tog_off Y 1
-&trans  &trans           &kp_tog_off Q 1  &trans           &kp_tog_off X 1  &trans    &trans  &kp_tog_off Z 1  &kp_tog_off SQT 1  &kp_tog_off U 1  &trans           &trans
-                                          &trans           &tog_off 1       &trans    &trans  &trans           &trans
+        &trans  &trans           &trans           &trans           &trans    &trans  &trans           &trans             &trans           &trans
+        &trans  &kp_tog_off V 1  &kp_tog_off J 1  &kp_tog_off F 1  &trans    &trans  &kp_tog_off W 1  &kp_tog_off E 1    &trans           &kp_tog_off Y 1
+&trans  &trans  &kp_tog_off Q 1  &trans           &kp_tog_off X 1  &trans    &trans  &kp_tog_off Z 1  &kp_tog_off SQT 1  &kp_tog_off U 1  &trans           &trans
+                                 &trans           &tog_off 1       &trans    &trans  &trans           &trans
             >;
         };
 
         alt_held {
             bindings = <
-        &trans           &trans           &trans           &trans           &trans    &trans  &trans           &trans             &trans           &trans
-        &kp_tog_off F 1  &kp_tog_off R 1  &kp_tog_off J 1  &kp_tog_off V 1  &trans    &trans  &kp_tog_off W 1  &kp_tog_off E 1    &trans           &kp_tog_off Y 1
-&trans  &trans           &kp_tog_off Q 1  &trans           &kp_tog_off X 1  &trans    &trans  &kp_tog_off Z 1  &kp_tog_off SQT 1  &kp_tog_off U 1  &trans           &trans
-                                          &trans           &trans           &trans    &trans  &trans           &trans
+        &trans  &trans           &trans           &trans           &trans    &trans  &trans           &trans             &trans           &trans
+        &trans  &kp_tog_off V 1  &kp_tog_off J 1  &kp_tog_off F 1  &trans    &trans  &kp_tog_off W 1  &kp_tog_off E 1    &trans           &kp_tog_off Y 1
+&trans  &trans  &kp_tog_off Q 1  &trans           &kp_tog_off X 1  &trans    &trans  &kp_tog_off Z 1  &kp_tog_off SQT 1  &kp_tog_off U 1  &trans           &trans
+                                 &trans           &trans           &trans    &trans  &trans           &trans
             >;
         };
 
